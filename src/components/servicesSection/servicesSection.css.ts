@@ -4,7 +4,6 @@ import { colors } from "@/theme/colors";
 export const servicesContainer = style({
     display: "flex",
     justifyContent: "space-between",
-    marginBottom: "64px",
     marginTop: "64px",
 })
 

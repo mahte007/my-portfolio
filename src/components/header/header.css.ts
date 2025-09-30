@@ -1,10 +1,18 @@
 import { style } from "@vanilla-extract/css";
 
+export const headerSticky = style({
+    position: "sticky",
+    top: 0,
+    zIndex: 1000,
+    backgroundColor: "#040a11",
+})
+
 export const headerContainer = style({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    marginBottom: "40px",
+    backgroundColor: "#040a11",
+    paddingBlock: "16px",
 })
 
 export const title = style ({
@@ -64,4 +72,11 @@ export const hamburgerMenuIcon = style({
             display: "none",
         }
     },
+})
+
+export const bottomLine = style ({
+    height: '1px',
+    width: '100%',
+    background: 'linear-gradient(to right, transparent, #e0e0e0, transparent)',
+    marginTop: '8px',
 })
