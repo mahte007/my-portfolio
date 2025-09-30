@@ -1,22 +1,89 @@
+import { useCallback, useState } from "react";
+
+import * as styles from "./skillsSection.css";
+import Image from "next/image";
+import chevronRight from "/public/right-chevron.svg";
+import clsx from "clsx";
+
 export default function SkillsSection() {
-    const skills = [
-    { name: "React", short: "React" },
-    { name: "HTML5", short: "HTML" },
-    { name: "CSS3", short: "CSS" },
-    { name: "JavaScript", short: "JS" },
+  const skills = [
+    {
+      id: "frontend",
+      name: "FrontEnd",
+      skills: [
+        { id: "react", name: "React", short: "React" },
+        { id: "html", name: "HTML5", short: "HTML" },
+        { id: "css", name: "CSS3", short: "CSS" },
+        { id: "javascript", name: "JavaScript", short: "JS" },
+      ],
+    },
+    {
+      id: "backend",
+      name: "BackEnd",
+      skills: [
+        { id: "java", name: "Java", short: "Java" },
+        { id: "node", name: "NodeJS", short: "NodeJS" },
+        { id: "mysql", name: "MySql", short: "MySQL" },
+        { id: "oracle", name: "Oracle Sql", short: "Oracle SQL" },
+      ],
+    },
+    {
+      id: "other",
+      name: "Other",
+      skills: [
+        { id: "git", name: "Git", short: "Git" },
+        { id: "wordpress", name: "WordPress", short: "WP" },
+        { id: "jquery", name: "JQuery", short: "JQuery" },
+      ],
+    },
   ];
 
-    return (
-        <section id="skills" className="mb-14">
-            <h3 className="text-2xl font-semibold text-white mb-6">Skills</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {skills.map((s, idx) => (
-                <div key={idx} className="rounded-lg p-4 bg-gray-900 flex flex-col items-center justify-center border border-gray-700">
-                  <div className="w-12 h-12 rounded-md bg-pink-200 flex items-center justify-center text-black font-bold">{s.short}</div>
-                  <div className="mt-3 text-sm text-gray-200">{s.name}</div>
-                </div>
-              ))}
+  const [selectedTech, changeSelectedTech] = useState(skills[0].id);
+
+  const changeTech = useCallback((id: string) => {
+    changeSelectedTech(id);
+  }, []);
+
+  return (
+    <section id="skills" className={styles.skillsSectionContainer}>
+      <h3 className="text-2xl font-semibold text-white mb-6">Skills</h3>
+      <div className={styles.mainContainer}>
+        <div className={styles.techContainer}>
+          {skills.map((tech) => (
+            <div
+              className={clsx(
+                styles.techElement,
+                selectedTech === tech.id && styles.highlightedElement
+              )}
+              onClick={() => changeTech(tech.id)}
+              key={tech.id}
+            >
+              {tech.name}
+              <Image
+                alt="chevronIcon"
+                src={chevronRight ?? ""}
+                width={25}
+                height={25}
+                draggable={false}
+                className={
+                  selectedTech === tech.id
+                    ? styles.rotatedChevron
+                    : styles.chevron
+                }
+              />
             </div>
-          </section>
-    )
+          ))}
+        </div>
+        <div className={styles.skillsContainer}>
+          {skills
+            .find((tech) => tech.id === selectedTech)
+            ?.skills.map((skill) => (
+              <div className={styles.skillsElement} key={skill.id}>
+                {skill.name}
+              </div>
+            ))}
+        </div>
+      </div>
+    </section>
+  );
 }
