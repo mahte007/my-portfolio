@@ -1,12 +1,35 @@
-import { Linkedin, Mail } from "lucide-react";
+import Button from "../common/button/button";
+import CustomTitle from "../common/customTitle/customTitle";
+import GlowCard from "../common/glowCard/glowCard";
+
+import github from "/public/github.svg";
+import linkedin from "/public/linkedin.svg";
+import mail from "/public/mail.svg";
+import phone from "/public/phone.svg";
+
 
 export default function ContactSection() {
     return (
         <section id="contact" className="mb-6">
-            <h3 className="text-2xl font-semibold text-white mb-4">Contact</h3>
-            <p className="text-gray-300 max-w-xl mb-4">Interested in working together? Send a message — I usually reply within a few days.</p>
+            <CustomTitle subTitle="Contact Information" heading="h2" position="center" subTitlePosition="above" >Contact</CustomTitle>
 
-            <form className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl">
+            <div>
+              <GlowCard icon={mail}>
+                <span>Email</span>
+                <Button variant="outline">mahte007@gmail.com</Button>
+                <p>Write me an Email</p>
+              </GlowCard>
+              <GlowCard icon={phone}>
+                
+              </GlowCard>
+            </div>
+
+
+
+
+
+
+            {/* <form className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl">
               <input className="md:col-span-2 rounded-md p-3 bg-gray-800 border border-gray-700 placeholder:text-gray-500" placeholder="Your message" />
               <input className="rounded-md p-3 bg-gray-800 border border-gray-700 placeholder:text-gray-500" placeholder="Email" />
               <div className="md:col-span-3 flex gap-3 mt-2">
@@ -18,7 +41,7 @@ export default function ContactSection() {
                   <Linkedin size={16} /> <span className="text-sm">LinkedIn</span>
                 </a>
               </div>
-            </form>
+            </form> */}
           </section>
     )
 }

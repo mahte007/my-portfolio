@@ -5,6 +5,7 @@ export const servicesContainer = style({
     display: "flex",
     justifyContent: "space-between",
     marginTop: "64px",
+    marginBottom: "128px",
 })
 
 export const firstCardColor = style({

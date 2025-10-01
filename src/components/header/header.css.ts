@@ -13,6 +13,10 @@ export const headerContainer = style({
     justifyContent: "space-between",
     backgroundColor: "#040a11",
     paddingBlock: "16px",
+    maxWidth: "1280px",
+    marginInline: "auto",
+    paddingInline: "48px",
+    paddingBlockEnd: "12px"
 })
 
 export const title = style ({

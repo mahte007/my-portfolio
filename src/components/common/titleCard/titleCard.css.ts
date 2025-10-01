@@ -24,5 +24,6 @@ export const titleCardMainContainer = style({
     padding: "16px",
     borderBottomLeftRadius: "16px",
     borderBottomRightRadius: "16px",
-    height: "60%"
+    height: "60%",
+    backgroundColor: "#040a11"
 })
