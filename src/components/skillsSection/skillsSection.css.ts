@@ -14,7 +14,8 @@ export const mainContainer = style({
   gap: "64px",
   marginTop: "64px",
   marginBottom: "64px",
-  height: "150px"
+  alignItems: "stretch",
+  height: "200px"
 });
 
 export const techContainer = style({
@@ -24,7 +25,6 @@ export const techContainer = style({
   width: "25%",
   borderRadius: "16px",
   padding: "16px",
-  height: "fit-content",
   backgroundColor: "#0f1a25",
   boxShadow: "0 0 15px rgba(59, 130, 246, 0.4)",
   gap: "8px",
@@ -48,15 +48,14 @@ export const skillsContainer = style({
   width: "25%",
   borderRadius: "16px",
   padding: "16px",
-  overflow: "hidden",
   backgroundColor: "#0f1a25",
   boxShadow: "0 0 15px rgba(59, 130, 246, 0.4)",
   gap: "8px",
-  height: "fit-content",
 });
 
 export const skillsElement = style({
   padding: "8px 0",
+  height: "100%"
 });
 
 export const rotatedChevron = style({
