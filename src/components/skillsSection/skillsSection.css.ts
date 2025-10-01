@@ -66,3 +66,16 @@ export const rotatedChevron = style({
 export const chevron = style({
   transition: "transform 0.3s ease",
 });
+
+export const progressBarBase = style({
+  width: "100%",
+  height: "8px",
+  borderRadius: "calc(infinity * 1px)",
+  backgroundColor: "grey",
+  overflow: "hidden"
+})
+
+export const progressBar = style({
+  height: "8px",
+  backgroundColor: "white"
+})

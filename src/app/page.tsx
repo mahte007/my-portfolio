@@ -14,7 +14,7 @@ import ServicesSection from "@/components/servicesSection/servicesSection";
 import Button from "@/components/common/button/button";
 
 export default function PortfolioPage() {
-  useEffect(() => {
+  /* useEffect(() => {
     let firstScrollDown = false;
 
     function handleFirstScroll(e: { preventDefault: () => void; }) {
@@ -35,7 +35,7 @@ export default function PortfolioPage() {
       window.addEventListener("wheel", handleFirstScroll);
       window.addEventListener("touchstart", handleFirstScroll);
     }
-  }, [])
+  }, []) */
 
   return (
     <div className="min-h-screen text-gray-200 antialiased">
@@ -45,7 +45,7 @@ export default function PortfolioPage() {
 
         {/* Hero */}
         <main>
-        <div className="h-screen">
+        <div className="">
           <HeroSection />
           <ServicesSection />
         </div>
