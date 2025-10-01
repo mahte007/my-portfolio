@@ -31,16 +31,14 @@ export default function Button({
   const [copied, setCopied] = useState(false);
 
   const handleOnClick = useCallback(
-    (e: { target: { innerText: string } }) => {
+    (e: React.MouseEvent<HTMLButtonElement>) => {
       if (copy) {
-        const textToCopy = e.target.innerText;
+        const textToCopy = (e.target as HTMLButtonElement).innerText;
 
         navigator.clipboard.writeText(textToCopy);
         setCopied(true);
         setTimeout(() => setCopied(false), 3000);
       }
-
-      return;
     },
     [copy]
   );
@@ -48,8 +46,8 @@ export default function Button({
   return (
     <motion.button
       id={id}
-      whileHover={!copied && { scale: 1.05 }}
-      whileTap={!copied && { scale: 0.95 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
       disabled={isLoading || props.disabled || copied}
       className={clsx(
         styles.button,
@@ -60,11 +58,11 @@ export default function Button({
           [styles.ghost]: variant === "ghost",
           [styles.link]: variant === "link",
           [styles.rounded]: rounded,
+          [styles.disabled]: copied,
         },
         className
       )}
       onClick={handleOnClick}
-      href={href}
     >
       {copy ? (
         <>
