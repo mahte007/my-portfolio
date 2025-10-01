@@ -1,8 +1,11 @@
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 
 import * as styles from "./skillsSection.css";
 import Image from "next/image";
 import chevronRight from "/public/right-chevron.svg";
+import brackets from "/public/brackets.svg";
+import gitBranch from "/public/git-branch.svg";
+import server from "/public/server.svg";
 import clsx from "clsx";
 import CustomTitle from "../common/customTitle/customTitle";
 
@@ -36,7 +39,6 @@ export default function SkillsSection() {
         { id: "node", name: "NodeJS", short: "NodeJS", level: 50 },
         { id: "mysql", name: "MySql", short: "MySQL", level: 40 },
         { id: "oracle", name: "Oracle Sql", short: "Oracle SQL", level: 35 },
-        { id: "oracle2", name: "Oracle Sql", short: "Oracle SQL", level: 35 },
       ],
     },
     {
@@ -75,6 +77,17 @@ export default function SkillsSection() {
     });
   };
 
+  const getTechImage = useCallback((tech: string) => {
+    switch (tech) {
+      case "frontend":
+        return <Image src={brackets} alt="asd" width={30} height={30} />
+      case "backend":
+        return <Image src={server} alt="asd" width={30} height={30} />
+      case "other":
+        return <Image src={gitBranch} alt="asd" width={30} height={30} />
+    }
+  }, [])
+
   const selectedCategory = skills.find((tech) => tech.id === selectedTech);
   const skillsPerPage = 3;
   const totalPages = selectedCategory
@@ -103,7 +116,13 @@ export default function SkillsSection() {
               onClick={() => changeTech(tech.id)}
               key={tech.id}
             >
-              {tech.name}
+              <span className="flex gap-3">
+                {getTechImage(tech.id)}
+                <span className="flex flex-col">
+                  <span>{tech.name}</span>
+                  <span className="text-xs">{`${tech.skills.length} skills`}</span>
+                </span>
+              </span>
               <Image
                 alt="chevronIcon"
                 src={chevronRight ?? ""}
@@ -143,7 +162,7 @@ export default function SkillsSection() {
             selectedCategory?.skills.length > 3 && (
               <div className="relative z-50">
                 <button
-                  className="absolute left-5 -top-3"
+                  className="absolute left-5 -top-3 cursor-pointer"
                   onClick={() => handleSlide(selectedTech, "prev")}
                 >
                   ◀
@@ -160,7 +179,7 @@ export default function SkillsSection() {
                   ))}
                 </div>
                 <button
-                  className="absolute right-5 -top-3"
+                  className="absolute right-5 -top-3 cursor-pointer"
                   onClick={() => handleSlide(selectedTech, "next")}
                 >
                   ▶

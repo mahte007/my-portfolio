@@ -12,6 +12,7 @@ import ContactSection from "@/components/contactSection/contactSection";
 import Footer from "@/components/footer/footer";
 import ServicesSection from "@/components/servicesSection/servicesSection";
 import Button from "@/components/common/button/button";
+import ExperienceSection from "@/components/experienceSection/experienceSection";
 
 export default function PortfolioPage() {
   /* useEffect(() => {
@@ -54,6 +55,7 @@ export default function PortfolioPage() {
           {/* <AboutSection /> */}
           {/* <ProjectsSection /> */}
           <SkillsSection />
+          <ExperienceSection />
           <ContactSection />
           <Footer />
         </main>

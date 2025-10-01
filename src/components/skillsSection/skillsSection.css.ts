@@ -15,13 +15,13 @@ export const mainContainer = style({
   marginTop: "64px",
   marginBottom: "64px",
   alignItems: "stretch",
-  height: "200px"
+  height: "250px"
 });
 
 export const techContainer = style({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "flex-start",
+  justifyContent: "space-evenly",
   width: "25%",
   borderRadius: "16px",
   padding: "16px",
