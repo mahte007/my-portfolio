@@ -24,18 +24,6 @@ export default function TimelineCard({
   cardTitle,
   titleIcon,
 }: TimelineCardProps) {
-
-    const getTitleIcon = useMemo(() => {
-        switch (titleIcon) {
-            case "work":
-                
-                break;
-        
-            default:
-                break;
-        }
-    }, [])
-
   return (
     <div className={styles.timelineCardContainer}>
       <h3 className={styles.titleContainer}>

@@ -1,0 +1,22 @@
+import { style } from "@vanilla-extract/css";
+
+export const footerContainer = style({
+    display: "flex",
+    flexDirection: "column",
+    fontSize: "14px",
+    color: "#6a7282",
+})
+
+export const mainContainer = style({
+    display: "flex",
+    justifyContent: "space-between",
+    marginInline: "128px",
+    padding: "32px"
+})
+
+export const bottomLine = style({
+    height: '1px',
+    width: '100%',
+    background: 'linear-gradient(to right, transparent, #e0e0e0, transparent)',
+    marginTop: '8px',
+})

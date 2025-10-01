@@ -9,6 +9,7 @@ export const timelineCardContainer = style({
     boxShadow: "0 0 15px rgba(59, 130, 246, 0.4)",
     gap: "16px",
     padding: "16px",
+    height: "fit-content",
 })
 
 export const titleContainer = style({

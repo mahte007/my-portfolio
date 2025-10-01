@@ -20,8 +20,8 @@ export default function HeroSection() {
                 </motion.p>
 
                 <div className="mt-6 flex gap-4 items-center">
-                    <Button variant="outline" rounded>View my work</Button>
-                    <Button variant="primary" rounded>Get in touch</Button>
+                    <Button variant="outline" rounded href="#projects">View my work</Button>
+                    <Button variant="primary" rounded href="#contact">Get in touch</Button>
                 </div>
             </div>
 

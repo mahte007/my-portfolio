@@ -78,7 +78,7 @@ export const hamburgerMenuIcon = style({
     },
 })
 
-export const bottomLine = style ({
+export const bottomLine = style({
     height: '1px',
     width: '100%',
     background: 'linear-gradient(to right, transparent, #e0e0e0, transparent)',

@@ -50,9 +50,9 @@ export default function PortfolioPage() {
           <SkillsSection />
           <ExperienceSection />
           <ContactSection />
-          <Footer />
         </main>
       </div>
+      <Footer />
     </div>
   );
 }

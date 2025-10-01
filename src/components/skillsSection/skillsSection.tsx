@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 
 import * as styles from "./skillsSection.css";
 import Image from "next/image";
