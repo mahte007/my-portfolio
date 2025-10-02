@@ -10,15 +10,8 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-  setMenuOpen((prev) => {
-    if (!prev) {
-      document.body.style.overflowX = "hidden";
-    } else {
-      document.body.style.overflowX = "auto";
-    }
-    return !prev;
-  });
-};
+    setMenuOpen((prev) => !prev);
+  }
 
   return (
     <header className={styles.headerSticky}>

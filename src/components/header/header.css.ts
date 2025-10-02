@@ -37,26 +37,27 @@ export const subTitle = style({
 })
 
 export const headerMenuContainer = style({
-  display: "none",
+  display: "none", // hidden by default
   gap: "24px",
   alignItems: "center",
   '@media': {
     '(min-width: 768px)': {
-      display: "flex",
+      display: "flex", // desktop menu
     },
     '(max-width: 768px)': {
       display: "flex",
       flexDirection: "column",
-      position: "fixed", // <-- make it fixed
-      top: "10%",
-      right: "-100%", // <-- hide off-screen
+      position: "absolute", // remove from normal flow
+      top: "101%",          // below header
+      right: 0,
       width: "200px",
-      height: "100vh",
-      backgroundColor: "#040a11",
+      backgroundColor: "#0f1a25",
       padding: "2rem",
       gap: "24px",
-      transition: "right 0.3s ease",
-      zIndex: 1000,
+      visibility: "hidden",   // hidden by default
+      opacity: 0,             // transparent
+      transition: "opacity 0.3s ease, visibility 0.3s ease",
+      borderBottomLeftRadius: "16px"
     },
   },
 });
@@ -102,7 +103,8 @@ export const bottomLine = style({
 export const headerMenuOpen = style({
   '@media': {
     '(max-width: 768px)': {
-      right: "0", // slide in
+      visibility: "visible",
+      opacity: 1,
     },
   },
 });
