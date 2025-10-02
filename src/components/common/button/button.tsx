@@ -14,6 +14,7 @@ type ButtonProps = {
   id?: string;
   href?: string;
   target?: string;
+  link?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function Button({
@@ -25,10 +26,21 @@ export default function Button({
   id,
   href,
   target,
+  link,
   className,
   ...props
 }: ButtonProps) {
   const [copied, setCopied] = useState(false);
+
+  const mainStyles = {
+    [styles.primary]: variant === "primary",
+    [styles.secondary]: variant === "secondary",
+    [styles.outline]: variant === "outline",
+    [styles.ghost]: variant === "ghost",
+    [styles.link]: variant === "link",
+    [styles.rounded]: rounded,
+    [styles.disabled]: copied,
+  };
 
   const handleOnClick = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -39,9 +51,31 @@ export default function Button({
         setCopied(true);
         setTimeout(() => setCopied(false), 3000);
       }
+
+      if (href) {
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     },
-    [copy]
+    [copy, href]
   );
+
+  if (href && link) {
+    return (
+      <motion.a
+        id={id}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className={clsx(styles.button, mainStyles, className)}
+        href={href}
+        target={target}
+      >
+        {children}
+      </motion.a>
+    );
+  }
 
   return (
     <motion.button
@@ -49,19 +83,7 @@ export default function Button({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       disabled={isLoading || props.disabled || copied}
-      className={clsx(
-        styles.button,
-        {
-          [styles.primary]: variant === "primary",
-          [styles.secondary]: variant === "secondary",
-          [styles.outline]: variant === "outline",
-          [styles.ghost]: variant === "ghost",
-          [styles.link]: variant === "link",
-          [styles.rounded]: rounded,
-          [styles.disabled]: copied,
-        },
-        className
-      )}
+      className={clsx(styles.button, mainStyles, className)}
       onClick={handleOnClick}
     >
       {copy ? (
@@ -93,7 +115,7 @@ export default function Button({
           )}
         </>
       ) : (
-        <>{isLoading ? "Loading..." : <a href={href} target={target}>{children}</a>}</>
+        <>{isLoading ? "Loading..." : <>{children}</>}</>
       )}
     </motion.button>
   );

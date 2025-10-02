@@ -80,7 +80,7 @@ export default function ExperienceSection() {
         <TimelineCard content={work} cardTitle="Work" titleIcon={workIcon} />
       </div>
       <div className="flex justify-center items-center gap-2">
-        <Button variant="outline" href={CV} target="_blank">
+        <Button variant="outline" href={CV} target="_blank" link>
           Check My CV
         </Button>
         <motion.a
