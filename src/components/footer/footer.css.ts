@@ -16,7 +16,8 @@ export const mainContainer = style({
     "screen and (max-width: 675px)": {
       flexDirection: "column",
       alignItems: "center",
-      gap: "16px"
+      gap: "16px",
+      marginInline: "64px",
     },
   },
 })
