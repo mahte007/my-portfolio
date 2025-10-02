@@ -37,23 +37,26 @@ export const subTitle = style({
 })
 
 export const headerMenuContainer = style({
-  display: 'flex',
-  gap: '1rem',
+  display: "none",
+  gap: "24px",
   alignItems: "center",
   '@media': {
-    'screen and (max-width: 768px)': {
-      position: 'absolute',
-      top: '100%',
-      right: 0,
-      flexDirection: 'column',
-      background: '#0f1a25',
-      width: '200px',
-      transform: 'translateX(100%)',
-      transition: 'transform 0.3s ease',
-      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-      color: "white",
-      borderBottomLeftRadius: "16px",
-      padding: "16px",
+    '(min-width: 768px)': {
+      display: "flex",
+    },
+    '(max-width: 768px)': {
+      display: "flex",
+      flexDirection: "column",
+      position: "fixed", // <-- make it fixed
+      top: "10%",
+      right: "-100%", // <-- hide off-screen
+      width: "200px",
+      height: "100vh",
+      backgroundColor: "#040a11",
+      padding: "2rem",
+      gap: "24px",
+      transition: "right 0.3s ease",
+      zIndex: 1000,
     },
   },
 });
@@ -98,8 +101,8 @@ export const bottomLine = style({
 
 export const headerMenuOpen = style({
   '@media': {
-    'screen and (max-width: 768px)': {
-      transform: 'translateX(0)',
+    '(max-width: 768px)': {
+      right: "0", // slide in
     },
   },
 });

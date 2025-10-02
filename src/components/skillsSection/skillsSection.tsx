@@ -83,11 +83,7 @@ export default function SkillsSection() {
       if (newPage < 0) newPage = totalPages - 1;
       if (newPage >= totalPages) newPage = 0;
 
-      if (isSwipe) {
         setDirection(dir === "next" ? 1 : -1);
-      } else {
-        setDirection(dir === "next" ? -1 : 1);
-      }
       return { ...prev, [techId]: newPage };
     });
   };
