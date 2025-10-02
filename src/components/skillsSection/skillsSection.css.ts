@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { keyframes, style } from "@vanilla-extract/css";
 import { colors } from "@/theme/colors";
 
 export const skillsSectionContainer = style({
@@ -9,7 +9,7 @@ export const skillsSectionContainer = style({
   "@media": {
     "screen and (max-width: 675px)": {
       alignItems: "center",
-      marginBottom: "128px"
+      marginBottom: "128px",
     },
   },
 });
@@ -122,3 +122,24 @@ export const progressBar = style({
   height: "8px",
   backgroundColor: "white",
 });
+
+/* export const swipeAnimation = keyframes({
+  "0%": { transform: "translateX(0) translateY(0)", opacity: 1 },
+  "20%": { opacity: 1 },
+  "40%": {opacity: 1},
+  "50%": { transform: "translateX(30px) translateY(0)", opacity: 0 },
+  "80%": { opacity: 0 },
+  "100%": { transform: "translateX(0) translateY(0)", opacity: 1 },
+});
+
+export const swipeIcon = style({
+  display: "flex",
+  marginLeft: "35%",
+  animation: `${swipeAnimation} 1.8s infinite`,
+}); */
+
+export const swipe = style({
+  display: "flex",
+  justifyContent: "space-evenly",
+  marginTop: "8px",
+})

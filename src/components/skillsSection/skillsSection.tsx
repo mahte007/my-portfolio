@@ -6,6 +6,7 @@ import chevronRight from "/public/right-chevron.svg";
 import brackets from "/public/brackets.svg";
 import gitBranch from "/public/git-branch.svg";
 import server from "/public/server.svg";
+import swipe from "/public/swipe-right.svg";
 import clsx from "clsx";
 import CustomTitle from "../common/customTitle/customTitle";
 import { useSwipeable } from "react-swipeable";
@@ -187,6 +188,12 @@ export default function SkillsSection() {
                 </div>
               ))}
           </motion.div>
+          {width <= 675 &&
+            <div className={styles.swipe}>
+              Swipe to see more
+              <Image alt="swipe" src={swipe} width={25} height={25} />
+            </div>
+          }
           {width > 675 &&
             selectedCategory?.skills.length &&
             selectedCategory?.skills.length > 3 && (
