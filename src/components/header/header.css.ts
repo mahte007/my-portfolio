@@ -37,15 +37,26 @@ export const subTitle = style({
 })
 
 export const headerMenuContainer = style({
-    display: "none",
-    gap: "24px",
-    alignItems: "center",
-    '@media': {
-        '(min-width: 768px)': {
-            display: "flex",
-        }
+  display: 'flex',
+  gap: '1rem',
+  alignItems: "center",
+  '@media': {
+    'screen and (max-width: 768px)': {
+      position: 'absolute',
+      top: '100%',
+      right: 0,
+      flexDirection: 'column',
+      background: '#0f1a25',
+      width: '200px',
+      transform: 'translateX(100%)',
+      transition: 'transform 0.3s ease',
+      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+      color: "white",
+      borderBottomLeftRadius: "16px",
+      padding: "16px",
     },
-})
+  },
+});
 
 export const headerMenuItem = style({
     fontSize: "14px",
@@ -84,3 +95,11 @@ export const bottomLine = style({
     background: 'linear-gradient(to right, transparent, #e0e0e0, transparent)',
     marginTop: '8px',
 })
+
+export const headerMenuOpen = style({
+  '@media': {
+    'screen and (max-width: 768px)': {
+      transform: 'translateX(0)',
+    },
+  },
+});

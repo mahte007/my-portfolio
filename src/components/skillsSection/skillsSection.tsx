@@ -59,6 +59,7 @@ export default function SkillsSection() {
   const [selectedTech, changeSelectedTech] = useState(skills[0].id);
   const [pageIndexes, setPageIndexes] = useState<{ [key: string]: number }>({});
   const [direction, setDirection] = useState(0);
+  const [isSwipe, setIsSwipe] = useState(false);
 
   const width = useScreenWidth();
 
@@ -82,16 +83,20 @@ export default function SkillsSection() {
       if (newPage < 0) newPage = totalPages - 1;
       if (newPage >= totalPages) newPage = 0;
 
-      setDirection(dir === "next" ? 1 : -1); // <-- set direction at the same time
+      if (isSwipe) {
+        setDirection(dir === "next" ? 1 : -1);
+      } else {
+        setDirection(dir === "next" ? -1 : 1);
+      }
       return { ...prev, [techId]: newPage };
     });
   };
 
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => handleSlide(selectedTech, "next"),
-    onSwipedRight: () => handleSlide(selectedTech, "prev"),
+    onSwipedLeft: () => {setIsSwipe(true); handleSlide(selectedTech, "next")},
+    onSwipedRight: () => {setIsSwipe(true); handleSlide(selectedTech, "prev")},
     preventScrollOnSwipe: true,
-    trackMouse: true, // enables dragging with mouse too
+    trackMouse: true,
   });
 
   const getTechImage = useCallback((tech: string) => {
@@ -199,8 +204,8 @@ export default function SkillsSection() {
             selectedCategory?.skills.length > 3 && (
               <div className="relative z-50">
                 <button
-                  className="absolute left-5 -top-3 cursor-pointer"
-                  onClick={() => handleSlide(selectedTech, "prev")}
+                  className="absolute left-5 -top-3 cursor-pointer text-2xl"
+                  onClick={() => {setIsSwipe(false); handleSlide(selectedTech, "prev")}}
                 >
                   ◀
                 </button>
@@ -216,8 +221,8 @@ export default function SkillsSection() {
                   ))}
                 </div>
                 <button
-                  className="absolute right-5 -top-3 cursor-pointer"
-                  onClick={() => handleSlide(selectedTech, "next")}
+                  className="absolute right-5 -top-3 cursor-pointer text-2xl"
+                  onClick={() => {setIsSwipe(false); handleSlide(selectedTech, "next")}}
                 >
                   ▶
                 </button>
