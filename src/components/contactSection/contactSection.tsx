@@ -24,7 +24,7 @@ export default function ContactSection() {
 
       <div className={styles.glowCardsContainer}>
         <GlowCard icon={mail}>
-          <CustomTitle heading="h4">Email</CustomTitle>
+          <CustomTitle heading="h4" className={styles.titleContainer}>Email</CustomTitle>
           <Button id="emailButton" variant="outline" copy>
             mahte007@gmail.com
           </Button>

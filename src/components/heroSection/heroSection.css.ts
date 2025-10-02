@@ -5,9 +5,58 @@ export const heroSectionContainer = style({
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: "48px",
+})
+
+export const buttonContainer = style({
+    display: "flex",
+    marginTop: "24px",
+    gap: "16px",
+    alignItems: "center",
+    '@media': {
+        '(max-width: 675px)': {
+            flexDirection: "column",
+            alignItems: "start",
+        },
+        '(max-width: 550px)': {
+            flexDirection: "column",
+            alignItems: "center",
+        }
+    }
+})
+
+export const textContainer = style({
+    marginTop: "16px",
+    maxWidth: "576px",
+    color: "#d1d5dc",
+})
+
+export const titleContainer = style({
+    fontWeight: "800",
+    fontSize: "60px",
     '@media': {
         '(max-width: 768px)': {
-            gridTemplateColumns: "repeat(1, minmax(0, 1fr))",
+            fontSize: "36px",
+        }
+    }
+})
+
+export const mainContainer = style({
+    width: "40%",
+    '@media': {
+        '(max-width: 768px)': {
+            width: "100%",
+        }
+    }
+})
+
+export const imageContainer = style({
+    width: "max-content",
+})
+
+export const button = style({
+    '@media': {
+        '(max-width: 768px)': {
+            width: "50%",
         }
     }
 })

@@ -19,6 +19,11 @@ export const glowCardsContainer = style({
     alignItems: "center",
     marginTop: "64px",
     marginBottom: "64px",
+    "@media": {
+    "screen and (max-width: 675px)": {
+      marginTop: "0px",
+    },
+  },
 })
 
 export const glowCardMessage = style({
@@ -38,4 +43,8 @@ export const glowCardIcon = style({
         transition: "transform 0.3s ease",
     },
     cursor: "pointer"
+})
+
+export const titleContainer = style({
+    marginBottom: "0px"
 })

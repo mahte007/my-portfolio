@@ -1,3 +1,4 @@
+import { style } from "@vanilla-extract/css";
 import TitleCard from "../common/titleCard/titleCard";
 import * as styles from "./servicesSection.css"
 import browser from "/public/browser.svg";
@@ -13,6 +14,7 @@ export default function ServicesSection() {
                 titleHeaderBg={styles.firstCardColor} 
                 titleIcon={browser}
                 borderColor={colors.firstCardColor}
+                className={styles.firstRow}
             >
                 Crafting modern, visually appealing, and responsive layouts that look great on any device.
             </TitleCard>
@@ -21,6 +23,7 @@ export default function ServicesSection() {
                 titleHeaderBg={styles.secondCardColor} 
                 titleIcon={code}
                 borderColor={colors.secondCardColor}
+                className={styles.firstRow}
             >
                 Building fast, scalable, and maintainable websites using the latest technologies.
             </TitleCard>
@@ -29,6 +32,7 @@ export default function ServicesSection() {
                 titleHeaderBg={styles.thirdCardColor}  
                 titleIcon={tablet}
                 borderColor={colors.thirdCardColor}
+                className={styles.secondRow}
             >
                 Designing intuitive and user-focused digital experiences that delight and engage users.
             </TitleCard>

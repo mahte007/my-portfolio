@@ -22,7 +22,7 @@ export default function TitleCard({
     ...props
 }: TitleCardProps) {
     return(
-        <div className={styles.titleCardContainer}>
+        <div className={clsx(styles.titleCardContainer, className)}>
             <div className={clsx(
                 titleHeaderBg,
                 styles.titleCardHeader

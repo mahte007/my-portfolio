@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useLayoutEffect, useState } from "react";
 
 import * as styles from "./skillsSection.css";
 import Image from "next/image";
@@ -8,6 +8,9 @@ import gitBranch from "/public/git-branch.svg";
 import server from "/public/server.svg";
 import clsx from "clsx";
 import CustomTitle from "../common/customTitle/customTitle";
+import { useSwipeable } from "react-swipeable";
+import { motion } from "framer-motion";
+import { useScreenWidth } from "@/utils/useScreenWidth";
 
 export default function SkillsSection() {
   const skills = [
@@ -54,12 +57,17 @@ export default function SkillsSection() {
 
   const [selectedTech, changeSelectedTech] = useState(skills[0].id);
   const [pageIndexes, setPageIndexes] = useState<{ [key: string]: number }>({});
+  const [direction, setDirection] = useState(0);
+
+  const width = useScreenWidth();
+
+  useLayoutEffect(() => {}, [direction]);
 
   const changeTech = useCallback((id: string) => {
     changeSelectedTech(id);
   }, []);
 
-  const handleSlide = (techId: string, direction: "prev" | "next") => {
+  const handleSlide = (techId: string, dir: "prev" | "next") => {
     const tech = skills.find((t) => t.id === techId);
     if (!tech) return;
 
@@ -68,25 +76,33 @@ export default function SkillsSection() {
 
     setPageIndexes((prev) => {
       const currentPage = prev[techId] ?? 0;
-      let newPage = direction === "next" ? currentPage + 1 : currentPage - 1;
+      let newPage = dir === "next" ? currentPage + 1 : currentPage - 1;
 
       if (newPage < 0) newPage = totalPages - 1;
       if (newPage >= totalPages) newPage = 0;
 
+      setDirection(dir === "next" ? 1 : -1); // <-- set direction at the same time
       return { ...prev, [techId]: newPage };
     });
   };
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleSlide(selectedTech, "next"),
+    onSwipedRight: () => handleSlide(selectedTech, "prev"),
+    preventScrollOnSwipe: true,
+    trackMouse: true, // enables dragging with mouse too
+  });
+
   const getTechImage = useCallback((tech: string) => {
     switch (tech) {
       case "frontend":
-        return <Image src={brackets} alt="asd" width={30} height={30} />
+        return <Image src={brackets} alt="asd" width={30} height={30} />;
       case "backend":
-        return <Image src={server} alt="asd" width={30} height={30} />
+        return <Image src={server} alt="asd" width={30} height={30} />;
       case "other":
-        return <Image src={gitBranch} alt="asd" width={30} height={30} />
+        return <Image src={gitBranch} alt="asd" width={30} height={30} />;
     }
-  }, [])
+  }, []);
 
   const selectedCategory = skills.find((tech) => tech.id === selectedTech);
   const skillsPerPage = 3;
@@ -139,26 +155,40 @@ export default function SkillsSection() {
           ))}
         </div>
         <div className={styles.skillsContainer}>
-          {selectedCategory?.skills
-            .slice(
-              currentPage * skillsPerPage,
-              currentPage * skillsPerPage + skillsPerPage
-            )
-            .map((skill) => (
-              <div className={styles.skillsElement} key={skill.id}>
-                <span className="flex justify-between">
-                  <span>{skill.name}</span>
-                  <span>{`${skill.level}%`}</span>
-                </span>
-                <div className={styles.progressBarBase}>
-                  <div
-                    className={styles.progressBar}
-                    style={{ width: `${skill.level}%` }}
-                  />
+          <motion.div
+            {...swipeHandlers}
+            key={currentPage}
+            initial={{ x: direction > 0 ? 200 : -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -200, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.3}
+            className={styles.skillsContent}
+          >
+            {selectedCategory?.skills
+              .slice(
+                currentPage * skillsPerPage,
+                currentPage * skillsPerPage + skillsPerPage
+              )
+              .map((skill) => (
+                <div className={styles.skillsElement} key={skill.id}>
+                  <span className="flex justify-between">
+                    <span>{skill.name}</span>
+                    <span>{`${skill.level}%`}</span>
+                  </span>
+                  <div className={styles.progressBarBase}>
+                    <div
+                      className={styles.progressBar}
+                      style={{ width: `${skill.level}%` }}
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-          {selectedCategory?.skills.length &&
+              ))}
+          </motion.div>
+          {width > 675 &&
+            selectedCategory?.skills.length &&
             selectedCategory?.skills.length > 3 && (
               <div className="relative z-50">
                 <button

@@ -3,7 +3,6 @@ import { style } from "@vanilla-extract/css";
 export const titleCardContainer = style({
     justifyContent: "center",
     alignItems: "center",
-    width: "30%",
 })
 
 export const titleCardHeader = style({

@@ -95,10 +95,10 @@ export default function Button({
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -10, scale: 0.9 }}
               transition={{ duration: 0.2 }}
-              className="flex items-center gap-2"
+              className={styles.copyButton}
             >
               <span>{children}</span>
-              <Image alt="copyButton" src={tick} width={20} height={20} />
+              <Image alt="copyButton" src={tick} width={20} height={20} className="pr-2" />
             </motion.span>
           ) : (
             <motion.span
@@ -107,10 +107,10 @@ export default function Button({
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -10, scale: 0.9 }}
               transition={{ duration: 0.2 }}
-              className="flex items-center gap-2"
+              className={styles.copyButton}
             >
               <span>{children}</span>
-              <Image alt="copyButton" src={clipboard} width={20} height={20} />
+              <Image alt="copyButton" src={clipboard} width={25} height={25} className="pr-1" />
             </motion.span>
           )}
         </>

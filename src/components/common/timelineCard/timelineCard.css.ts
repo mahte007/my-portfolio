@@ -10,6 +10,14 @@ export const timelineCardContainer = style({
     gap: "16px",
     padding: "16px",
     height: "fit-content",
+    '@media': {
+    'screen and (max-width: 865px)': {
+      width: "30%"
+    },
+    'screen and (max-width: 675px)': {
+        width: "100%"
+    }
+  }
 })
 
 export const titleContainer = style({

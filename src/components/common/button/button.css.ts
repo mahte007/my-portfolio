@@ -64,3 +64,14 @@ export const disabled = style({
   pointerEvents: "none",
   cursor: "not-allowed",
 });
+
+export const copyButton = style({
+  display: "flex",
+  alignItems: "center",
+  gap: "8px",
+  '@media': {
+    'screen and (max-width: 1048px)': {
+      fontSize: "12px",
+    }
+  }
+})

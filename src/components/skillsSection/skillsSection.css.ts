@@ -6,6 +6,12 @@ export const skillsSectionContainer = style({
   flexDirection: "column",
   marginTop: "64px",
   marginBottom: "64px",
+  "@media": {
+    "screen and (max-width: 675px)": {
+      alignItems: "center",
+      marginBottom: "128px"
+    },
+  },
 });
 
 export const mainContainer = style({
@@ -15,7 +21,15 @@ export const mainContainer = style({
   marginTop: "64px",
   marginBottom: "64px",
   alignItems: "stretch",
-  height: "250px"
+  height: "250px",
+  "@media": {
+    "screen and (max-width: 675px)": {
+      flexDirection: "column",
+      width: "100%",
+      alignItems: "center",
+      marginBottom: "128px",
+    },
+  },
 });
 
 export const techContainer = style({
@@ -28,6 +42,17 @@ export const techContainer = style({
   backgroundColor: "#0f1a25",
   boxShadow: "0 0 15px rgba(59, 130, 246, 0.4)",
   gap: "8px",
+  "@media": {
+    "screen and (max-width: 865px)": {
+      width: "30%",
+    },
+    "screen and (max-width: 675px)": {
+      width: "40%",
+    },
+    "screen and (max-width: 550px)": {
+      width: "60%",
+    },
+  },
 });
 
 export const techElement = style({
@@ -40,22 +65,40 @@ export const techElement = style({
 export const highlightedElement = style({
   backgroundColor: "rgba(6, 182, 212, 0.1)",
   borderRadius: "8px",
-})
+});
 
 export const skillsContainer = style({
   display: "flex",
   flexDirection: "column",
+  justifyContent: "space-between",
   width: "25%",
   borderRadius: "16px",
   padding: "16px",
   backgroundColor: "#0f1a25",
   boxShadow: "0 0 15px rgba(59, 130, 246, 0.4)",
+  cursor: "pointer",
+  "@media": {
+    "screen and (max-width: 865px)": {
+      width: "30%",
+    },
+    "screen and (max-width: 675px)": {
+      width: "40%",
+    },
+    "screen and (max-width: 550px)": {
+      width: "60%",
+    },
+  },
+});
+
+export const skillsContent = style({
+  display: "flex",
+  flexDirection: "column",
   gap: "8px",
 });
 
 export const skillsElement = style({
   padding: "8px 0",
-  height: "100%"
+  height: "100%",
 });
 
 export const rotatedChevron = style({
@@ -72,10 +115,10 @@ export const progressBarBase = style({
   height: "8px",
   borderRadius: "calc(infinity * 1px)",
   backgroundColor: "grey",
-  overflow: "hidden"
-})
+  overflow: "hidden",
+});
 
 export const progressBar = style({
   height: "8px",
-  backgroundColor: "white"
-})
+  backgroundColor: "white",
+});

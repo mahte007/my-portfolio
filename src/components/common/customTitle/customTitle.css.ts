@@ -10,6 +10,11 @@ const baseHeading = style({
 export const titleContainer = style({
     display: "flex",
     flexFlow: "column",
+    "@media": {
+    "screen and (max-width: 675px)": {
+      marginBottom: "64px",
+    },
+  },
 })
 
 export const h1 = style([

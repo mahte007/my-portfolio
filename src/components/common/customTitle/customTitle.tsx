@@ -39,7 +39,8 @@ export default function CustomTitle({children, className, heading, subTitle, pos
                 "justify-start items-start": position === "left",
                 "justify-center items-center": position === "center",
                 "justify-end items-end": position === "right",
-            }
+            },
+            className
         )}>
             {subTitlePosition === "above" && (
                 <p className={styles.subTitle}>{subTitle}</p>
