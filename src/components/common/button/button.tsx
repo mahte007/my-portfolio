@@ -98,7 +98,7 @@ export default function Button({
               className={styles.copyButton}
             >
               <span>{children}</span>
-              <Image alt="copyButton" src={tick} width={20} height={20} className="pr-2" />
+              <Image alt="copyButton" src={tick} width={25} height={25} className="pr-1" />
             </motion.span>
           ) : (
             <motion.span
