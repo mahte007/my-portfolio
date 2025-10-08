@@ -8,6 +8,7 @@ export const cardContainer = style({
   alignItems: "center",
   borderRadius: "16px",
   backgroundColor: "#0f1a25",
+  boxShadow: "0 0 15px rgba(59, 130, 246, 0.2)",
   gap: "8px",
   padding: "16px",
   "@media": {
@@ -40,4 +41,8 @@ export const subTitleContainer = style({
 
 export const titleContainer = style({
   margin: 0,
+})
+
+export const glow = style({
+  boxShadow: "0 0 15px rgba(59, 130, 246, 0.4)",
 })

@@ -38,6 +38,7 @@ export default function PackagesSection() {
           title="Professional"
           price="220 000 Ft"
           subTitle="SEO optimization"
+          glow
         >
           <div className="flex flex-col gap-3">
             <PackageFeature icon={tick} text="Gallery & Events page" />

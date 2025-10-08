@@ -12,11 +12,12 @@ type PriceCardProps = {
   title?: string;
   subTitle?: string;
   price?: string;
+  glow?: boolean;
 };
 
-export default function PriceCard({ children, className, price, subTitle, title }: PriceCardProps) {
+export default function PriceCard({ children, className, price, subTitle, title, glow=false }: PriceCardProps) {
   return (
-      <div className={clsx(styles.cardContainer, className)}>
+      <div className={clsx(styles.cardContainer, glow && styles.glow, className)}>
         <CustomTitle heading="h5" className={styles.titleContainer}>{title}</CustomTitle>
         <p className={styles.priceContainer}>{price}</p>
         <p className={styles.subTitleContainer}>{subTitle}</p>
