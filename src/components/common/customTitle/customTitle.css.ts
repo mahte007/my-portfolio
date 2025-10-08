@@ -70,5 +70,5 @@ export const subTitle = style({
     fontSize: "1rem",
     marginBottom: "0.25rem",
     fontWeight: 500,
-    color: "rgba(59, 130, 246, 1)",
+    color: "#cbd5e1",
 })

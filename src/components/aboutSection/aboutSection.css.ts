@@ -24,4 +24,9 @@ export const mainContainer = style({
 export const paragraphContainer = style({
     marginTop: "24px",
     width: "40%",
+    '@media': {
+        '(max-width: 550px)': {
+            width: "60%",
+        },
+    },
 })
