@@ -30,7 +30,7 @@ export default function PackagesSection() {
             <PackageFeature icon={tick} text="Mobile friendly design" />
             <PackageFeature icon={clock} text="5 days delivery" />
             <div className="text-center mt-4">
-              <Button variant="secondary">{"Get Started"}</Button>
+              <Button variant="secondary" href="#contact">{"Get Started"}</Button>
             </div>
           </div>
         </PriceCard>
@@ -44,7 +44,7 @@ export default function PackagesSection() {
             <PackageFeature icon={tick} text="1-month free maintenance" />
             <PackageFeature icon={clock} text="10 days delivery" />
             <div className="text-center mt-4">
-              <Button variant="primary">{"Most Popular"}</Button>
+              <Button variant="primary" href="#contact">{"Most Popular"}</Button>
             </div>
           </div>
         </PriceCard>
@@ -54,7 +54,7 @@ export default function PackagesSection() {
             <PackageFeature icon={tick} text="6 months support" />
             <PackageFeature icon={clock} text="14 days delivery" />
             <div className="text-center mt-4">
-              <Button variant="secondary">{"Let's Talk"}</Button>
+              <Button variant="secondary" href="#contact">{"Let's Talk"}</Button>
             </div>
           </div>
         </PriceCard>
