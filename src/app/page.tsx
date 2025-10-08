@@ -15,6 +15,7 @@ import Button from "@/components/common/button/button";
 import ExperienceSection from "@/components/experienceSection/experienceSection";
 import OrbBackground from "@/components/common/orbs/orbs";
 import PackagesSection from "@/components/packagesSection/packagesSection";
+import ContractSection from "@/components/contractSection/contractSection";
 
 export default function PortfolioPage() {
 
@@ -35,20 +36,19 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div className="min-h-screen text-gray-200 antialiased">
+    <div id="home" className="min-h-screen text-gray-200 antialiased">
       <OrbBackground pageHeight={pageHeight} />
       <Header />
       <div className="max-w-7xl mx-auto p-6 pt-0 lg:p-12 lg:pt-0 z-10">
         <main>
-        <div>
           <HeroSection />
           <AboutSection />
           <ServicesSection />
           <PackagesSection />
-        </div>
-          <ProjectsSection />
           <SkillsSection />
+          <ProjectsSection />
           <ExperienceSection />
+          <ContractSection />
           <ContactSection />
         </main>
       </div>

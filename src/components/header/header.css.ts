@@ -23,6 +23,7 @@ export const title = style ({
     fontSize: "24px",
     lineHeight: "1.33",
     fontWeight: "600",
+    cursor: "pointer",
     color: "white",
     '@media': {
         '(max-width: 768px)': {
@@ -64,6 +65,7 @@ export const headerMenuContainer = style({
 
 export const headerMenuItem = style({
     fontSize: "14px",
+    cursor: "pointer",
     ":hover": {
         color: "white",
     },

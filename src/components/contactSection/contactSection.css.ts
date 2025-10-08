@@ -3,7 +3,7 @@ import {style} from "@vanilla-extract/css"
 export const contactSectionContainer = style({
     display: "flex",
     flexDirection: "column",
-    marginTop: "64px",
+    marginTop: "128px",
     marginBottom: "64px",
 })
 

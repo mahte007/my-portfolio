@@ -5,6 +5,7 @@ import * as styles from "./button.css";
 import tick from "/public/tick.svg";
 import clipboard from "/public/clipboard.svg";
 import Image from "next/image";
+import { useScrollSmooth } from "@/utils/useScrollSmooth";
 
 type ButtonProps = {
   variant?: "primary" | "secondary" | "outline" | "ghost" | "link";
@@ -32,6 +33,8 @@ export default function Button({
 }: ButtonProps) {
   const [copied, setCopied] = useState(false);
 
+  const scrollSmooth = useScrollSmooth()
+
   const mainStyles = {
     [styles.primary]: variant === "primary",
     [styles.secondary]: variant === "secondary",
@@ -53,13 +56,10 @@ export default function Button({
       }
 
       if (href) {
-        const target = document.querySelector(href);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
+        scrollSmooth(href)
       }
     },
-    [copy, href]
+    [copy, href, scrollSmooth]
   );
 
   if (href && link) {

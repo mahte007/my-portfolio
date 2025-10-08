@@ -14,7 +14,6 @@ export const buttonContainer = style({
     alignItems: "center",
     '@media': {
         '(max-width: 675px)': {
-            flexDirection: "column",
             alignItems: "start",
         },
         '(max-width: 550px)': {

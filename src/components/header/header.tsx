@@ -2,20 +2,28 @@ import { Menu, X } from "lucide-react";
 import * as styles from "./header.css";
 import Image from "next/image";
 import github from "/public/github.svg";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { useScrollSmooth } from "@/utils/useScrollSmooth";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const scrollSmooth = useScrollSmooth()
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   }
 
+  const handleOnClick = useCallback((href: string) => {
+    scrollSmooth(href)
+    setMenuOpen(false)
+  }, [scrollSmooth])
+
   return (
     <header className={styles.headerSticky}>
       <div className={styles.headerContainer}>
         <div>
-          <h1 className={styles.title}>Máté Horváth</h1>
+          <h1 className={styles.title} onClick={() => handleOnClick("#home")}>Máté Horváth</h1>
           <p className={styles.subTitle}>
             Frontend developer — building accessible & delightful UIs
           </p>
@@ -26,14 +34,23 @@ export default function Header() {
             menuOpen ? styles.headerMenuOpen : ""
           }`}
         >
-          <a href="#projects" className={styles.headerMenuItem} onClick={() => setMenuOpen(false)}>
+          <a className={styles.headerMenuItem} onClick={() => handleOnClick("#projects")}>
             Projects
           </a>
-          <a href="#skills" className={styles.headerMenuItem} onClick={() => setMenuOpen(false)}>
+          <a className={styles.headerMenuItem} onClick={() => handleOnClick("#packages")}>
+            Prices
+          </a>
+          <a className={styles.headerMenuItem} onClick={() => handleOnClick("#contract")}>
+            For Agencies
+          </a>
+          <a className={styles.headerMenuItem} onClick={() => handleOnClick("#contact")}>
+            Contact
+          </a>
+          <a className={styles.headerMenuItem} onClick={() => handleOnClick("#skills")}>
             Skills
           </a>
-          <a href="#contact" className={styles.headerMenuItem} onClick={() => setMenuOpen(false)}>
-            Contact
+          <a className={styles.headerMenuItem} onClick={() => handleOnClick("#experience")}>
+            Work Experience
           </a>
           <a
             href="https://github.com/mahte007"

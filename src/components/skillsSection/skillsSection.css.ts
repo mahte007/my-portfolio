@@ -4,7 +4,7 @@ import { colors } from "@/theme/colors";
 export const skillsSectionContainer = style({
   display: "flex",
   flexDirection: "column",
-  marginTop: "64px",
+  marginTop: "128px",
   marginBottom: "64px",
   "@media": {
     "screen and (max-width: 675px)": {
@@ -18,7 +18,7 @@ export const mainContainer = style({
   display: "flex",
   justifyContent: "center",
   gap: "64px",
-  marginTop: "64px",
+  marginTop: "128px",
   marginBottom: "64px",
   alignItems: "stretch",
   height: "250px",

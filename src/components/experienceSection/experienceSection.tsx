@@ -62,7 +62,7 @@ export default function ExperienceSection() {
   }, []);
 
   return (
-    <section className={styles.experienceSectionContainer}>
+    <section id="experience" className={styles.experienceSectionContainer}>
       <CustomTitle
         subTitle="Education"
         heading="h2"

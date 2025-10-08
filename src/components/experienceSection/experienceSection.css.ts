@@ -4,7 +4,7 @@ import { colors } from "@/theme/colors";
 export const experienceSectionContainer = style({
   display: "flex",
   flexDirection: "column",
-  marginTop: "64px",
+  marginTop: "128px",
   marginBottom: "64px",
   "@media": {
     "screen and (max-width: 675px)": {
