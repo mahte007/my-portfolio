@@ -90,8 +90,8 @@ export default function SkillsSection() {
   };
 
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => {setIsSwipe(true); handleSlide(selectedTech, "next")},
-    onSwipedRight: () => {setIsSwipe(true); handleSlide(selectedTech, "prev")},
+    onSwipedLeft: () => {setIsSwipe(true); handleSlide(selectedTech, "prev")},
+    onSwipedRight: () => {setIsSwipe(true); handleSlide(selectedTech, "next")},
     preventScrollOnSwipe: true,
     trackMouse: true,
   });
@@ -169,7 +169,7 @@ export default function SkillsSection() {
           <motion.div
             {...swipeHandlers}
             key={currentPage}
-            initial={{ x: direction > 0 ? 200 : -200, opacity: 0 }}
+            initial={{ x: direction > 0 ? -200 : 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -200, opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
