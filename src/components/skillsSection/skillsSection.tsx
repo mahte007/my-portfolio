@@ -1,4 +1,4 @@
-import { useCallback, useLayoutEffect, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useState } from "react";
 
 import * as styles from "./skillsSection.css";
 import Image from "next/image";
@@ -56,6 +56,7 @@ export default function SkillsSection() {
     },
   ];
 
+  const [mounted, setMounted] = useState(false);
   const [selectedTech, changeSelectedTech] = useState(skills[0].id);
   const [pageIndexes, setPageIndexes] = useState<{ [key: string]: number }>({});
   const [direction, setDirection] = useState(0);
@@ -112,6 +113,14 @@ export default function SkillsSection() {
     ? Math.ceil(selectedCategory.skills.length / skillsPerPage)
     : 0;
   const currentPage = pageIndexes[selectedTech] ?? 0;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section id="skills" className={styles.skillsSectionContainer}>

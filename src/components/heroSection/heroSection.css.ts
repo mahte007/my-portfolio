@@ -41,7 +41,7 @@ export const titleContainer = style({
 })
 
 export const mainContainer = style({
-    width: "40%",
+    width: "60%",
     '@media': {
         '(max-width: 768px)': {
             width: "100%",
@@ -50,7 +50,13 @@ export const mainContainer = style({
 })
 
 export const imageContainer = style({
+    display: "block",
     width: "max-content",
+    '@media': {
+        '(max-width: 550px)': {
+            display: "none",
+        },
+    },
 })
 
 export const button = style({

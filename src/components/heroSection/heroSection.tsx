@@ -1,5 +1,3 @@
-'use client'
-
 import { motion } from "framer-motion";
 
 import * as styles from "./heroSection.css";
@@ -20,9 +18,9 @@ export default function HeroSection() {
           className={styles.titleContainer}
         >
           Hi — I’m
-          <span className="text-pastel-green"> Máté, Front-End </span>
+          <span className="text-pastel-green"> Máté, </span>
           <br />
-          <span className="text-pastel-green">Developer</span>
+          <span className="text-pastel-green">Front-End Developer</span>
         </motion.h2>
 
         <motion.p
@@ -31,9 +29,7 @@ export default function HeroSection() {
           transition={{ delay: 0.15 }}
           className={styles.textContainer}
         >
-          I build modern, accessible frontends with a focus on performance and
-          UX. I enjoy turning design systems into production-ready interfaces
-          and shipping delightful interactions.
+          I build fast, accessible websites for businesses and creative studios.
         </motion.p>
 
         <div className={styles.buttonContainer}>
@@ -56,7 +52,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {width > 550 && 
         <div className={styles.imageContainer}>
           <Image
             alt="FeImage"
@@ -67,7 +62,6 @@ export default function HeroSection() {
             draggable={false}
           />
         </div>
-      }
     </section>
   );
 }

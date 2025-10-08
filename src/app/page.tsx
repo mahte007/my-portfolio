@@ -14,6 +14,7 @@ import ServicesSection from "@/components/servicesSection/servicesSection";
 import Button from "@/components/common/button/button";
 import ExperienceSection from "@/components/experienceSection/experienceSection";
 import OrbBackground from "@/components/common/orbs/orbs";
+import PackagesSection from "@/components/packagesSection/packagesSection";
 
 export default function PortfolioPage() {
 
@@ -33,8 +34,6 @@ export default function PortfolioPage() {
     };
   }, []);
 
-  console.log(pageHeight)
-
   return (
     <div className="min-h-screen text-gray-200 antialiased">
       <OrbBackground pageHeight={pageHeight} />
@@ -43,10 +42,11 @@ export default function PortfolioPage() {
         <main>
         <div>
           <HeroSection />
+          <AboutSection />
           <ServicesSection />
+          <PackagesSection />
         </div>
-          {/* <AboutSection /> */}
-          {/* <ProjectsSection /> */}
+          <ProjectsSection />
           <SkillsSection />
           <ExperienceSection />
           <ContactSection />

@@ -1,5 +1,3 @@
-"use client";
-
 import { Menu, X } from "lucide-react";
 import * as styles from "./header.css";
 import Image from "next/image";
