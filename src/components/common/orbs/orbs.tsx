@@ -28,7 +28,7 @@ const OrbBackground: React.FC<{ pageHeight?: number }> = ({ pageHeight }) => {
   return (
     <div
       className={orbWrapper}
-      style={{ height: `${pageHeight && pageHeight + 500}px` }} // spreads across full scroll height
+      style={{ height: `${pageHeight}px` }} // spreads across full scroll height
     >
       {orbs.map((o, index) => (
         <div
