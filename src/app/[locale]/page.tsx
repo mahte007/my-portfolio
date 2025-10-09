@@ -33,7 +33,7 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div id="home" className="min-h-screen text-gray-200 antialiased">
+    <div id="home" style={{background: "linear-gradient(180deg, #040a11 0%, #1b0a2a 50%, #040a11 100%)"}} className="min-h-screen text-gray-200 antialiased">
       <OrbBackground pageHeight={pageHeight} />
       <Header />
       <div className="max-w-7xl mx-auto p-6 pt-0 lg:p-12 lg:pt-0 z-10">
