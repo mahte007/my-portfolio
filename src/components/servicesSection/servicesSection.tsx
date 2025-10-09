@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { useTranslations } from "next-intl";
 import TitleCard from "../common/titleCard/titleCard";
 import * as styles from "./servicesSection.css"
 import browser from "/public/browser.svg";
@@ -7,34 +7,36 @@ import tablet from "/public/tablet.svg";
 import { colors } from "@/theme/colors"
 
 export default function ServicesSection() {
+    const t = useTranslations("ServicesSection");
+
     return (
         <section className={styles.servicesContainer}>
             <TitleCard 
-                title="Web Design" 
+                title={t("titles.webDesign")}
                 titleHeaderBg={styles.firstCardColor} 
                 titleIcon={browser}
                 borderColor={colors.firstCardColor}
                 className={styles.firstRow}
             >
-                Crafting modern, visually appealing, and responsive layouts that look great on any device.
+                {t("messages.webDesign")}
             </TitleCard>
             <TitleCard 
-                title="Web Development" 
+                title={t("titles.webDevelopment")}
                 titleHeaderBg={styles.secondCardColor} 
                 titleIcon={code}
                 borderColor={colors.secondCardColor}
                 className={styles.firstRow}
             >
-                Building fast, scalable, and maintainable websites using the latest technologies.
+                {t("messages.webDevelopment")}
             </TitleCard>
             <TitleCard 
-                title="UI/UX Design" 
+                title={t("titles.uiDesign")}
                 titleHeaderBg={styles.thirdCardColor}  
                 titleIcon={tablet}
                 borderColor={colors.thirdCardColor}
                 className={styles.secondRow}
             >
-                Designing intuitive and user-focused digital experiences that delight and engage users.
+                {t("messages.uiDesign")}
             </TitleCard>
         </section>
     )

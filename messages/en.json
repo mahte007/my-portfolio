@@ -1,0 +1,171 @@
+{
+  "Header": {
+    "title": "Máté Horváth",
+    "subTitle": "Frontend developer — building accessible & delightful UIs",
+    "projects": "Projects",
+    "prices": "Prices",
+    "forAgencies": "For Agencies",
+    "contact": "Contact",
+    "skills": "Skills",
+    "workExperience": "Work Experience",
+    "github": "GitHub"
+  },
+  "HeroSection": {
+    "title": {
+      "hi": "Hi — I’m",
+      "name": " Máté, ",
+      "frontend": "Front-End Developer"
+    },
+    "heroMessage": "I build fast, accessible websites for businesses and creative studios.",
+    "viewWork": "View my work",
+    "getInTouch": "Get in touch"
+  },
+  "AboutSection": {
+    "message": "👋 Hi, I’m Máté — a front-end developer based in Pécs, Hungary. I specialize in creating lightweight, performant websites for small businesses and agencies. I focus on clean design, maintainable code, and collaboration with creative teams."
+  },
+  "ServicesSection": {
+    "titles": {
+      "webDesign": "Web Design",
+      "webDevelopment": "Web Development",
+      "uiDesign": "UI/UX Design"
+    },
+    "messages": {
+      "webDesign": "Crafting modern, visually appealing, and responsive layouts that look great on any device.",
+      "webDevelopment": "Building fast, scalable, and maintainable websites using the latest technologies.",
+      "uiDesign": "Designing intuitive and user-focused digital experiences that delight and engage users."
+    }
+  },
+  "PackagesSection": {
+    "title": "Website Packages",
+    "subTitle": "The prices are informative and can be varied",
+    "starterPackage": {
+      "title": "Starter",
+      "subTitle": "1-page modern design",
+      "price": "300 EUR",
+      "features": {
+        "bookingForm": "Booking Form",
+        "design": "Mobile friendly design",
+        "delivery": "5 days delivery"
+      },
+      "getStarted": "Get Started"
+    },
+    "professionalPackage": {
+      "title": "Professional",
+      "subTitle": "SEO optimization",
+      "price": "550 EUR",
+      "features": {
+        "gallery": "Gallery & Events page",
+        "maintenance": "1-month free maintenance",
+        "delivery": "10 days delivery"
+      },
+      "mostPopular": "Most Popular"
+    },
+    "premiumPackage": {
+      "title": "Premium",
+      "subTitle": "Custom design",
+      "price": "1000 EUR",
+      "features": {
+        "bookingSystem": "Online booking system",
+        "support": "6 months support",
+        "delivery": "14 days delivery"
+      },
+      "letsTalk": "Let's Talk"
+    }
+  },
+  "SkillsSection": {
+    "title": "Skills",
+    "subTitle": "Technical",
+    "swipeText": "Swipe to see more",
+    "tech": {
+      "other": "Other",
+      "frontend": "FrontEnd",
+      "backend": "BackEnd"
+    }
+  },
+  "ProjectsSection": {
+    "title": "Portfolio",
+    "subTitle": "Recent Projects",
+    "projects": {
+      "myPortfolio": {
+        "title": "My Portfolio",
+        "description": "Personal portfolio website built with React, featuring animations and responsive design.",
+        "buttonText": "You Are Here"
+      },
+      "architectPortfolio": {
+        "title": "Architech Portfolio Template",
+        "description": "Template for architects and designers — clean layout, image gallery, and easy customization.",
+        "buttonText": "View Project"
+      },
+      "nextProject": {
+        "title": "Be my next project",
+        "description": "Looking for a modern, fast website for your business? Let’s work together.",
+        "buttonText": "Contact Me"
+      }
+    }
+  },
+  "ExperienceSection": {
+    "title": "Work Experience",
+    "subTitle": "Education",
+    "educationTitle": "Education",
+    "workTitle": "Work",
+    "work": {
+      "kanizsatel": {
+        "company": "Kanizsatel Kft.",
+        "time": "Summer of 2017",
+        "title": "Telecommunication Intern"
+      },
+      "ferling": {
+        "company": "FERLING Kft.",
+        "time": "Oct 2022 - Jan 2023",
+        "title": "Web Developer Intern"
+      },
+      "arteries": {
+        "company": "Arteries Studio",
+        "time": "Jun 2023 - Sept 2024",
+        "title": "Frontend Developer"
+      },
+      "amelco": {
+        "company": "Amelco UK",
+        "time": "Sept 2024 - Sept 2025",
+        "title": "Frontend Developer"
+      }
+    },
+    "education": {
+      "highSchool": {
+        "school": "Cserháti Sándor Technical School",
+        "time": "2016 - 2020",
+        "major": "Telecommunication"
+      },
+      "university": {
+        "school": "University of Pécs",
+        "time": "2020",
+        "major": "Computer Science Engineer Bsc"
+      }
+    },
+    "checkCV": "Check My CV"
+  },
+  "ContractSection": {
+    "title": "For Agencies",
+    "subTitle": "Contract Work",
+    "message": "I also collaborate with agencies and studios as a freelance front-end developer. I can join your team for short- or long-term projects — implementing responsive layouts, animations, and UI components using React, Next.js, and TypeScript.",
+    "list": {
+      "pixelPerfect": "✅ Pixel-perfect Figma → code",
+      "typescript": "✅ Clean, modular TypeScript components",
+      "deadling": "✅ Deadline-focused and communicative",
+      "remote": "✅ Available for remote work"
+    },
+    "checkOutCV": "Check out My CV",
+    "collaborate": "Let's Collaborate"
+  },
+  "ContactSection": {
+    "title": "Contact",
+    "subTitle": "Contact Information",
+    "email": "Email",
+    "writeEmail": "Write me an Email!"
+  },
+  "Footer": {
+    "name": "Máté Horváth",
+    "github": "GitHub",
+    "linkedIn": "LinkedIn"
+  }
+}

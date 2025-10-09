@@ -13,54 +13,17 @@ import { useSwipeable } from "react-swipeable";
 import { motion } from "framer-motion";
 import { useScreenWidth } from "@/utils/useScreenWidth";
 
-export default function SkillsSection() {
-  const skills = [
-    {
-      id: "frontend",
-      name: "FrontEnd",
-      skills: [
-        { id: "react", name: "React", short: "React", level: 80 },
-        { id: "html", name: "HTML5", short: "HTML", level: 90 },
-        { id: "css", name: "CSS3", short: "CSS", level: 85 },
-        { id: "javascript", name: "JavaScript", short: "JS", level: 80 },
-        { id: "typescript", name: "TypeScript", short: "TS", level: 75 },
-        { id: "nextjs", name: "NextJs", short: "Next", level: 75 },
-        { id: "talwind", name: "Tailwind", short: "Tailwind", level: 70 },
-        { id: "bootstrap", name: "BootStrap5", short: "BootStrap", level: 65 },
-        {
-          id: "reactnative",
-          name: "React Native",
-          short: "React Native",
-          level: 50,
-        },
-      ],
-    },
-    {
-      id: "backend",
-      name: "BackEnd",
-      skills: [
-        { id: "java", name: "Java", short: "Java", level: 45 },
-        { id: "node", name: "NodeJS", short: "NodeJS", level: 50 },
-        { id: "mysql", name: "MySql", short: "MySQL", level: 40 },
-        { id: "oracle", name: "Oracle Sql", short: "Oracle SQL", level: 35 },
-      ],
-    },
-    {
-      id: "other",
-      name: "Other",
-      skills: [
-        { id: "git", name: "Git", short: "Git", level: 85 },
-        { id: "wordpress", name: "WordPress", short: "WP", level: 30 },
-        { id: "jquery", name: "JQuery", short: "JQuery", level: 45 },
-      ],
-    },
-  ];
+import { skills } from "../../data/skills";
+import { useTranslations } from "next-intl";
 
+export default function SkillsSection() {
   const [mounted, setMounted] = useState(false);
   const [selectedTech, changeSelectedTech] = useState(skills[0].id);
   const [pageIndexes, setPageIndexes] = useState<{ [key: string]: number }>({});
   const [direction, setDirection] = useState(0);
   const [isSwipe, setIsSwipe] = useState(false);
+
+  const t = useTranslations("SkillsSection");
 
   const width = useScreenWidth();
 
@@ -84,14 +47,20 @@ export default function SkillsSection() {
       if (newPage < 0) newPage = totalPages - 1;
       if (newPage >= totalPages) newPage = 0;
 
-        setDirection(dir === "next" ? 1 : -1);
+      setDirection(dir === "next" ? 1 : -1);
       return { ...prev, [techId]: newPage };
     });
   };
 
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => {setIsSwipe(true); handleSlide(selectedTech, "prev")},
-    onSwipedRight: () => {setIsSwipe(true); handleSlide(selectedTech, "next")},
+    onSwipedLeft: () => {
+      setIsSwipe(true);
+      handleSlide(selectedTech, "prev");
+    },
+    onSwipedRight: () => {
+      setIsSwipe(true);
+      handleSlide(selectedTech, "next");
+    },
     preventScrollOnSwipe: true,
     trackMouse: true,
   });
@@ -99,11 +68,11 @@ export default function SkillsSection() {
   const getTechImage = useCallback((tech: string) => {
     switch (tech) {
       case "frontend":
-        return <Image src={brackets} alt="asd" width={30} height={30} />;
+        return <Image src={brackets} alt="frontend" width={30} height={30} />;
       case "backend":
-        return <Image src={server} alt="asd" width={30} height={30} />;
+        return <Image src={server} alt="backend" width={30} height={30} />;
       case "other":
-        return <Image src={gitBranch} alt="asd" width={30} height={30} />;
+        return <Image src={gitBranch} alt="other" width={30} height={30} />;
     }
   }, []);
 
@@ -127,10 +96,10 @@ export default function SkillsSection() {
       <CustomTitle
         heading="h2"
         position="center"
-        subTitle="Technical"
+        subTitle={t("subTitle")}
         subTitlePosition="above"
       >
-        Skills
+        {t("title")}
       </CustomTitle>
       <div className={styles.mainContainer}>
         <div className={styles.techContainer}>
@@ -146,7 +115,7 @@ export default function SkillsSection() {
               <span className="flex gap-3">
                 {getTechImage(tech.id)}
                 <span className="flex flex-col">
-                  <span>{tech.name}</span>
+                  <span>{t(`tech.${tech.nameKey}`)}</span>
                   <span className="text-xs">{`${tech.skills.length} skills`}</span>
                 </span>
               </span>
@@ -198,19 +167,22 @@ export default function SkillsSection() {
                 </div>
               ))}
           </motion.div>
-          {width <= 675 &&
+          {width <= 675 && (
             <div className={styles.swipe}>
-              Swipe to see more
+              {t("swipeText")}
               <Image alt="swipe" src={swipe} width={25} height={25} />
             </div>
-          }
+          )}
           {width > 675 &&
             selectedCategory?.skills.length &&
             selectedCategory?.skills.length > 3 && (
               <div className="relative z-50">
                 <button
                   className="absolute left-5 -top-3 cursor-pointer text-2xl"
-                  onClick={() => {setIsSwipe(false); handleSlide(selectedTech, "prev")}}
+                  onClick={() => {
+                    setIsSwipe(false);
+                    handleSlide(selectedTech, "prev");
+                  }}
                 >
                   ◀
                 </button>
@@ -227,7 +199,10 @@ export default function SkillsSection() {
                 </div>
                 <button
                   className="absolute right-5 -top-3 cursor-pointer text-2xl"
-                  onClick={() => {setIsSwipe(false); handleSlide(selectedTech, "next")}}
+                  onClick={() => {
+                    setIsSwipe(false);
+                    handleSlide(selectedTech, "next");
+                  }}
                 >
                   ▶
                 </button>

@@ -1,8 +1,6 @@
 'use client'
 
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Menu } from "lucide-react";
 import Header from "@/components/header/header";
 import HeroSection from "@/components/heroSection/heroSection";
 import AboutSection from "@/components/aboutSection/aboutSection";
@@ -11,7 +9,6 @@ import SkillsSection from "@/components/skillsSection/skillsSection";
 import ContactSection from "@/components/contactSection/contactSection";
 import Footer from "@/components/footer/footer";
 import ServicesSection from "@/components/servicesSection/servicesSection";
-import Button from "@/components/common/button/button";
 import ExperienceSection from "@/components/experienceSection/experienceSection";
 import OrbBackground from "@/components/common/orbs/orbs";
 import PackagesSection from "@/components/packagesSection/packagesSection";

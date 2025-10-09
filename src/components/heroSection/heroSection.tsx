@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import * as styles from "./heroSection.css";
 import Image from "next/image";
 import Button from "../common/button/button";
-import { useScreenWidth } from "@/utils/useScreenWidth";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
-  const width = useScreenWidth();
+  const t = useTranslations("HeroSection");
 
   return (
     <section className={styles.heroSectionContainer}>
@@ -17,10 +17,10 @@ export default function HeroSection() {
           transition={{ duration: 0.4 }}
           className={styles.titleContainer}
         >
-          Hi — I’m
-          <span className="text-pastel-green"> Máté, </span>
+          {t("title.hi")}
+          <span className="text-pastel-green">{t("title.name")}</span>
           <br />
-          <span className="text-pastel-green">Front-End Developer</span>
+          <span className="text-pastel-green">{t("title.frontend")}</span>
         </motion.h2>
 
         <motion.p
@@ -29,7 +29,7 @@ export default function HeroSection() {
           transition={{ delay: 0.15 }}
           className={styles.textContainer}
         >
-          I build fast, accessible websites for businesses and creative studios.
+          {t("heroMessage")}
         </motion.p>
 
         <div className={styles.buttonContainer}>
@@ -39,7 +39,7 @@ export default function HeroSection() {
             rounded
             href="#projects"
           >
-            View my work
+            {t("viewWork")}
           </Button>
           <Button
             className={styles.button}
@@ -47,21 +47,21 @@ export default function HeroSection() {
             rounded
             href="#contact"
           >
-            Get in touch
+            {t("getInTouch")}
           </Button>
         </div>
       </div>
 
-        <div className={styles.imageContainer}>
-          <Image
-            alt="FeImage"
-            src={"/FrontendGraphic.png"}
-            width={500}
-            height={500}
-            style={{ objectFit: "cover" }}
-            draggable={false}
-          />
-        </div>
+      <div className={styles.imageContainer}>
+        <Image
+          alt="FeImage"
+          src={"/FrontendGraphic.png"}
+          width={500}
+          height={500}
+          style={{ objectFit: "cover" }}
+          draggable={false}
+        />
+      </div>
     </section>
   );
 }

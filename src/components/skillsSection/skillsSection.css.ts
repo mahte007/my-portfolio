@@ -18,7 +18,7 @@ export const mainContainer = style({
   display: "flex",
   justifyContent: "center",
   gap: "64px",
-  marginTop: "128px",
+  marginTop: "64px",
   marginBottom: "64px",
   alignItems: "stretch",
   height: "250px",

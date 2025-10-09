@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PriceCard from "../common/card/priceCard";
 import tick from "/public/tick.svg";
 import clock from "/public/clock.svg";
@@ -7,55 +6,58 @@ import * as styles from "./packagesSection.css";
 import Button from "../common/button/button";
 import PackageFeature from "./packageFeature";
 import CustomTitle from "../common/customTitle/customTitle";
+import { useTranslations } from "next-intl";
 
 export default function PackagesSection() {
+  const t = useTranslations("PackagesSection");
+
   return (
     <section id="packages">
       <CustomTitle
         heading="h2"
         position="center"
-        subTitle="The prices are informative and can be varied"
+        subTitle={t("subTitle")}
         subTitlePosition="above"
       >
-        Website Packages
+        {t("title")}
       </CustomTitle>
       <div className={styles.mainContainer}>
         <PriceCard
-          title="Starter"
-          price="120 000 Ft"
-          subTitle="1-page modern design"
+          title={t("starterPackage.title")}
+          price={t("starterPackage.price")}
+          subTitle={t("starterPackage.subTitle")}
         >
           <div className="flex flex-col gap-3">
-            <PackageFeature icon={tick} text="Booking Form" />
-            <PackageFeature icon={tick} text="Mobile friendly design" />
-            <PackageFeature icon={clock} text="5 days delivery" />
+            <PackageFeature icon={tick} text={t("starterPackage.features.bookingForm")} />
+            <PackageFeature icon={tick} text={t("starterPackage.features.design")} />
+            <PackageFeature icon={clock} text={t("starterPackage.features.delivery")} />
             <div className="text-center mt-4">
-              <Button variant="secondary" href="#contact">{"Get Started"}</Button>
+              <Button variant="secondary" href="#contact">{t("starterPackage.getStarted")}</Button>
             </div>
           </div>
         </PriceCard>
         <PriceCard
-          title="Professional"
-          price="220 000 Ft"
-          subTitle="SEO optimization"
+          title={t("professionalPackage.title")}
+          price={t("professionalPackage.price")}
+          subTitle={t("professionalPackage.subTitle")}
           glow
         >
           <div className="flex flex-col gap-3">
-            <PackageFeature icon={tick} text="Gallery & Events page" />
-            <PackageFeature icon={tick} text="1-month free maintenance" />
-            <PackageFeature icon={clock} text="10 days delivery" />
+            <PackageFeature icon={tick} text={t("professionalPackage.features.gallery")} />
+            <PackageFeature icon={tick} text={t("professionalPackage.features.maintenance")} />
+            <PackageFeature icon={clock} text={t("professionalPackage.features.delivery")} />
             <div className="text-center mt-4">
-              <Button variant="primary" href="#contact">{"Most Popular"}</Button>
+              <Button variant="primary" href="#contact">{t("professionalPackage.mostPopular")}</Button>
             </div>
           </div>
         </PriceCard>
-        <PriceCard title="Premium" price="400 000 Ft" subTitle="Custom design">
+        <PriceCard title={t("premiumPackage.title")} price={t("premiumPackage.price")} subTitle={t("premiumPackage.subTitle")}>
           <div className="flex flex-col gap-3">
-            <PackageFeature icon={tick} text="Online booking system" />
-            <PackageFeature icon={tick} text="6 months support" />
-            <PackageFeature icon={clock} text="14 days delivery" />
+            <PackageFeature icon={tick} text={t("premiumPackage.features.bookingSystem")} />
+            <PackageFeature icon={tick} text={t("premiumPackage.features.support")} />
+            <PackageFeature icon={clock} text={t("premiumPackage.features.delivery")} />
             <div className="text-center mt-4">
-              <Button variant="secondary" href="#contact">{"Let's Talk"}</Button>
+              <Button variant="secondary" href="#contact">{t("premiumPackage.letsTalk")}</Button>
             </div>
           </div>
         </PriceCard>

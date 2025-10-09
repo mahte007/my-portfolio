@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
+import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin";
+import createNextIntlPlugin from "next-intl/plugin";
 
-import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin';
+
+const nextConfig: NextConfig = {};
+
+const withNextIntl = createNextIntlPlugin();
 const withVanillaExtract = createVanillaExtractPlugin();
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-module.exports = withVanillaExtract(nextConfig);
+module.exports = withNextIntl(withVanillaExtract(nextConfig));

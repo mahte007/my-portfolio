@@ -6,29 +6,31 @@ import github from "/public/github.svg";
 import linkedin from "/public/linkedin.svg";
 import mail from "/public/mail.svg";
 import instagram from "/public/instagram.svg";
-import { motion } from "framer-motion";
 import * as styles from "./contactSection.css";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function ContactSection() {
+  const t = useTranslations("ContactSection")
+
   return (
     <section id="contact" className={styles.contactSectionContainer}>
       <CustomTitle
-        subTitle="Contact Information"
+        subTitle={t("subTitle")}
         heading="h2"
         position="center"
         subTitlePosition="above"
       >
-        Contact
+        {t("title")}
       </CustomTitle>
 
       <div className={styles.glowCardsContainer}>
         <GlowCard icon={mail}>
-          <CustomTitle heading="h4" className={styles.titleContainer}>Email</CustomTitle>
+          <CustomTitle heading="h4" className={styles.titleContainer}>{t("email")}</CustomTitle>
           <Button id="emailButton" variant="outline" copy>
             mahte007@gmail.com
           </Button>
-          <p className={styles.glowCardMessage}>Write me an Email!</p>
+          <p className={styles.glowCardMessage}>{t("writeEmail")}</p>
         </GlowCard>
 
         <GlowCard className={styles.iconGlowCard}>

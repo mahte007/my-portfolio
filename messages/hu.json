@@ -1,0 +1,171 @@
+{
+  "Header": {
+    "title": "Horváth Máté",
+    "subTitle": "Frontend fejlesztő — akadálymentes és esztétikus felhasználói felületeket építek",
+    "projects": "Projektek",
+    "prices": "Árak",
+    "forAgencies": "Ügynökségeknek",
+    "contact": "Kapcsolat",
+    "skills": "Képzettség",
+    "workExperience": "Tapasztalat",
+    "github": "GitHub"
+  },
+  "HeroSection": {
+    "title": {
+      "hi": "Szia — Máté",
+      "name": " vagyok, ",
+      "frontend": "Front-End Fejlesztő"
+    },
+    "heroMessage": "Gyors és akadálymentes weboldalakat készítek vállalkozásoknak és kreatív stúdióknak.",
+    "viewWork": "Nézd meg a munkáim",
+    "getInTouch": "Vedd fel a kapcsolatot"
+  },
+  "AboutSection": {
+    "message": "👋 Szia, Máténak hívnak — egy front-end fejlesztő vagyok Magyarországon, Pécsett. Könnyed, magas teljesítményű weboldalak készítésében szerzett tapasztalatommal a tiszta dizájnra, fenntartható kódra és hatékony együttműködésre fókuszálok minden projekt során."
+  },
+  "ServicesSection": {
+    "titles": {
+      "webDesign": "Web Dizájn",
+      "webDevelopment": "Web Fejlesztés",
+      "uiDesign": "UI/UX Dizájn"
+    },
+    "messages": {
+      "webDesign": "Modern, vizuálisan vonzó és reszponzív dizájnokat készítek, amelyek minden eszközön tökéletesen jelennek meg.",
+      "webDevelopment": "Gyors, skálázható és könnyen karbantartható weboldalakat fejlesztek a legújabb technológiák alkalmazásával.",
+      "uiDesign": "Intuitív és felhasználóbarát digitális élményeket készítek melyek bevonják és elbűvölik a felhasználókat."
+    }
+  },
+  "PackagesSection": {
+    "title": "Weboldal Csomagok",
+    "subTitle": "Az árak tájékoztató jellegűek és változhatnak",
+    "starterPackage": {
+      "title": "Starter",
+      "subTitle": "Modern 1 oldalas dizájn",
+      "price": "120 000 Ft",
+      "features": {
+        "bookingForm": "Fogalaló űrlap",
+        "design": "Mobil barát dizájn",
+        "delivery": "5 napos kiszállítás"
+      },
+      "getStarted": "Vágjunk Bele"
+    },
+    "professionalPackage": {
+      "title": "Professional",
+      "subTitle": "SEO optimalizálás",
+      "price": "220 000 Ft",
+      "features": {
+        "gallery": "Galléria és Események oldal",
+        "maintenance": "1 hónap ingyenes karbantartás",
+        "delivery": "10 napos kiszállítás"
+      },
+      "mostPopular": "Legnépszerűbb"
+    },
+    "premiumPackage": {
+      "title": "Premium",
+      "subTitle": "Egyedi dizájn",
+      "price": "400 000 Ft",
+      "features": {
+        "bookingSystem": "Online foglaló rendszer",
+        "support": "6 hónapos támogatás",
+        "delivery": "14 napos kiszállítás"
+      },
+      "letsTalk": "Vedd fel a kapcsolatot"
+    }
+  },
+  "SkillsSection": {
+    "title": "Tudás",
+    "subTitle": "Szakmai",
+    "swipeText": "Csúsztass a többihez",
+    "tech": {
+      "other": "Egyéb",
+      "frontend": "FrontEnd",
+      "backend": "BackEnd"
+    }
+  },
+  "ProjectsSection": {
+    "title": "Portfólió",
+    "subTitle": "Legújabb projektek",
+    "projects": {
+      "myPortfolio": {
+        "title": "Saját Portfólióm",
+        "description": "Saját portfólió weboldalamat React segítségével készítettem, reszponzív dizájnnal és animációkkal a felhasználói élmény fokozására.",
+        "buttonText": "Itt vagy"
+      },
+      "architectPortfolio": {
+        "title": "Építész Portfólió Sablon",
+        "description": "Egy sablon weboldal építészek és dizájnerek számára, letisztult felépítéssel, képgalériával és egyszerűen testreszabható funkciókkal.",
+        "buttonText": "Nézd meg"
+      },
+      "nextProject": {
+        "title": "Legyél a következő",
+        "description": "Egy modern és gyors weboldalt szeretnél vállalkozásodnak? Dolgozzunk együtt még ma! Lépj velem kapcsolatba.",
+        "buttonText": "Írj egy üzenetet"
+      }
+    }
+  },
+  "ExperienceSection": {
+    "title": "Munka Tapasztalat",
+    "subTitle": "Tanulmányok",
+    "educationTitle": "Tanulmányok",
+    "workTitle": "Munka",
+    "work": {
+      "kanizsatel": {
+        "company": "Kanizsatel Kft.",
+        "time": "2017 nyara",
+        "title": "Távközlési Gyakornok"
+      },
+      "ferling": {
+        "company": "FERLING Kft.",
+        "time": "2022 Okt - 2023 Jan",
+        "title": "Web Fejlesztő Gyakornok"
+      },
+      "arteries": {
+        "company": "Arteries Studio",
+        "time": "2023 Jún - 2024 Szept",
+        "title": "Frontend Fejlesztő"
+      },
+      "amelco": {
+        "company": "Amelco UK",
+        "time": "2024 Szept - 2025 Szept",
+        "title": "Frontend Fejlesztő"
+      }
+    },
+    "education": {
+      "highSchool": {
+        "school": "Cserháti Sándor Technikum",
+        "time": "2016 - 2020",
+        "major": "Telecommunication"
+      },
+      "university": {
+        "school": "Pécsi Tudományegyetem",
+        "time": "2020",
+        "major": "Mérnökinformatikus Bsc"
+      }
+    },
+    "checkCV": "Nézd meg az önéletrajzom"
+  },
+  "ContractSection": {
+    "title": "Ügynökségeknek",
+    "subTitle": "Szerződéses Munka",
+    "message": "Ügynökségekkel és stúdiókkal is dolgozom szabadúszó front-end fejlesztőként. Rövid- és hosszú távon is csatlakozhatok a csapatodhoz, reszponzív felületek, animációk és komponensek implementálásával React, Next.js és TypeScript használatával.",
+    "list": {
+      "pixelPerfect": "✅ Pixelpontos Figma → kód",
+      "typescript": "✅ Letisztult, moduláris TypeScript komponensek",
+      "deadling": "✅ Határidő-orientált és kiváló kommunikációs készségek",
+      "remote": "✅ Elérhető vagyok távmunkára"
+    },
+    "checkOutCV": "Nézd meg az önéletrajzom",
+    "collaborate": "Dolgozzunk együtt"
+  },
+  "ContactSection": {
+    "title": "Kapcsolat",
+    "subTitle": "Elérhetőségi adatok",
+    "email": "Email",
+    "writeEmail": "Írj nekem egy Emailt!"
+  },
+  "Footer": {
+    "name": "Horváth Máté",
+    "github": "GitHub",
+    "linkedIn": "LinkedIn"
+  }
+}
