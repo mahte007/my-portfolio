@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Header from "@/components/header/header";
@@ -15,7 +15,6 @@ import PackagesSection from "@/components/packagesSection/packagesSection";
 import ContractSection from "@/components/contractSection/contractSection";
 
 export default function PortfolioPage() {
-
   const [pageHeight, setPageHeight] = useState(0);
 
   useEffect(() => {
@@ -33,23 +32,32 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div id="home" style={{background: "linear-gradient(180deg, #040a11 0%, #1b0a2a 50%, #040a11 100%)"}} className="min-h-screen text-gray-200 antialiased">
+    <>
       <OrbBackground pageHeight={pageHeight} />
-      <Header />
-      <div className="max-w-7xl mx-auto p-6 pt-0 lg:p-12 lg:pt-0 z-10">
-        <main>
-          <HeroSection />
-          <AboutSection />
-          <ServicesSection />
-          <PackagesSection />
-          <SkillsSection />
-          <ProjectsSection />
-          <ExperienceSection />
-          <ContractSection />
-          <ContactSection />
-        </main>
+      <div
+        id="home"
+        style={{
+          background:
+            "linear-gradient(180deg, #040a11 0%, #1b0a2a 50%, #040a11 100%)",
+        }}
+        className="min-h-screen text-gray-200 antialiased"
+      >
+        <Header />
+        <div className="max-w-7xl mx-auto p-6 pt-0 lg:p-12 lg:pt-0 z-10">
+          <main className="z-10 relative">
+            <HeroSection />
+            <AboutSection />
+            <ServicesSection />
+            <PackagesSection />
+            <SkillsSection />
+            <ProjectsSection />
+            <ExperienceSection />
+            <ContractSection />
+            <ContactSection />
+          </main>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }

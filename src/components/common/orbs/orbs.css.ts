@@ -23,7 +23,7 @@ export const orbWrapper = style({
   top: 0,
   left: 0,
   overflow: 'hidden',
-  zIndex: -1,
+  zIndex: 0,
   pointerEvents: 'none',
 });
 
