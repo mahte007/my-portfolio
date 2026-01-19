@@ -41,7 +41,7 @@
     "starterPackage": {
       "title": "Starter",
       "subTitle": "1-page modern design",
-      "price": "300 EUR",
+      "price": "500 EUR",
       "features": {
         "bookingForm": "Booking Form",
         "design": "Mobile friendly design",
@@ -52,7 +52,7 @@
     "professionalPackage": {
       "title": "Professional",
       "subTitle": "SEO optimization",
-      "price": "550 EUR",
+      "price": "1200 EUR",
       "features": {
         "gallery": "Gallery & Events page",
         "maintenance": "1-month free maintenance",
@@ -63,7 +63,7 @@
     "premiumPackage": {
       "title": "Premium",
       "subTitle": "Custom design",
-      "price": "1000 EUR",
+      "price": "2500 EUR",
       "features": {
         "bookingSystem": "Online booking system",
         "support": "6 months support",

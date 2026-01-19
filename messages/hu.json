@@ -41,7 +41,7 @@
     "starterPackage": {
       "title": "Starter",
       "subTitle": "Modern 1 oldalas dizájn",
-      "price": "120 000 Ft",
+      "price": "200 000 Ft",
       "features": {
         "bookingForm": "Fogalaló űrlap",
         "design": "Mobil barát dizájn",
@@ -52,7 +52,7 @@
     "professionalPackage": {
       "title": "Professional",
       "subTitle": "SEO optimalizálás",
-      "price": "220 000 Ft",
+      "price": "450 000 Ft",
       "features": {
         "gallery": "Galléria és Események oldal",
         "maintenance": "1 hónap ingyenes karbantartás",
@@ -63,7 +63,7 @@
     "premiumPackage": {
       "title": "Premium",
       "subTitle": "Egyedi dizájn",
-      "price": "400 000 Ft",
+      "price": "1 000 000 Ft",
       "features": {
         "bookingSystem": "Online foglaló rendszer",
         "support": "6 hónapos támogatás",
