@@ -167,5 +167,10 @@
     "name": "Máté Horváth",
     "github": "GitHub",
     "linkedIn": "LinkedIn"
+  },
+  "MaintenancePage": {
+    "title": "Under Maintenance",
+    "subTitle": "Be right back",
+    "message": "I'm currently updating this site to make it even better. Please check back soon — in the meantime, feel free to reach out."
   }
 }

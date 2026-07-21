@@ -167,5 +167,10 @@
     "name": "Horváth Máté",
     "github": "GitHub",
     "linkedIn": "LinkedIn"
+  },
+  "MaintenancePage": {
+    "title": "Karbantartás alatt",
+    "subTitle": "Hamarosan visszatérünk",
+    "message": "Jelenleg frissítem az oldalt, hogy még jobb legyen. Nézz vissza hamarosan — addig is szívesen veszem, ha felveszed velem a kapcsolatot."
   }
 }
