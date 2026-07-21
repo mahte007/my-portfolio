@@ -26,7 +26,7 @@ export const iconWrapper = style({
 export const message = style({
   maxWidth: "480px",
   fontSize: "16px",
-  color: "#b2c4b7",
+  color: "#fff",
   marginBottom: "40px",
 });
 
