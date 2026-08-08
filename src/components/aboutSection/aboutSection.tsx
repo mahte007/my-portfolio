@@ -8,7 +8,7 @@ export default function AboutSection() {
   const t = useTranslations("AboutSection");
 
   return (
-    <section id="about-me" className={styles.aboutSectionContainer}>
+    <section id="about" className={styles.aboutSectionContainer}>
       <CustomTitle
         heading="h2"
         position="left"

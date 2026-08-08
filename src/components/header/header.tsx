@@ -49,9 +49,9 @@ export default function Header() {
           </a>
           <a
             className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#contact")}
+            onClick={() => handleOnClick("#experience")}
           >
-            {t("contact")}
+            {t("workExperience")}
           </a>
           <a
             className={styles.headerMenuItem}
@@ -61,9 +61,15 @@ export default function Header() {
           </a>
           <a
             className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#experience")}
+            onClick={() => handleOnClick("#about")}
           >
-            {t("workExperience")}
+            {t("about")}
+          </a>
+          <a
+            className={styles.headerMenuItem}
+            onClick={() => handleOnClick("#contact")}
+          >
+            {t("contact")}
           </a>
         <LanguageSwitcher />
         </nav>

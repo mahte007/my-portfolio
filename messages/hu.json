@@ -7,6 +7,7 @@
     "forAgencies": "Ügynökségeknek",
     "contact": "Kapcsolat",
     "skills": "Képzettség",
+    "about": "Rólam",
     "workExperience": "Tapasztalat",
     "github": "GitHub"
   },
@@ -273,7 +274,7 @@
     }
   },
   "ExperienceSection": {
-    "title": "Munka Tapasztalat",
+    "title": "Hol dolgoztam eddig",
     "subTitle": "02 / TAPASZTALAT",
     "educationTitle": "Tanulmányok",
     "workTitle": "Munka",

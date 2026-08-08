@@ -7,7 +7,7 @@ export default function About() {
   const t = useTranslations("HeroSection")
   
   return (
-    <section id="about" className={styles.aboutSectionContainer}>
+    <section className={styles.aboutSectionContainer}>
       <div className={styles.aboutMainContainer}>
           <p className={styles.aboutParagraphContainer}>
             {t("aboutMessage")}
