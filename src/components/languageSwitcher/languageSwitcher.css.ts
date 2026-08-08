@@ -1,48 +1,32 @@
-import {style} from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 export const languageSwitcherContainer = style({
-    position: "relative",
-    display: "inline-block",
-    textAlign: "left",
-})
+  display: "inline-flex",
+  alignItems: "center",
+  gap: "6px",
+});
 
-export const switcherButton = style({
-    display: "inline-flex",
-    justifyContent: "space-between",
-    width: "fit-content",
-    borderRadius: "6px",
-    paddingInline: "16px",
-    paddingBlock: "8px",
-    backgroundColor: "#0f1a25",
-    cursor: "pointer",
-    ":hover": {
-        backgroundColor: "#385e85"
+export const separator = style({
+  fontSize: "0.9rem",
+  color: "#475569",
+});
+
+export const languageLink = style({
+  fontSize: "0.9rem",
+  fontWeight: 600,
+  letterSpacing: "0.02em",
+  color: "#94a3b8",
+  textDecoration: "none",
+  transition: "color 0.2s ease",
+  selectors: {
+    "&:hover": {
+      color: "white",
     },
-})
+  },
+});
 
-export const dropDownContainer = style({
-    transformOrigin: "top right",
-    position: "absolute",
-    marginTop: "8px",
-    width: "fit-content",
-    borderRadius: "6px",
-    backgroundColor: "#0f1a25",
-    zIndex: 10,
-})
-
-export const link = style({
-    display: "block",
-    width: "100%",
-    paddingInline: "16px",
-    paddingBlock: "8px",
-})
-
-export const activeLink = style({
-    backgroundColor: "#2e4259"
-})
-
-export const hoverLink = style({
-    ":hover": {
-        backgroundColor: "#385e85"
-    },
-})
+export const activeLanguageLink = style({
+  color: "#60a5fa",
+  fontWeight: 700,
+  pointerEvents: "none",
+});

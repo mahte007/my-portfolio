@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Horváth Máté",
-    "subTitle": "Frontend fejlesztő — akadálymentes és esztétikus felhasználói felületeket építek",
+    "subTitle": "Frontend Fejlesztő · React · TypeScript",
     "projects": "Projektek",
     "prices": "Árak",
     "forAgencies": "Ügynökségeknek",
@@ -16,10 +16,10 @@
       "name": " vagyok, ",
       "frontend": "Front-End Fejlesztő"
     },
-    "heroMessage": "Gyors és akadálymentes weboldalakat készítek vállalkozásoknak és kreatív stúdióknak.",
+    "heroMessage": "Átgondolt webes élményeket készítek React és TypeScript segítségével.",
     "viewWork": "Nézd meg a munkáim",
     "getInTouch": "Vedd fel a kapcsolatot",
-    "aboutMessage": "👋 Szia, Máténak hívnak — egy front-end fejlesztő vagyok Magyarországon, Pécsett. Könnyed, magas teljesítményű weboldalak készítésében szerzett tapasztalatommal a tiszta dizájnra, fenntartható kódra és hatékony együttműködésre fókuszálok minden projekt során."
+    "aboutMessage": "👋 Szia, Máté vagyok, front-end fejlesztő Pécsről. 3+ év tapasztalattal rendelkezem web- és mobiltermékek fejlesztésében, banki és sport fogadói platformoktól vállalati alkalmazásokig. Fontos számomra az intuitív felhasználói felület, a karbantartható kód és az olyan termékek, amelyeket jó használni."
   },
   "AboutSection": {
     "subTitle": "04 / RÓLAM",
@@ -256,20 +256,19 @@
     "title": "Portfólió",
     "subTitle": "01 / PROJEKTEK",
     "projects": {
-      "myPortfolio": {
-        "title": "Saját Portfólióm",
-        "description": "Saját portfólió weboldalamat React segítségével készítettem, reszponzív dizájnnal és animációkkal a felhasználói élmény fokozására.",
-        "buttonText": "Itt vagy"
+      "meetingRoomManager": {
+        "title": "Meeting Room Reservation",
+        "description": "Full-stack PWA tárgyaló foglalások kezelésére, hitelesítéssel, szerepkör-alapú munkafolyamatokkal és offline támogatással."
       },
       "architectPortfolio": {
         "title": "Építész Portfólió Sablon",
         "description": "Egy sablon weboldal építészek és dizájnerek számára, letisztult felépítéssel, képgalériával és egyszerűen testreszabható funkciókkal.",
         "buttonText": "Nézd meg"
       },
-      "nextProject": {
-        "title": "Legyél a következő",
-        "description": "Egy modern és gyors weboldalt szeretnél vállalkozásodnak? Dolgozzunk együtt még ma! Lépj velem kapcsolatba.",
-        "buttonText": "Írj egy üzenetet"
+      "bodaPortfolioSite": {
+        "title": "Boda Viktor weboldal",
+        "description": "Éles weboldal Next.js és TypeScript segítségével, a reszponzív dizájnra, teljesítményre és letisztult felhasználói élményre fókuszálva.",
+        "buttonText": "Írj nekem"
       }
     }
   },
@@ -279,37 +278,37 @@
     "educationTitle": "Tanulmányok",
     "workTitle": "Munka",
     "work": {
-      "kanizsatel": {
-        "company": "Kanizsatel Kft.",
-        "time": "2017 nyara",
-        "title": "Távközlési Gyakornok"
-      },
       "ferling": {
         "company": "FERLING Kft.",
         "time": "2022 Okt - 2023 Jan",
-        "title": "Web Fejlesztő Gyakornok"
+        "title": "Web Fejlesztő Gyakornok",
+        "description": "WordPress és egyedi webfejlesztésben szereztem tapasztalatot."
       },
       "arteries": {
         "company": "Arteries Studio",
         "time": "2023 Jún - 2024 Szept",
-        "title": "Frontend Fejlesztő"
+        "title": "Frontend Fejlesztő",
+        "description": "Banki és e-kereskedelmi ügyfeleknek fejlesztettem webes felületeket."
       },
       "amelco": {
         "company": "Amelco UK",
         "time": "2024 Szept - 2025 Szept",
-        "title": "Frontend Fejlesztő"
+        "title": "Frontend Fejlesztő",
+        "description": "Web- és mobilalkalmazásokon dolgoztam React, TypeScript és React Native használatával."
+      },
+      "adesso": {
+        "company": "Adesso Business Consulting Kft",
+        "time": "2026 Feb - Jelenleg",
+        "title": "Frontend Fejlesztő és Tanácsadó",
+        "description": "Vállalati frontend fejlesztés SAPUI5, JavaScript és CAP használatával."
       }
     },
     "education": {
-      "highSchool": {
-        "school": "Cserháti Sándor Technikum",
-        "time": "2016 - 2020",
-        "major": "Telecommunication"
-      },
       "university": {
         "school": "Pécsi Tudományegyetem",
-        "time": "2020",
-        "major": "Mérnökinformatikus Bsc"
+        "time": "2020 - Jelenleg",
+        "major": "Mérnökinformatikus Bsc",
+        "specialization": "Alkalmazásfejlesztés"
       }
     },
     "checkCV": "Nézd meg az önéletrajzom"
