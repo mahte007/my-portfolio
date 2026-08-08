@@ -9,9 +9,6 @@ export default function About() {
   return (
     <section id="about" className={styles.aboutSectionContainer}>
       <div className={styles.aboutMainContainer}>
-        <div>
-            <Image className="rounded-full" alt="ProfPic" src={"/Profile.png"} width={200} height={200} />
-        </div>
           <p className={styles.aboutParagraphContainer}>
             {t("aboutMessage")}
           </p>

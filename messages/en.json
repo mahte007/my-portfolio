@@ -22,11 +22,15 @@
     "aboutMessage": "👋 I’m Máté, a frontend engineer based in Pécs, Hungary. I have 3+ years of experience building web and mobile products, from banking and sports platforms to enterprise applications. I care about intuitive interfaces, maintainable code and products that feel good to use."
   },
   "AboutSection": {
-    "message": ""
+    "subTitle": "04 / ABOUT",
+    "title": "A little more about me.",
+    "paragraph1": "I'm a frontend engineer from Pécs, Hungary. What I enjoy most about development is taking an idea and turning it into something people can actually use.",
+    "paragraph2": "React and TypeScript are where I'm most at home, but I'm curious about the whole product. I enjoy understanding how the backend works, experimenting with new technologies and building projects outside of work.",
+    "paragraph3": "When I'm not coding, you'll probably find me gaming, cooking, working on some random project, or convincing myself that this side project will definitely be the one I finish."
   },
   "SkillsSection": {
     "title": "What I work with",
-    "subTitle": "Skills",
+    "subTitle": "03 / SKILLS",
     "tech": {
       "core": "Core",
       "frontend": "Frontend",
@@ -201,7 +205,7 @@
   },
   "ProjectsSection": {
     "title": "Selected Work",
-    "subTitle": "Projects",
+    "subTitle": "01 / PROJECTS",
     "projects": {
       "meetingRoomManager": {
         "title": "Meeting Room Reservation",
@@ -221,7 +225,7 @@
   },
   "ExperienceSection": {
     "title": "Where I've Worked",
-    "subTitle": "Experience",
+    "subTitle": "02 / EXPERIENCE",
     "educationTitle": "Education",
     "workTitle": "Work",
     "work": {
@@ -261,10 +265,11 @@
     "checkCV": "Check My CV"
   },
   "ContactSection": {
-    "title": "Contact",
-    "subTitle": "Contact Information",
-    "email": "Email",
-    "writeEmail": "Write me an Email!"
+    "title": "Let's build something.",
+    "subTitle": "05 / CONTACT",
+    "message": "Interested in working together or just want to say hi?",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
   },
   "Footer": {
     "name": "Máté Horváth",

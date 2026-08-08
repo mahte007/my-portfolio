@@ -67,7 +67,6 @@ export const button = style({
 })
 
 export const aboutSectionContainer = style({
-    marginTop: "64px",
     marginBottom: "128px"
 })
 

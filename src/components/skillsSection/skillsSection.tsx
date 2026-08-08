@@ -39,9 +39,10 @@ export default function SkillsSection() {
     <section id="skills" className={styles.skillsSectionContainer}>
       <CustomTitle
         heading="h2"
-        position="center"
+        position="left"
         subTitle={t("subTitle")}
         subTitlePosition="above"
+        eyebrow
       >
         {t("title")}
       </CustomTitle>

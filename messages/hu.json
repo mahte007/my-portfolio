@@ -18,10 +18,15 @@
     },
     "heroMessage": "Gyors és akadálymentes weboldalakat készítek vállalkozásoknak és kreatív stúdióknak.",
     "viewWork": "Nézd meg a munkáim",
-    "getInTouch": "Vedd fel a kapcsolatot"
+    "getInTouch": "Vedd fel a kapcsolatot",
+    "aboutMessage": "👋 Szia, Máténak hívnak — egy front-end fejlesztő vagyok Magyarországon, Pécsett. Könnyed, magas teljesítményű weboldalak készítésében szerzett tapasztalatommal a tiszta dizájnra, fenntartható kódra és hatékony együttműködésre fókuszálok minden projekt során."
   },
   "AboutSection": {
-    "message": "👋 Szia, Máténak hívnak — egy front-end fejlesztő vagyok Magyarországon, Pécsett. Könnyed, magas teljesítményű weboldalak készítésében szerzett tapasztalatommal a tiszta dizájnra, fenntartható kódra és hatékony együttműködésre fókuszálok minden projekt során."
+    "subTitle": "04 / RÓLAM",
+    "title": "Egy kicsit többet rólam.",
+    "paragraph1": "Front-end fejlesztő vagyok Pécsről. Amit a legjobban élvezek a fejlesztésben, az az, amikor egy ötletből valami olyat alkotok, amit az emberek ténylegesen használni tudnak.",
+    "paragraph2": "A React és a TypeScript az, amiben a leginkább otthon érzem magam, de érdekel a teljes termék is. Szeretem megérteni, hogyan működik a backend, új technológiákkal kísérletezni, és munkán kívül is projekteken dolgozni.",
+    "paragraph3": "Ha épp nem kódolok, valószínűleg gamingelés, főzés, valamilyen random projekt közben találsz, vagy amint éppen győzködöm magam, hogy ez a side project lesz az, amit tényleg befejezek."
   },
   "ServicesSection": {
     "titles": {
@@ -74,7 +79,7 @@
   },
   "SkillsSection": {
     "title": "Amivel dolgozom",
-    "subTitle": "Szakmai",
+    "subTitle": "03 / KÉSZSÉGEK",
     "tech": {
       "core": "Alap",
       "frontend": "Frontend",
@@ -249,7 +254,7 @@
   },
   "ProjectsSection": {
     "title": "Portfólió",
-    "subTitle": "Legújabb projektek",
+    "subTitle": "01 / PROJEKTEK",
     "projects": {
       "myPortfolio": {
         "title": "Saját Portfólióm",
@@ -270,7 +275,7 @@
   },
   "ExperienceSection": {
     "title": "Munka Tapasztalat",
-    "subTitle": "Tanulmányok",
+    "subTitle": "02 / TAPASZTALAT",
     "educationTitle": "Tanulmányok",
     "workTitle": "Munka",
     "work": {
@@ -323,10 +328,11 @@
     "collaborate": "Dolgozzunk együtt"
   },
   "ContactSection": {
-    "title": "Kapcsolat",
-    "subTitle": "Elérhetőségi adatok",
-    "email": "Email",
-    "writeEmail": "Írj nekem egy Emailt!"
+    "title": "Építsünk együtt valamit.",
+    "subTitle": "05 / KAPCSOLAT",
+    "message": "Érdekel az együttműködés, vagy csak köszönnél? Írj bátran!",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
   },
   "Footer": {
     "name": "Horváth Máté",

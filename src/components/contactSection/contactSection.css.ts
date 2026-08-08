@@ -1,50 +1,80 @@
-import {style} from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 export const contactSectionContainer = style({
-    display: "flex",
-    flexDirection: "column",
-    marginTop: "128px",
-    marginBottom: "64px",
-})
+  display: "flex",
+  flexDirection: "column",
+  width: "100%",
+  marginTop: "160px",
+  marginBottom: "96px",
+});
 
-export const mainContainer = style({
-    display: "flex",
-    justifyContent: "center",
-})
+export const eyebrow = style({
+  fontSize: "0.9rem",
+  fontWeight: 700,
+  letterSpacing: "0.1em",
+  color: "#60a5fa",
+  marginBottom: "16px",
+});
 
-export const glowCardsContainer = style({
-    display: "flex",
-    flexDirection: "column",
-    gap: "24px",
-    alignItems: "center",
-    marginTop: "64px",
-    marginBottom: "64px",
-    "@media": {
-    "screen and (max-width: 675px)": {
-      marginTop: "0px",
+export const title = style({
+  fontSize: "clamp(2rem, 5vw, 3.25rem)",
+  fontWeight: 700,
+  lineHeight: 1.15,
+  color: "white",
+  margin: 0,
+});
+
+export const message = style({
+  fontSize: "1.15rem",
+  color: "#94a3b8",
+  marginTop: "16px",
+  maxWidth: "560px",
+});
+
+export const emailLink = style({
+  display: "inline-flex",
+  alignItems: "center",
+  gap: "16px",
+  width: "fit-content",
+  fontSize: "clamp(1.75rem, 8vw, 4.5rem)",
+  fontWeight: 700,
+  lineHeight: 1.1,
+  color: "white",
+  textDecoration: "none",
+  marginTop: "48px",
+  wordBreak: "break-word",
+  transition: "color 0.2s ease",
+  selectors: {
+    "&:hover": {
+      color: "#60a5fa",
     },
   },
-})
+});
 
-export const glowCardMessage = style({
-    marginBlock: "8px",
-    fontSize: "16px",
-})
+export const arrow = style({
+  fontWeight: 400,
+  color: "#60a5fa",
+});
 
-export const iconGlowCard = style({
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-})
+export const socialRow = style({
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "32px",
+  marginTop: "40px",
+});
 
-export const glowCardIcon = style({
-    ":hover": {
-        transform: "scale(1.2)",
-        transition: "transform 0.3s ease",
+export const socialLink = style({
+  display: "inline-flex",
+  alignItems: "center",
+  gap: "6px",
+  fontSize: "1.1rem",
+  fontWeight: 600,
+  color: "#e2e8f0",
+  textDecoration: "none",
+  transition: "color 0.2s ease",
+  selectors: {
+    "&:hover": {
+      color: "#60a5fa",
     },
-    cursor: "pointer"
-})
-
-export const titleContainer = style({
-    marginBottom: "0px"
-})
+  },
+});

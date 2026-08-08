@@ -9,10 +9,11 @@ type TitleCardProps = {
     className?: string,
     position?: "left" | "center" | "right",
     subTitlePosition?: "above" | "below" ,
+    eyebrow?: boolean,
     children?: ReactNode,
 }
 
-export default function CustomTitle({children, className, heading, subTitle, position, subTitlePosition}: TitleCardProps) {
+export default function CustomTitle({children, className, heading, subTitle, position, subTitlePosition, eyebrow}: TitleCardProps) {
     const getHeading = useMemo(() => {
     switch (heading) {
         case "h1":
@@ -43,11 +44,11 @@ export default function CustomTitle({children, className, heading, subTitle, pos
             className
         )}>
             {subTitlePosition === "above" && (
-                <p className={styles.subTitle}>{subTitle}</p>
+                <p className={clsx(styles.subTitle, eyebrow && styles.eyebrowSubTitle)}>{subTitle}</p>
             )}
             {getHeading}
             {subTitlePosition === "below" && (
-                <p className={styles.subTitle}>{subTitle}</p>
+                <p className={clsx(styles.subTitle, eyebrow && styles.eyebrowSubTitle)}>{subTitle}</p>
             )}
         </div>
     )

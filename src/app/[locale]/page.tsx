@@ -45,8 +45,8 @@ export default function PortfolioPage() {
             <HeroSection />
             <ProjectsSection />
             <ExperienceSection />
-            {/* <AboutSection /> */}
             <SkillsSection />
+            <AboutSection />
             <ContactSection />
           </main>
         </div>

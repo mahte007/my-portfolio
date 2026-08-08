@@ -72,3 +72,11 @@ export const subTitle = style({
     fontWeight: 500,
     color: "#cbd5e1",
 })
+
+export const eyebrowSubTitle = style({
+    fontSize: "0.9rem",
+    marginBottom: "16px",
+    fontWeight: 700,
+    letterSpacing: "0.1em",
+    color: "#60a5fa",
+})

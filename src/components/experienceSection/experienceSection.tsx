@@ -15,8 +15,9 @@ export default function ExperienceSection() {
       <CustomTitle
         subTitle={t("subTitle")}
         heading="h2"
-        position="center"
+        position="left"
         subTitlePosition="above"
+        eyebrow
       >
         {t("title")}
       </CustomTitle>

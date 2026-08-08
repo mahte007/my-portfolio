@@ -1,4 +1,3 @@
-import ImageCard from "../common/imageCard/imageCard";
 import CustomTitle from "../common/customTitle/customTitle";
 
 import { projects } from "../../data/projects";
@@ -13,8 +12,9 @@ export default function ProjectsSection() {
       <CustomTitle
         subTitle={t("subTitle")}
         heading="h2"
-        position="center"
+        position="left"
         subTitlePosition="above"
+        eyebrow
       >
         {t("title")}
       </CustomTitle>
