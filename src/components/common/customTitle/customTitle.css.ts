@@ -5,6 +5,8 @@ const baseHeading = style({
     lineHeight: 1.2,
     color: "white",
     margin: 0,
+    maxWidth: "100%",
+    overflowWrap: "break-word",
 });
 
 export const titleContainer = style({
@@ -71,4 +73,12 @@ export const subTitle = style({
     marginBottom: "0.25rem",
     fontWeight: 500,
     color: "#cbd5e1",
+})
+
+export const eyebrowSubTitle = style({
+    fontSize: "0.9rem",
+    marginBottom: "16px",
+    fontWeight: 700,
+    letterSpacing: "0.1em",
+    color: "#60a5fa",
 })

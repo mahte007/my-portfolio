@@ -9,7 +9,8 @@ const float = keyframes({
 export const orb = style({
   position: 'absolute',
   borderRadius: '50%',
-  opacity: 0.6,
+  opacity: 0.35,
+  filter: 'blur(100px)',
   animationName: float,
   animationTimingFunction: 'ease-in-out',
   animationIterationCount: 'infinite',
@@ -18,10 +19,7 @@ export const orb = style({
 
 export const orbWrapper = style({
   position: 'absolute',
-  width: '100%',
-  height: '100%',
-  top: 0,
-  left: 0,
+  inset: 0,
   overflow: 'hidden',
   zIndex: 0,
   pointerEvents: 'none',

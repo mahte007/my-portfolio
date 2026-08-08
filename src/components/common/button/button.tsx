@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { ButtonHTMLAttributes, useCallback, useState } from "react";
 import clsx from "clsx";
 import * as styles from "./button.css";
@@ -64,24 +63,20 @@ export default function Button({
 
   if (href && link) {
     return (
-      <motion.a
+      <a
         id={id}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
         className={clsx(styles.button, mainStyles, className)}
         href={href}
         target={target}
       >
         {children}
-      </motion.a>
+      </a>
     );
   }
 
   return (
-    <motion.button
+    <button
       id={id}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
       disabled={isLoading || props.disabled || copied}
       className={clsx(styles.button, mainStyles, className)}
       onClick={handleOnClick}
@@ -89,34 +84,20 @@ export default function Button({
       {copy ? (
         <>
           {copied ? (
-            <motion.span
-              key="check"
-              initial={{ opacity: 0, y: 10, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -10, scale: 0.9 }}
-              transition={{ duration: 0.2 }}
-              className={styles.copyButton}
-            >
+            <span key="check" className={styles.copyButton}>
               <span>{children}</span>
               <Image alt="copyButton" src={tick} width={25} height={25} className="pr-1" />
-            </motion.span>
+            </span>
           ) : (
-            <motion.span
-              key="copy"
-              initial={{ opacity: 0, y: 10, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -10, scale: 0.9 }}
-              transition={{ duration: 0.2 }}
-              className={styles.copyButton}
-            >
+            <span key="copy" className={styles.copyButton}>
               <span>{children}</span>
               <Image alt="copyButton" src={clipboard} width={25} height={25} className="pr-1" />
-            </motion.span>
+            </span>
           )}
         </>
       ) : (
         <>{isLoading ? "Loading..." : <>{children}</>}</>
       )}
-    </motion.button>
+    </button>
   );
 }

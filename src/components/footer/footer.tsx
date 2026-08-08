@@ -1,3 +1,5 @@
+"use client";
+
 import { Github, Linkedin } from "lucide-react";
 
 import * as styles from "./footer.css";

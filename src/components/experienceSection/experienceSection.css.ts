@@ -1,5 +1,4 @@
 import { style } from "@vanilla-extract/css";
-import { colors } from "@/theme/colors";
 
 export const experienceSectionContainer = style({
   display: "flex",
@@ -9,7 +8,6 @@ export const experienceSectionContainer = style({
   "@media": {
     "screen and (max-width: 675px)": {
       justifyContent: "center",
-      alignItems: "center",
       marginBottom: "128px"
     },
   },
@@ -17,15 +15,16 @@ export const experienceSectionContainer = style({
 
 export const mainContainer = style({
   display: "flex",
-  justifyContent: "center",
-  gap: "64px",
+  flexDirection: "row",
+  gap: "128px",
   marginTop: "64px",
-  marginBottom: "64px",
-  alignItems: "stretch",
   "@media": {
-    "screen and (max-width: 675px)": {
+    "screen and (max-width: 1024px)": {
       flexDirection: "column",
-      marginTop: "0px",
+      gap: "48px",
+      marginTop: 0
     },
   },
 });
+
+

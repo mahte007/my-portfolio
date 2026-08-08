@@ -1,10 +1,20 @@
-import { style } from "@vanilla-extract/css";
+import { style, keyframes } from "@vanilla-extract/css";
+
+const popIn = keyframes({
+  from: { opacity: 0, transform: "translateY(10px) scale(0.9)" },
+  to: { opacity: 1, transform: "translateY(0) scale(1)" },
+});
 
 export const button = style({
   borderRadius: "16px",
   alignItems: "center",
   justifyContent: "center",
   cursor: "pointer",
+  transition: "transform 0.15s ease-out",
+  selectors: {
+    "&:hover": { transform: "scale(1.05)" },
+    "&:active": { transform: "scale(0.95)" },
+  },
 });
 
 export const primary = style({
@@ -69,6 +79,7 @@ export const copyButton = style({
   display: "flex",
   alignItems: "center",
   gap: "8px",
+  animation: `${popIn} 0.2s ease-out both`,
   '@media': {
     'screen and (max-width: 1048px)': {
       fontSize: "12px",

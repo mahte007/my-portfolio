@@ -1,12 +1,13 @@
 {
   "Header": {
     "title": "Máté Horváth",
-    "subTitle": "Frontend developer — building accessible & delightful UIs",
+    "subTitle": "Frontend Engineer · React · TypeScript",
     "projects": "Projects",
     "prices": "Prices",
     "forAgencies": "For Agencies",
     "contact": "Contact",
     "skills": "Skills",
+    "about": "About",
     "workExperience": "Work Experience",
     "github": "GitHub"
   },
@@ -14,15 +15,274 @@
     "title": {
       "hi": "Hi — I’m",
       "name": " Máté, ",
-      "frontend": "Front-End Developer"
+      "frontend": "Front-End Engineer"
     },
-    "heroMessage": "I build fast, accessible websites for businesses and creative studios.",
+    "heroMessage": "I build thoughtful web experiences with React & TypeScript.",
     "viewWork": "View my work",
-    "getInTouch": "Get in touch"
+    "getInTouch": "Get in touch",
+    "aboutMessage": "👋 I’m Máté, a frontend engineer based in Pécs, Hungary. I have 3+ years of experience building web and mobile products, from banking and sports betting platforms to enterprise applications. I care about intuitive interfaces, maintainable code and products that feel good to use."
   },
   "AboutSection": {
-    "message": "👋 Hi, I’m Máté — a front-end developer based in Pécs, Hungary. I specialize in creating lightweight, performant websites for small businesses and agencies. I focus on clean design, maintainable code, and collaboration with creative teams."
+    "subTitle": "04 / ABOUT",
+    "title": "A little more about me.",
+    "paragraph1": "I'm a frontend engineer from Pécs, Hungary. What I enjoy most about development is taking an idea and turning it into something people can actually use.",
+    "paragraph2": "React and TypeScript are where I'm most at home, but I'm curious about the whole product. I enjoy understanding how the backend works, experimenting with new technologies and building projects outside of work.",
+    "paragraph3": "When I'm not coding, you'll probably find me gaming, cooking, working on some random project, or convincing myself that this side project will definitely be the one I finish."
   },
+  "SkillsSection": {
+    "title": "What I work with",
+    "subTitle": "03 / SKILLS",
+    "tech": {
+      "core": "Core",
+      "frontend": "Frontend",
+      "backendData": "Backend & Data",
+      "other": "Other Experience"
+    },
+    "skillDetails": {
+      "react": {
+        "subTitle": "Primary library for building modern user interfaces.",
+        "description": "I have 3+ years of professional experience building web and mobile applications with React, from customer-facing products to complex application interfaces.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Web applications" },
+          "arteries": { "name": "Arteries Studio", "description": "Banking, e-commerce & client applications" },
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Full-stack PWA" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "typescript": {
+        "subTitle": "My primary language for building maintainable frontend applications.",
+        "description": "I use TypeScript extensively alongside React and Next.js to create safer, more predictable applications and improve maintainability as projects grow.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Web & mobile development" },
+          "arteries": { "name": "Arteries Studio", "description": "Production web applications" },
+          "meetingRoom": { "name": "Meeting Room Reservation" },
+          "personal": { "name": "Portfolio & personal projects" }
+        }
+      },
+      "nextjs": {
+        "subTitle": "React framework I use for production websites and web applications.",
+        "description": "I've used Next.js professionally and in personal projects for building performant, responsive applications with modern React development patterns.",
+        "usedIn": {
+          "arteries": { "name": "Arteries Studio", "description": "Client & production projects" },
+          "boda": { "name": "Boda Viktor", "description": "Financial advisor website" },
+          "beerpong": { "name": "Beerpong Tournament" },
+          "personal": { "name": "Portfolio & personal projects" }
+        }
+      },
+      "javascript": {
+        "subTitle": "The foundation of my frontend development experience.",
+        "description": "I've worked with JavaScript throughout my professional career, from traditional websites to React applications, enterprise interfaces and API integrations.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Enterprise applications" },
+          "amelco": { "name": "Amelco UK", "description": "Web & mobile products" },
+          "arteries": { "name": "Arteries Studio", "description": "Web applications" },
+          "ferling": { "name": "FERLING", "description": "Client websites" }
+        }
+      },
+      "reactnative": {
+        "subTitle": "React-based development for cross-platform mobile applications.",
+        "description": "I used React Native professionally at Amelco to develop mobile features for casino and sports-betting products while sharing concepts and patterns with the React web ecosystem.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Mobile applications" }
+        }
+      },
+      "tailwind": {
+        "subTitle": "Utility-first CSS framework for building responsive interfaces quickly and consistently.",
+        "description": "I've used Tailwind CSS across professional and personal projects to create responsive layouts and maintain consistent visual systems.",
+        "usedIn": {
+          "arteries": { "name": "Arteries Studio", "description": "Web projects" },
+          "boda": { "name": "Boda Viktor", "description": "Financial advisor website" },
+          "beerpong": { "name": "Beerpong Tournament" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "htmlCss": {
+        "subTitle": "The fundamentals behind every interface I build.",
+        "description": "I have extensive experience translating designs and requirements into responsive, accessible interfaces using semantic HTML and modern CSS.",
+        "usedIn": {
+          "professional": { "name": "Professional frontend work" },
+          "client": { "name": "Client websites" },
+          "webapps": { "name": "Web applications" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "sapui5": {
+        "subTitle": "Enterprise UI framework for building SAP web applications.",
+        "description": "I currently use SAPUI5 professionally to develop data-driven enterprise interfaces and integrate frontend functionality with OData services.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Document-processing application" },
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "Full-stack mentor project" }
+        }
+      },
+      "nodejs": {
+        "subTitle": "JavaScript runtime I use when working beyond the frontend.",
+        "description": "I've used Node.js for backend development and personal projects, giving me a better understanding of APIs, server-side logic and the systems my frontend applications communicate with.",
+        "usedIn": {
+          "personal": { "name": "Personal full-stack projects" },
+          "experiments": { "name": "API development & experiments" }
+        }
+      },
+      "restapis": {
+        "subTitle": "The main way I've integrated frontend applications with backend services.",
+        "description": "I regularly work with APIs from the frontend, including request handling, authentication, data transformation, error states and asynchronous application flows.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK" },
+          "arteries": { "name": "Arteries Studio" },
+          "meetingRoom": { "name": "Meeting Room Reservation" },
+          "personal": { "name": "Multiple personal projects" }
+        }
+      },
+      "postgresql": {
+        "subTitle": "Relational database used in my full-stack application development.",
+        "description": "I've worked with PostgreSQL when building applications that require persistent relational data and backend-driven workflows.",
+        "usedIn": {
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Application database" }
+        }
+      },
+      "sqlite": {
+        "subTitle": "Lightweight relational database for development and application persistence.",
+        "description": "I've used SQLite together with SAP CAP while designing entities and implementing persistence for full-stack applications.",
+        "usedIn": {
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "CAP persistence layer" }
+        }
+      },
+      "sapcap": {
+        "subTitle": "Framework for building data models, services and backend functionality in the SAP ecosystem.",
+        "description": "I've used CAP to build backend services, define application data models and expose functionality to SAPUI5 applications through OData.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Internal training & development" },
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "Full-stack mentor project" }
+        }
+      },
+      "odata": {
+        "subTitle": "Data protocol I use for frontend-to-backend communication in SAP applications.",
+        "description": "I work with OData services to retrieve, update and manage application data from SAPUI5 frontends.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Enterprise application development" },
+          "meetingRoomManager": { "name": "Meeting Room Manager" }
+        }
+      },
+      "javaSpringboot": {
+        "subTitle": "Backend technologies I've used for full-stack application development.",
+        "description": "I've built backend functionality with Java and Spring Boot, including REST endpoints, authentication, authorization and database integration.",
+        "usedIn": {
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Backend API" },
+          "university": { "name": "University & personal development" }
+        }
+      },
+      "abap": {
+        "subTitle": "SAP backend language I'm developing practical familiarity with.",
+        "description": "I've completed hands-on ABAP learning and worked with SAP applications where frontend functionality integrates with ABAP-based backend services.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Learning journey & enterprise development environment" }
+        }
+      },
+      "git": {
+        "subTitle": "Version control at the center of my day-to-day development workflow.",
+        "description": "I use Git professionally for feature development, branching, code collaboration and maintaining projects across teams.",
+        "usedIn": {
+          "daily": { "name": "Daily professional development" },
+          "github": { "name": "GitHub projects" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "wordpress": {
+        "subTitle": "CMS I used during my early professional web-development experience.",
+        "description": "I've built WordPress websites, developed reusable components and maintained production client websites.",
+        "usedIn": {
+          "ferling": { "name": "FERLING", "description": "Client websites" }
+        }
+      },
+      "figma": {
+        "subTitle": "Design tool I use when working with interfaces and translating designs into code.",
+        "description": "I'm comfortable reading designs, inspecting layouts and assets, and using Figma as part of the frontend implementation workflow.",
+        "usedIn": {
+          "frontend": { "name": "Frontend development" },
+          "ui": { "name": "UI implementation" },
+          "personal": { "name": "Personal projects" }
+        }
+      }
+    }
+  },
+  "ProjectsSection": {
+    "title": "Selected Work",
+    "subTitle": "01 / PROJECTS",
+    "projects": {
+      "meetingRoomManager": {
+        "title": "Meeting Room Reservation",
+        "description": "Full-stack PWA for managing meeting rooms and reservations with authentication, role-based workflows and offline support."
+      },
+      "architectPortfolio": {
+        "title": "Architech Portfolio",
+        "description": "Portfolio website for architects and designers — clean layout, image gallery, and easy customization.",
+        "buttonText": "View Project"
+      },
+      "bodaPortfolioSite": {
+        "title": "Boda Viktor Website",
+        "description": "Production website built with Next.js and TypeScript with a focus on responsive design, performance and a polished user experience.",
+        "buttonText": "Contact Me"
+      }
+    }
+  },
+  "ExperienceSection": {
+    "title": "Where I've Worked",
+    "subTitle": "02 / EXPERIENCE",
+    "educationTitle": "Education",
+    "workTitle": "Work",
+    "work": {
+      "ferling": {
+        "company": "FERLING Kft.",
+        "time": "Oct 2022 - Jan 2023",
+        "title": "Web Developer Intern",
+        "description": "Gained experience in WordPress and custom web development."
+      },
+      "arteries": {
+        "company": "Arteries Studio",
+        "time": "Jun 2023 - Sept 2024",
+        "title": "Frontend Developer",
+        "description": "Built web for banking and e-commerce clients."
+      },
+      "amelco": {
+        "company": "Amelco UK",
+        "time": "Sept 2024 - Sept 2025",
+        "title": "Frontend Developer",
+        "description": "Worked on web and mobile applications using React, TypeScript and React Native."
+      },
+      "adesso": {
+        "company": "Adesso Business Consulting Kft",
+        "time": "Feb 2026 - Now",
+        "title": "Frontend Developer and Consultant",
+        "description": "Enterprise frontend development with SAPUI5, JavaScript and CAP."
+      }
+    },
+    "education": {
+      "university": {
+        "school": "University of Pécs",
+        "time": "2020 - Present",
+        "major": "Computer Science Engineer Bsc",
+        "specialization": "Application Development"
+      }
+    },
+    "checkCV": "Check My CV"
+  },
+  "ContactSection": {
+    "title": "Let's build something.",
+    "subTitle": "05 / CONTACT",
+    "message": "Interested in working together or just want to say hi?",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "Footer": {
+    "name": "Máté Horváth",
+    "github": "GitHub",
+    "linkedIn": "LinkedIn"
+  },
+  "MaintenancePage": {
+    "title": "Under Maintenance",
+    "subTitle": "Be right back",
+    "message": "I'm currently updating this site to make it even better. Please check back soon — in the meantime, feel free to reach out."
+  },
+
   "ServicesSection": {
     "titles": {
       "webDesign": "Web Design",
@@ -72,78 +332,6 @@
       "letsTalk": "Let's Talk"
     }
   },
-  "SkillsSection": {
-    "title": "Skills",
-    "subTitle": "Technical",
-    "swipeText": "Swipe to see more",
-    "tech": {
-      "other": "Other",
-      "frontend": "FrontEnd",
-      "backend": "BackEnd"
-    }
-  },
-  "ProjectsSection": {
-    "title": "Portfolio",
-    "subTitle": "Recent Projects",
-    "projects": {
-      "myPortfolio": {
-        "title": "My Portfolio",
-        "description": "Personal portfolio website built with React, featuring animations and responsive design.",
-        "buttonText": "You Are Here"
-      },
-      "architectPortfolio": {
-        "title": "Architech Portfolio Template",
-        "description": "Template for architects and designers — clean layout, image gallery, and easy customization.",
-        "buttonText": "View Project"
-      },
-      "nextProject": {
-        "title": "Be my next project",
-        "description": "Looking for a modern, fast website for your business? Let’s work together.",
-        "buttonText": "Contact Me"
-      }
-    }
-  },
-  "ExperienceSection": {
-    "title": "Work Experience",
-    "subTitle": "Education",
-    "educationTitle": "Education",
-    "workTitle": "Work",
-    "work": {
-      "kanizsatel": {
-        "company": "Kanizsatel Kft.",
-        "time": "Summer of 2017",
-        "title": "Telecommunication Intern"
-      },
-      "ferling": {
-        "company": "FERLING Kft.",
-        "time": "Oct 2022 - Jan 2023",
-        "title": "Web Developer Intern"
-      },
-      "arteries": {
-        "company": "Arteries Studio",
-        "time": "Jun 2023 - Sept 2024",
-        "title": "Frontend Developer"
-      },
-      "amelco": {
-        "company": "Amelco UK",
-        "time": "Sept 2024 - Sept 2025",
-        "title": "Frontend Developer"
-      }
-    },
-    "education": {
-      "highSchool": {
-        "school": "Cserháti Sándor Technical School",
-        "time": "2016 - 2020",
-        "major": "Telecommunication"
-      },
-      "university": {
-        "school": "University of Pécs",
-        "time": "2020",
-        "major": "Computer Science Engineer Bsc"
-      }
-    },
-    "checkCV": "Check My CV"
-  },
   "ContractSection": {
     "title": "For Agencies",
     "subTitle": "Contract Work",
@@ -156,21 +344,5 @@
     },
     "checkOutCV": "Check out My CV",
     "collaborate": "Let's Collaborate"
-  },
-  "ContactSection": {
-    "title": "Contact",
-    "subTitle": "Contact Information",
-    "email": "Email",
-    "writeEmail": "Write me an Email!"
-  },
-  "Footer": {
-    "name": "Máté Horváth",
-    "github": "GitHub",
-    "linkedIn": "LinkedIn"
-  },
-  "MaintenancePage": {
-    "title": "Under Maintenance",
-    "subTitle": "Be right back",
-    "message": "I'm currently updating this site to make it even better. Please check back soon — in the meantime, feel free to reach out."
   }
 }

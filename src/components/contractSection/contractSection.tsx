@@ -5,7 +5,7 @@ import Button from "../common/button/button";
 import { useTranslations } from "next-intl";
 
 export default function ContractSection() {
-  const CV = "/files/MateHorvathCV.pdf";
+  const CV = "/files/Mate_Horvath_CV.pdf";
   const t = useTranslations("ContractSection");
 
   return (

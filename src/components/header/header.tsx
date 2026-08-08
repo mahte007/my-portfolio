@@ -1,3 +1,5 @@
+"use client";
+
 import { Menu, X } from "lucide-react";
 import * as styles from "./header.css";
 import Image from "next/image";
@@ -49,21 +51,9 @@ export default function Header() {
           </a>
           <a
             className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#packages")}
+            onClick={() => handleOnClick("#experience")}
           >
-            {t("prices")}
-          </a>
-          <a
-            className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#contract")}
-          >
-            {t("forAgencies")}
-          </a>
-          <a
-            className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#contact")}
-          >
-            {t("contact")}
+            {t("workExperience")}
           </a>
           <a
             className={styles.headerMenuItem}
@@ -73,9 +63,15 @@ export default function Header() {
           </a>
           <a
             className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#experience")}
+            onClick={() => handleOnClick("#about")}
           >
-            {t("workExperience")}
+            {t("about")}
+          </a>
+          <a
+            className={styles.headerMenuItem}
+            onClick={() => handleOnClick("#contact")}
+          >
+            {t("contact")}
           </a>
         <LanguageSwitcher />
         </nav>
