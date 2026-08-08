@@ -8,11 +8,8 @@ import ProjectsSection from "@/components/projectsSection/projectsSection";
 import SkillsSection from "@/components/skillsSection/skillsSection";
 import ContactSection from "@/components/contactSection/contactSection";
 import Footer from "@/components/footer/footer";
-import ServicesSection from "@/components/servicesSection/servicesSection";
 import ExperienceSection from "@/components/experienceSection/experienceSection";
 import OrbBackground from "@/components/common/orbs/orbs";
-import PackagesSection from "@/components/packagesSection/packagesSection";
-import ContractSection from "@/components/contractSection/contractSection";
 
 export default function PortfolioPage() {
   const [pageHeight, setPageHeight] = useState(0);
@@ -46,13 +43,10 @@ export default function PortfolioPage() {
         <div className="max-w-7xl mx-auto p-6 pt-0 lg:p-12 lg:pt-0 z-10">
           <main className="z-10 relative">
             <HeroSection />
-            <AboutSection />
-            <ServicesSection />
-            <PackagesSection />
-            <SkillsSection />
             <ProjectsSection />
             <ExperienceSection />
-            <ContractSection />
+            {/* <AboutSection /> */}
+            <SkillsSection />
             <ContactSection />
           </main>
         </div>

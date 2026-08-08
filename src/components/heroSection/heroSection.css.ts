@@ -3,8 +3,8 @@ import { style } from "@vanilla-extract/css";
 export const heroSectionContainer = style({
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
     marginBottom: "48px",
+    flexDirection: "column"
 })
 
 export const buttonContainer = style({
@@ -64,4 +64,33 @@ export const button = style({
             width: "50%",
         }
     }
+})
+
+export const aboutSectionContainer = style({
+    marginTop: "64px",
+    marginBottom: "128px"
+})
+
+export const aboutMainContainer = style({
+    display: "flex",
+    gap: "32px",
+    '@media': {
+        '(max-width: 550px)': {
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "justify",
+            gap: "16px",
+        },
+    },
+})
+
+export const aboutParagraphContainer = style({
+    marginTop: "24px",
+    width: "40%",
+    '@media': {
+        '(max-width: 550px)': {
+            width: "60%",
+        },
+    },
 })

@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Máté Horváth",
-    "subTitle": "Frontend developer — building accessible & delightful UIs",
+    "subTitle": "Frontend Engineer · React · TypeScript",
     "projects": "Projects",
     "prices": "Prices",
     "forAgencies": "For Agencies",
@@ -14,14 +14,15 @@
     "title": {
       "hi": "Hi — I’m",
       "name": " Máté, ",
-      "frontend": "Front-End Developer"
+      "frontend": "Front-End Engineer"
     },
-    "heroMessage": "I build fast, accessible websites for businesses and creative studios.",
+    "heroMessage": "I build thoughtful web experiences with React & TypeScript.",
     "viewWork": "View my work",
-    "getInTouch": "Get in touch"
+    "getInTouch": "Get in touch",
+    "aboutMessage": "👋 I’m Máté, a frontend engineer based in Pécs, Hungary. I have 3+ years of experience building web and mobile products, from banking and sports platforms to enterprise applications. I care about intuitive interfaces, maintainable code and products that feel good to use."
   },
   "AboutSection": {
-    "message": "👋 Hi, I’m Máté — a front-end developer based in Pécs, Hungary. I specialize in creating lightweight, performant websites for small businesses and agencies. I focus on clean design, maintainable code, and collaboration with creative teams."
+    "message": ""
   },
   "ServicesSection": {
     "titles": {

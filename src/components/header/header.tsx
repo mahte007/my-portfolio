@@ -49,18 +49,6 @@ export default function Header() {
           </a>
           <a
             className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#packages")}
-          >
-            {t("prices")}
-          </a>
-          <a
-            className={styles.headerMenuItem}
-            onClick={() => handleOnClick("#contract")}
-          >
-            {t("forAgencies")}
-          </a>
-          <a
-            className={styles.headerMenuItem}
             onClick={() => handleOnClick("#contact")}
           >
             {t("contact")}
