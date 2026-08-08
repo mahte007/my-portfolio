@@ -55,42 +55,42 @@
     }
   },
   "ExperienceSection": {
-    "title": "Work Experience",
-    "subTitle": "Education",
+    "title": "Where I've Worked",
+    "subTitle": "Experience",
     "educationTitle": "Education",
     "workTitle": "Work",
     "work": {
-      "kanizsatel": {
-        "company": "Kanizsatel Kft.",
-        "time": "Summer of 2017",
-        "title": "Telecommunication Intern"
-      },
       "ferling": {
         "company": "FERLING Kft.",
         "time": "Oct 2022 - Jan 2023",
-        "title": "Web Developer Intern"
+        "title": "Web Developer Intern",
+        "description": "Gained experience in WordPress and custom web development."
       },
       "arteries": {
         "company": "Arteries Studio",
         "time": "Jun 2023 - Sept 2024",
-        "title": "Frontend Developer"
+        "title": "Frontend Developer",
+        "description": "Built web for banking and e-commerce clients."
       },
       "amelco": {
         "company": "Amelco UK",
         "time": "Sept 2024 - Sept 2025",
-        "title": "Frontend Developer"
+        "title": "Frontend Developer",
+        "description": "Worked on web and mobile applications using React, TypeScript and React Native."
+      },
+      "adesso": {
+        "company": "Adesso Business Consulting Kft",
+        "time": "Feb 2026 - Now",
+        "title": "Frontend Developer and Consultant",
+        "description": "Enterprise frontend development with SAPUI5, JavaScript and CAP."
       }
     },
     "education": {
-      "highSchool": {
-        "school": "Cserháti Sándor Technical School",
-        "time": "2016 - 2020",
-        "major": "Telecommunication"
-      },
       "university": {
         "school": "University of Pécs",
-        "time": "2020",
-        "major": "Computer Science Engineer Bsc"
+        "time": "2020 - Present",
+        "major": "Computer Science Engineer Bsc",
+        "specialization": "Application Development"
       }
     },
     "checkCV": "Check My CV"

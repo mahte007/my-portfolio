@@ -17,15 +17,9 @@ export const experienceSectionContainer = style({
 
 export const mainContainer = style({
   display: "flex",
-  justifyContent: "center",
-  gap: "64px",
-  marginTop: "64px",
-  marginBottom: "64px",
-  alignItems: "stretch",
-  "@media": {
-    "screen and (max-width: 675px)": {
-      flexDirection: "column",
-      marginTop: "0px",
-    },
-  },
+  flexDirection: "row",
+  gap: "128px",
+  marginTop: "64px"
 });
+
+
