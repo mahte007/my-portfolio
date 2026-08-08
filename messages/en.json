@@ -25,13 +25,178 @@
     "message": ""
   },
   "SkillsSection": {
-    "title": "Skills",
-    "subTitle": "Technical",
-    "swipeText": "Swipe to see more",
+    "title": "What I work with",
+    "subTitle": "Skills",
     "tech": {
-      "other": "Other",
-      "frontend": "FrontEnd",
-      "backend": "BackEnd"
+      "core": "Core",
+      "frontend": "Frontend",
+      "backendData": "Backend & Data",
+      "other": "Other Experience"
+    },
+    "skillDetails": {
+      "react": {
+        "subTitle": "Primary library for building modern user interfaces.",
+        "description": "I have 3+ years of professional experience building web and mobile applications with React, from customer-facing products to complex application interfaces.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Web applications" },
+          "arteries": { "name": "Arteries Studio", "description": "Banking, e-commerce & client applications" },
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Full-stack PWA" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "typescript": {
+        "subTitle": "My primary language for building maintainable frontend applications.",
+        "description": "I use TypeScript extensively alongside React and Next.js to create safer, more predictable applications and improve maintainability as projects grow.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Web & mobile development" },
+          "arteries": { "name": "Arteries Studio", "description": "Production web applications" },
+          "meetingRoom": { "name": "Meeting Room Reservation" },
+          "personal": { "name": "Portfolio & personal projects" }
+        }
+      },
+      "nextjs": {
+        "subTitle": "React framework I use for production websites and web applications.",
+        "description": "I've used Next.js professionally and in personal projects for building performant, responsive applications with modern React development patterns.",
+        "usedIn": {
+          "arteries": { "name": "Arteries Studio", "description": "Client & production projects" },
+          "boda": { "name": "Boda Viktor", "description": "Financial advisor website" },
+          "beerpong": { "name": "Beerpong Tournament" },
+          "personal": { "name": "Portfolio & personal projects" }
+        }
+      },
+      "javascript": {
+        "subTitle": "The foundation of my frontend development experience.",
+        "description": "I've worked with JavaScript throughout my professional career, from traditional websites to React applications, enterprise interfaces and API integrations.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Enterprise applications" },
+          "amelco": { "name": "Amelco UK", "description": "Web & mobile products" },
+          "arteries": { "name": "Arteries Studio", "description": "Web applications" },
+          "ferling": { "name": "FERLING", "description": "Client websites" }
+        }
+      },
+      "reactnative": {
+        "subTitle": "React-based development for cross-platform mobile applications.",
+        "description": "I used React Native professionally at Amelco to develop mobile features for casino and sports-betting products while sharing concepts and patterns with the React web ecosystem.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Mobile applications" }
+        }
+      },
+      "tailwind": {
+        "subTitle": "Utility-first CSS framework for building responsive interfaces quickly and consistently.",
+        "description": "I've used Tailwind CSS across professional and personal projects to create responsive layouts and maintain consistent visual systems.",
+        "usedIn": {
+          "arteries": { "name": "Arteries Studio", "description": "Web projects" },
+          "boda": { "name": "Boda Viktor", "description": "Financial advisor website" },
+          "beerpong": { "name": "Beerpong Tournament" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "htmlCss": {
+        "subTitle": "The fundamentals behind every interface I build.",
+        "description": "I have extensive experience translating designs and requirements into responsive, accessible interfaces using semantic HTML and modern CSS.",
+        "usedIn": {
+          "professional": { "name": "Professional frontend work" },
+          "client": { "name": "Client websites" },
+          "webapps": { "name": "Web applications" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "sapui5": {
+        "subTitle": "Enterprise UI framework for building SAP web applications.",
+        "description": "I currently use SAPUI5 professionally to develop data-driven enterprise interfaces and integrate frontend functionality with OData services.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Document-processing application" },
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "Full-stack mentor project" }
+        }
+      },
+      "nodejs": {
+        "subTitle": "JavaScript runtime I use when working beyond the frontend.",
+        "description": "I've used Node.js for backend development and personal projects, giving me a better understanding of APIs, server-side logic and the systems my frontend applications communicate with.",
+        "usedIn": {
+          "personal": { "name": "Personal full-stack projects" },
+          "experiments": { "name": "API development & experiments" }
+        }
+      },
+      "restapis": {
+        "subTitle": "The main way I've integrated frontend applications with backend services.",
+        "description": "I regularly work with APIs from the frontend, including request handling, authentication, data transformation, error states and asynchronous application flows.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK" },
+          "arteries": { "name": "Arteries Studio" },
+          "meetingRoom": { "name": "Meeting Room Reservation" },
+          "personal": { "name": "Multiple personal projects" }
+        }
+      },
+      "postgresql": {
+        "subTitle": "Relational database used in my full-stack application development.",
+        "description": "I've worked with PostgreSQL when building applications that require persistent relational data and backend-driven workflows.",
+        "usedIn": {
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Application database" }
+        }
+      },
+      "sqlite": {
+        "subTitle": "Lightweight relational database for development and application persistence.",
+        "description": "I've used SQLite together with SAP CAP while designing entities and implementing persistence for full-stack applications.",
+        "usedIn": {
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "CAP persistence layer" }
+        }
+      },
+      "sapcap": {
+        "subTitle": "Framework for building data models, services and backend functionality in the SAP ecosystem.",
+        "description": "I've used CAP to build backend services, define application data models and expose functionality to SAPUI5 applications through OData.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Internal training & development" },
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "Full-stack mentor project" }
+        }
+      },
+      "odata": {
+        "subTitle": "Data protocol I use for frontend-to-backend communication in SAP applications.",
+        "description": "I work with OData services to retrieve, update and manage application data from SAPUI5 frontends.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Enterprise application development" },
+          "meetingRoomManager": { "name": "Meeting Room Manager" }
+        }
+      },
+      "javaSpringboot": {
+        "subTitle": "Backend technologies I've used for full-stack application development.",
+        "description": "I've built backend functionality with Java and Spring Boot, including REST endpoints, authentication, authorization and database integration.",
+        "usedIn": {
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Backend API" },
+          "university": { "name": "University & personal development" }
+        }
+      },
+      "abap": {
+        "subTitle": "SAP backend language I'm developing practical familiarity with.",
+        "description": "I've completed hands-on ABAP learning and worked with SAP applications where frontend functionality integrates with ABAP-based backend services.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Learning journey & enterprise development environment" }
+        }
+      },
+      "git": {
+        "subTitle": "Version control at the center of my day-to-day development workflow.",
+        "description": "I use Git professionally for feature development, branching, code collaboration and maintaining projects across teams.",
+        "usedIn": {
+          "daily": { "name": "Daily professional development" },
+          "github": { "name": "GitHub projects" },
+          "personal": { "name": "Personal projects" }
+        }
+      },
+      "wordpress": {
+        "subTitle": "CMS I used during my early professional web-development experience.",
+        "description": "I've built WordPress websites, developed reusable components and maintained production client websites.",
+        "usedIn": {
+          "ferling": { "name": "FERLING", "description": "Client websites" }
+        }
+      },
+      "figma": {
+        "subTitle": "Design tool I use when working with interfaces and translating designs into code.",
+        "description": "I'm comfortable reading designs, inspecting layouts and assets, and using Figma as part of the frontend implementation workflow.",
+        "usedIn": {
+          "frontend": { "name": "Frontend development" },
+          "ui": { "name": "UI implementation" },
+          "personal": { "name": "Personal projects" }
+        }
+      }
     }
   },
   "ProjectsSection": {

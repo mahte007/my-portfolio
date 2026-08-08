@@ -73,13 +73,178 @@
     }
   },
   "SkillsSection": {
-    "title": "Tudás",
+    "title": "Amivel dolgozom",
     "subTitle": "Szakmai",
-    "swipeText": "Csúsztass a többihez",
     "tech": {
-      "other": "Egyéb",
-      "frontend": "FrontEnd",
-      "backend": "BackEnd"
+      "core": "Alap",
+      "frontend": "Frontend",
+      "backendData": "Backend és adatok",
+      "other": "Egyéb tapasztalat"
+    },
+    "skillDetails": {
+      "react": {
+        "subTitle": "Elsődleges könyvtár modern felhasználói felületek építéséhez.",
+        "description": "3+ éves szakmai tapasztalattal rendelkezem web- és mobilalkalmazások fejlesztésében React segítségével, ügyfélszolgálati termékektől komplex alkalmazásfelületekig.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Webalkalmazások" },
+          "arteries": { "name": "Arteries Studio", "description": "Banki, e-kereskedelmi és ügyfél alkalmazások" },
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Full-stack PWA" },
+          "personal": { "name": "Saját projektek" }
+        }
+      },
+      "typescript": {
+        "subTitle": "Elsődleges nyelvem karbantartható frontend alkalmazások építéséhez.",
+        "description": "A TypeScriptet kiterjedten használom React és Next.js mellett, hogy biztonságosabb, kiszámíthatóbb alkalmazásokat építsek, és megőrizzem a karbantarthatóságot ahogy a projektek nőnek.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Web- és mobilfejlesztés" },
+          "arteries": { "name": "Arteries Studio", "description": "Éles webalkalmazások" },
+          "meetingRoom": { "name": "Meeting Room Reservation" },
+          "personal": { "name": "Portfólió és saját projektek" }
+        }
+      },
+      "nextjs": {
+        "subTitle": "React keretrendszer, amit éles weboldalakhoz és webalkalmazásokhoz használok.",
+        "description": "A Next.js-t szakmai és saját projektekben is használtam nagy teljesítményű, reszponzív alkalmazások építéséhez, modern React fejlesztési mintákkal.",
+        "usedIn": {
+          "arteries": { "name": "Arteries Studio", "description": "Ügyfél- és éles projektek" },
+          "boda": { "name": "Boda Viktor", "description": "Pénzügyi tanácsadó weboldal" },
+          "beerpong": { "name": "Beerpong Tournament" },
+          "personal": { "name": "Portfólió és saját projektek" }
+        }
+      },
+      "javascript": {
+        "subTitle": "A frontend fejlesztői tapasztalatom alapja.",
+        "description": "A szakmai pályafutásom során folyamatosan dolgoztam JavaScripttel, hagyományos weboldalaktól React alkalmazásokig, vállalati felületekig és API integrációkig.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Vállalati alkalmazások" },
+          "amelco": { "name": "Amelco UK", "description": "Web- és mobiltermékek" },
+          "arteries": { "name": "Arteries Studio", "description": "Webalkalmazások" },
+          "ferling": { "name": "FERLING", "description": "Ügyfél weboldalak" }
+        }
+      },
+      "reactnative": {
+        "subTitle": "React alapú fejlesztés platformfüggetlen mobilalkalmazásokhoz.",
+        "description": "A React Native-et szakmai környezetben az Amelcónál használtam kaszinó- és sportfogadási termékek mobilfunkcióinak fejlesztésére, a React webes ökoszisztémájával megosztott koncepciók és minták mentén.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK", "description": "Mobilalkalmazások" }
+        }
+      },
+      "tailwind": {
+        "subTitle": "Utility-first CSS keretrendszer gyors és konzisztens reszponzív felületekhez.",
+        "description": "A Tailwind CSS-t szakmai és saját projektekben is használtam reszponzív elrendezések és konzisztens vizuális rendszerek kialakításához.",
+        "usedIn": {
+          "arteries": { "name": "Arteries Studio", "description": "Webes projektek" },
+          "boda": { "name": "Boda Viktor", "description": "Pénzügyi tanácsadó weboldal" },
+          "beerpong": { "name": "Beerpong Tournament" },
+          "personal": { "name": "Saját projektek" }
+        }
+      },
+      "htmlCss": {
+        "subTitle": "Az általam épített minden felület alapjai.",
+        "description": "Kiterjedt tapasztalattal rendelkezem dizájnok és követelmények reszponzív, akadálymentes felületekké alakításában, szemantikus HTML és modern CSS használatával.",
+        "usedIn": {
+          "professional": { "name": "Szakmai frontend munka" },
+          "client": { "name": "Ügyfél weboldalak" },
+          "webapps": { "name": "Webalkalmazások" },
+          "personal": { "name": "Saját projektek" }
+        }
+      },
+      "sapui5": {
+        "subTitle": "Vállalati UI keretrendszer SAP webalkalmazások építéséhez.",
+        "description": "Jelenleg szakmai környezetben használom a SAPUI5-öt adatvezérelt vállalati felületek fejlesztésére, és a frontend funkciók OData szolgáltatásokkal való összekapcsolására.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Dokumentumfeldolgozó alkalmazás" },
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "Full-stack mentorprojekt" }
+        }
+      },
+      "nodejs": {
+        "subTitle": "JavaScript futtatókörnyezet, amit a frontenden túli munkához használok.",
+        "description": "A Node.js-t backend fejlesztésben és saját projektekben használtam, ami jobb rálátást adott az API-kra, a szerveroldali logikára és azokra a rendszerekre, amelyekkel a frontend alkalmazásaim kommunikálnak.",
+        "usedIn": {
+          "personal": { "name": "Saját full-stack projektek" },
+          "experiments": { "name": "API fejlesztés és kísérletek" }
+        }
+      },
+      "restapis": {
+        "subTitle": "A fő módja annak, ahogy a frontend alkalmazásaimat backend szolgáltatásokkal összekötöttem.",
+        "description": "Rendszeresen dolgozom API-kkal a frontend oldalról, beleértve a kéréskezelést, hitelesítést, adatátalakítást, hibaállapotokat és aszinkron alkalmazásfolyamatokat.",
+        "usedIn": {
+          "amelco": { "name": "Amelco UK" },
+          "arteries": { "name": "Arteries Studio" },
+          "meetingRoom": { "name": "Meeting Room Reservation" },
+          "personal": { "name": "Több saját projekt" }
+        }
+      },
+      "postgresql": {
+        "subTitle": "Relációs adatbázis, amit a full-stack alkalmazásfejlesztésemben használok.",
+        "description": "A PostgreSQL-lel olyan alkalmazások építésekor dolgoztam, amelyek tartós relációs adatokat és backend-vezérelt folyamatokat igényelnek.",
+        "usedIn": {
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Alkalmazás adatbázisa" }
+        }
+      },
+      "sqlite": {
+        "subTitle": "Könnyűsúlyú relációs adatbázis fejlesztéshez és alkalmazás-perzisztenciához.",
+        "description": "Az SQLite-ot a SAP CAP-pal együtt használtam entitások tervezésekor és a perzisztencia megvalósításakor full-stack alkalmazásokban.",
+        "usedIn": {
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "CAP perzisztenciarréteg" }
+        }
+      },
+      "sapcap": {
+        "subTitle": "Keretrendszer adatmodellek, szolgáltatások és backend funkcionalitás építéséhez a SAP ökoszisztémában.",
+        "description": "A CAP-ot backend szolgáltatások építésére, alkalmazás adatmodellek definiálására és a funkcionalitás SAPUI5 alkalmazások felé OData-n keresztüli megnyitására használtam.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Belső képzés és fejlesztés" },
+          "meetingRoomManager": { "name": "Meeting Room Manager", "description": "Full-stack mentorprojekt" }
+        }
+      },
+      "odata": {
+        "subTitle": "Adatprotokoll, amit a frontend-backend kommunikációhoz használok SAP alkalmazásokban.",
+        "description": "OData szolgáltatásokkal dolgozom alkalmazásadatok lekérdezésére, frissítésére és kezelésére SAPUI5 frontendekről.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Vállalati alkalmazásfejlesztés" },
+          "meetingRoomManager": { "name": "Meeting Room Manager" }
+        }
+      },
+      "javaSpringboot": {
+        "subTitle": "Backend technológiák, amiket full-stack alkalmazásfejlesztéshez használtam.",
+        "description": "Java-val és Spring Boot-tal építettem backend funkcionalitást, beleértve REST végpontokat, hitelesítést, jogosultságkezelést és adatbázis-integrációt.",
+        "usedIn": {
+          "meetingRoom": { "name": "Meeting Room Reservation", "description": "Backend API" },
+          "university": { "name": "Egyetemi és saját fejlesztés" }
+        }
+      },
+      "abap": {
+        "subTitle": "SAP backend nyelv, amiben gyakorlati jártasságot szerzek.",
+        "description": "Gyakorlati ABAP tanulást végeztem, és olyan SAP alkalmazásokon dolgoztam, ahol a frontend funkcionalitás ABAP-alapú backend szolgáltatásokkal kapcsolódik össze.",
+        "usedIn": {
+          "adesso": { "name": "adesso", "description": "Tanulási folyamat és vállalati fejlesztői környezet" }
+        }
+      },
+      "git": {
+        "subTitle": "A verziókezelés a napi fejlesztői munkafolyamatom középpontjában.",
+        "description": "A Gitet szakmai környezetben használom funkciófejlesztéshez, branch-eléshez, kódmegosztáshoz és projektek karbantartásához csapatok között.",
+        "usedIn": {
+          "daily": { "name": "Napi szakmai fejlesztés" },
+          "github": { "name": "GitHub projektek" },
+          "personal": { "name": "Saját projektek" }
+        }
+      },
+      "wordpress": {
+        "subTitle": "CMS, amit a korai szakmai webfejlesztői tapasztalatom során használtam.",
+        "description": "WordPress weboldalakat építettem, újrafelhasználható komponenseket fejlesztettem, és éles ügyfél weboldalakat tartottam karban.",
+        "usedIn": {
+          "ferling": { "name": "FERLING", "description": "Ügyfél weboldalak" }
+        }
+      },
+      "figma": {
+        "subTitle": "Tervezőeszköz, amit felületek átvizsgálásakor és kódba ültetésekor használok.",
+        "description": "Magabiztosan olvasok dizájnokat, vizsgálok elrendezéseket és eszközöket, és a Figmát a frontend implementációs folyamat részeként használom.",
+        "usedIn": {
+          "frontend": { "name": "Frontend fejlesztés" },
+          "ui": { "name": "UI megvalósítás" },
+          "personal": { "name": "Saját projektek" }
+        }
+      }
     }
   },
   "ProjectsSection": {
