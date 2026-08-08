@@ -23,7 +23,7 @@ type EducationCardProps = {
 
 export default function EducationCard({ content, cvHref }: EducationCardProps) {
   const t = useTranslations("ExperienceSection");
-  const CV = "/files/MateHorvathCV.pdf";
+  const CV = "/files/Mate_Horvath_CV.pdf";
 
   const [downloaded, setDownloaded] = useState(false);
 

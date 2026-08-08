@@ -7,7 +7,7 @@ import { work } from "../../data/work";
 import { education } from "../../data/education";
 
 export default function ExperienceSection() {
-  const CV = "/files/MateHorvathCV.pdf";
+  const CV = "/files/Mate_Horvath_CV.pdf";
   const t = useTranslations("ExperienceSection");
 
   return (
