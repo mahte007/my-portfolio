@@ -24,6 +24,94 @@
   "AboutSection": {
     "message": ""
   },
+  "SkillsSection": {
+    "title": "Skills",
+    "subTitle": "Technical",
+    "swipeText": "Swipe to see more",
+    "tech": {
+      "other": "Other",
+      "frontend": "FrontEnd",
+      "backend": "BackEnd"
+    }
+  },
+  "ProjectsSection": {
+    "title": "Selected Work",
+    "subTitle": "Projects",
+    "projects": {
+      "meetingRoomManager": {
+        "title": "Meeting Room Reservation",
+        "description": "Full-stack PWA for managing meeting rooms and reservations with authentication, role-based workflows and offline support."
+      },
+      "architectPortfolio": {
+        "title": "Architech Portfolio",
+        "description": "Portfolio website for architects and designers — clean layout, image gallery, and easy customization.",
+        "buttonText": "View Project"
+      },
+      "bodaPortfolioSite": {
+        "title": "Boda Viktor Website",
+        "description": "Production website built with Next.js and TypeScript with a focus on responsive design, performance and a polished user experience.",
+        "buttonText": "Contact Me"
+      }
+    }
+  },
+  "ExperienceSection": {
+    "title": "Work Experience",
+    "subTitle": "Education",
+    "educationTitle": "Education",
+    "workTitle": "Work",
+    "work": {
+      "kanizsatel": {
+        "company": "Kanizsatel Kft.",
+        "time": "Summer of 2017",
+        "title": "Telecommunication Intern"
+      },
+      "ferling": {
+        "company": "FERLING Kft.",
+        "time": "Oct 2022 - Jan 2023",
+        "title": "Web Developer Intern"
+      },
+      "arteries": {
+        "company": "Arteries Studio",
+        "time": "Jun 2023 - Sept 2024",
+        "title": "Frontend Developer"
+      },
+      "amelco": {
+        "company": "Amelco UK",
+        "time": "Sept 2024 - Sept 2025",
+        "title": "Frontend Developer"
+      }
+    },
+    "education": {
+      "highSchool": {
+        "school": "Cserháti Sándor Technical School",
+        "time": "2016 - 2020",
+        "major": "Telecommunication"
+      },
+      "university": {
+        "school": "University of Pécs",
+        "time": "2020",
+        "major": "Computer Science Engineer Bsc"
+      }
+    },
+    "checkCV": "Check My CV"
+  },
+  "ContactSection": {
+    "title": "Contact",
+    "subTitle": "Contact Information",
+    "email": "Email",
+    "writeEmail": "Write me an Email!"
+  },
+  "Footer": {
+    "name": "Máté Horváth",
+    "github": "GitHub",
+    "linkedIn": "LinkedIn"
+  },
+  "MaintenancePage": {
+    "title": "Under Maintenance",
+    "subTitle": "Be right back",
+    "message": "I'm currently updating this site to make it even better. Please check back soon — in the meantime, feel free to reach out."
+  },
+
   "ServicesSection": {
     "titles": {
       "webDesign": "Web Design",
@@ -73,78 +161,6 @@
       "letsTalk": "Let's Talk"
     }
   },
-  "SkillsSection": {
-    "title": "Skills",
-    "subTitle": "Technical",
-    "swipeText": "Swipe to see more",
-    "tech": {
-      "other": "Other",
-      "frontend": "FrontEnd",
-      "backend": "BackEnd"
-    }
-  },
-  "ProjectsSection": {
-    "title": "Portfolio",
-    "subTitle": "Recent Projects",
-    "projects": {
-      "myPortfolio": {
-        "title": "My Portfolio",
-        "description": "Personal portfolio website built with React, featuring animations and responsive design.",
-        "buttonText": "You Are Here"
-      },
-      "architectPortfolio": {
-        "title": "Architech Portfolio Template",
-        "description": "Template for architects and designers — clean layout, image gallery, and easy customization.",
-        "buttonText": "View Project"
-      },
-      "nextProject": {
-        "title": "Be my next project",
-        "description": "Looking for a modern, fast website for your business? Let’s work together.",
-        "buttonText": "Contact Me"
-      }
-    }
-  },
-  "ExperienceSection": {
-    "title": "Work Experience",
-    "subTitle": "Education",
-    "educationTitle": "Education",
-    "workTitle": "Work",
-    "work": {
-      "kanizsatel": {
-        "company": "Kanizsatel Kft.",
-        "time": "Summer of 2017",
-        "title": "Telecommunication Intern"
-      },
-      "ferling": {
-        "company": "FERLING Kft.",
-        "time": "Oct 2022 - Jan 2023",
-        "title": "Web Developer Intern"
-      },
-      "arteries": {
-        "company": "Arteries Studio",
-        "time": "Jun 2023 - Sept 2024",
-        "title": "Frontend Developer"
-      },
-      "amelco": {
-        "company": "Amelco UK",
-        "time": "Sept 2024 - Sept 2025",
-        "title": "Frontend Developer"
-      }
-    },
-    "education": {
-      "highSchool": {
-        "school": "Cserháti Sándor Technical School",
-        "time": "2016 - 2020",
-        "major": "Telecommunication"
-      },
-      "university": {
-        "school": "University of Pécs",
-        "time": "2020",
-        "major": "Computer Science Engineer Bsc"
-      }
-    },
-    "checkCV": "Check My CV"
-  },
   "ContractSection": {
     "title": "For Agencies",
     "subTitle": "Contract Work",
@@ -157,21 +173,5 @@
     },
     "checkOutCV": "Check out My CV",
     "collaborate": "Let's Collaborate"
-  },
-  "ContactSection": {
-    "title": "Contact",
-    "subTitle": "Contact Information",
-    "email": "Email",
-    "writeEmail": "Write me an Email!"
-  },
-  "Footer": {
-    "name": "Máté Horváth",
-    "github": "GitHub",
-    "linkedIn": "LinkedIn"
-  },
-  "MaintenancePage": {
-    "title": "Under Maintenance",
-    "subTitle": "Be right back",
-    "message": "I'm currently updating this site to make it even better. Please check back soon — in the meantime, feel free to reach out."
   }
 }
