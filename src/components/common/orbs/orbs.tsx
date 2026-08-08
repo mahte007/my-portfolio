@@ -9,7 +9,7 @@ type OrbConfig = {
   duration: string;
 };
 
-const OrbBackground: React.FC<{ pageHeight?: number }> = ({ pageHeight }) => {
+const OrbBackground: React.FC = () => {
   const orbs: OrbConfig[] = [
     { size: 400, color: '#3b82f6', top: '5%', left: '10%', duration: '35s' },
     { size: 350, color: '#8b5cf6', top: '20%', left: '70%', duration: '40s' },
@@ -20,10 +20,7 @@ const OrbBackground: React.FC<{ pageHeight?: number }> = ({ pageHeight }) => {
   ];
 
   return (
-    <div
-      className={orbWrapper}
-      style={{ height: `${pageHeight}px` }} // spreads across full scroll height
-    >
+    <div className={orbWrapper}>{/* fills nearest positioned ancestor via inset:0 */}
       {orbs.map((o, index) => (
         <div
           key={index}

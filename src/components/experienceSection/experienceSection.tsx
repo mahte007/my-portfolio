@@ -1,3 +1,5 @@
+"use client";
+
 import CustomTitle from "../common/customTitle/customTitle";
 import WorkTimeline from "../common/workTimeline/workTimeline";
 import EducationCard from "../common/educationCard/educationCard";

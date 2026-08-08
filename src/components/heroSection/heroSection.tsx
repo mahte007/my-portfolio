@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+"use client";
 
 import * as styles from "./heroSection.css";
 import Image from "next/image";
@@ -13,26 +13,14 @@ export default function HeroSection() {
     <section className={styles.heroSectionContainer}>
       <div className="flex flex-row">
         <div className={styles.mainContainer}>
-          <motion.h2
-            initial={{ y: -6, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.4 }}
-            className={styles.titleContainer}
-          >
+          <h2 className={styles.titleContainer}>
             {t("title.hi")}
             <span className="text-pastel-green">{t("title.name")}</span>
             <br />
             <span className="text-pastel-green">{t("title.frontend")}</span>
-          </motion.h2>
+          </h2>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.15 }}
-            className={styles.textContainer}
-          >
-            {t("heroMessage")}
-          </motion.p>
+          <p className={styles.textContainer}>{t("heroMessage")}</p>
 
           <div className={styles.buttonContainer}>
             <Button
@@ -57,7 +45,7 @@ export default function HeroSection() {
         <div className={styles.imageContainer}>
           <Image
             alt="FeImage"
-            src={"/FrontendGraphic.png"}
+            src={"/FrontendGraphic.webp"}
             width={500}
             height={500}
             style={{ objectFit: "cover" }}

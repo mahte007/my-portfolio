@@ -1,3 +1,5 @@
+"use client";
+
 import CustomTitle from "../common/customTitle/customTitle";
 
 import { projects } from "../../data/projects";

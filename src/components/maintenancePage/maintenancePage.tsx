@@ -15,16 +15,15 @@ export default function MaintenancePage() {
   const t = useTranslations("MaintenancePage");
 
   return (
-    <>
-      <OrbBackground pageHeight={800} />
-      <div
-        style={{
-          background:
-            "linear-gradient(180deg, #040a11 0%, #1b0a2a 50%, #040a11 100%)",
-        }}
-        className="text-gray-200 antialiased"
-      >
-        <div className={styles.wrapper}>
+    <div
+      style={{
+        background:
+          "linear-gradient(180deg, #040a11 0%, #1b0a2a 50%, #040a11 100%)",
+      }}
+      className="relative text-gray-200 antialiased"
+    >
+      <OrbBackground />
+      <div className={styles.wrapper}>
           <div className={styles.iconWrapper}>
             <Wrench size={32} />
           </div>
@@ -88,6 +87,6 @@ export default function MaintenancePage() {
           </div>
         </div>
       </div>
-    </>
   );
 }
+

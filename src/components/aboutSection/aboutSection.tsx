@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import * as styles from "./aboutSection.css";
@@ -22,7 +24,7 @@ export default function AboutSection() {
         <div className={styles.imageWrapper}>
           <Image
             alt="Máté Horváth"
-            src="/Profile.png"
+            src="/Profile.webp"
             fill
             sizes="220px"
             className={styles.image}

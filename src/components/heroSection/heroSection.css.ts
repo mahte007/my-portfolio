@@ -1,4 +1,14 @@
-import { style } from "@vanilla-extract/css";
+import { style, keyframes } from "@vanilla-extract/css";
+
+const fadeInDown = keyframes({
+    from: { opacity: 0, transform: "translateY(-6px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+});
+
+const fadeIn = keyframes({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+});
 
 export const heroSectionContainer = style({
     display: "flex",
@@ -27,6 +37,7 @@ export const textContainer = style({
     marginTop: "16px",
     maxWidth: "576px",
     color: "#d1d5dc",
+    animation: `${fadeIn} 0.3s ease-out 0.15s both`,
 })
 
 export const titleContainer = style({
@@ -34,6 +45,7 @@ export const titleContainer = style({
     fontSize: "60px",
     maxWidth: "100%",
     overflowWrap: "break-word",
+    animation: `${fadeInDown} 0.4s ease-out both`,
     '@media': {
         '(max-width: 768px)': {
             fontSize: "36px",

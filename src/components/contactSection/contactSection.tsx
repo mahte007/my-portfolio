@@ -1,3 +1,5 @@
+"use client";
+
 import * as styles from "./contactSection.css";
 import { useTranslations } from "next-intl";
 

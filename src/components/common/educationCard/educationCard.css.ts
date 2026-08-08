@@ -122,3 +122,11 @@ export const line = style({
 export const downloadButton = style({
   fill: "#60a5fa !important"
 });
+
+export const downloadLink = style({
+  transition: "transform 0.15s ease-out",
+  selectors: {
+    "&:hover": { transform: "scale(1.2)" },
+    "&:active": { transform: "scale(0.95)" },
+  },
+});

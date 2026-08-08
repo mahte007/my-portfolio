@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Máté Horváth Portfolio",
     images: [
       {
-        url: "/preview.png",
+        url: "/preview.webp",
         width: 1200,
         height: 630,
         alt: "Preview of Máté Horváth’s Front-End Developer portfolio website",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Máté Horváth | Front-End Developer",
     description:
       "Building fast, accessible websites using React, Next.js, and TypeScript.",
-    images: ["/preview.png"],
+    images: ["/preview.webp"],
   },
   themeColor: "#040a11",
   icons: {

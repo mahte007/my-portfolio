@@ -1,9 +1,10 @@
+"use client";
+
 import * as styles from "./educationCard.css";
 import { GraduationCap } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Button from "../button/button";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useCallback, useState } from "react";
 import clsx from "clsx";
 import download from "/public/download.svg";
@@ -77,16 +78,14 @@ export default function EducationCard({ content, cvHref }: EducationCardProps) {
         >
           {t("checkCV")}
         </Button>
-        <motion.a
-          className={clsx((downloaded && "pointer-events-none"))}
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.95 }}
+        <a
+          className={clsx(styles.downloadLink, downloaded && "pointer-events-none")}
           href={CV}
           download
           onClick={handleDownload}
         >
           <Image className={styles.downloadButton} alt="downloadButton" src={download} width={25} height={25} />
-        </motion.a>
+        </a>
       </div>
     </div>
   );

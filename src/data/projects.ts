@@ -4,7 +4,7 @@ export const projects = [
       titleKey: "title",
       descKey: "description",
       tags: ["React", "TypeScript", "Next.js", "Spring Boot", "PostgreSQL"],
-      imageLink: "/PWA_Dashboard.png",
+      imageLink: "/PWA_Dashboard.webp",
       caseStudyHref: "/" ,
       githubHref: "https://github.com/mahte007/meeting-room-pwa" ,
       reversed: false
@@ -14,7 +14,7 @@ export const projects = [
       titleKey: "title",
       descKey: "description",
       tags: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-      imageLink: "/bodaPortfolio.png",
+      imageLink: "/bodaPortfolio.webp",
       caseStudyHref: "/" ,
       githubHref: "https://github.com/mahte007/boda_portfolio",
       reversed: true
@@ -24,7 +24,7 @@ export const projects = [
       titleKey: "title",
       descKey: "description",
       tags: ["React", "Vanilla CSS", "Next.js", "LocalStorage"],
-      imageLink: "/architectGalery.png",
+      imageLink: "/architectGalery.webp",
       caseStudyHref: "/" ,
       githubHref: "https://github.com/mahte007/architect-portfolio",
       reversed: false
