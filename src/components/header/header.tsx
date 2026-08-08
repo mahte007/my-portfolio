@@ -5,16 +5,22 @@ import * as styles from "./header.css";
 import Image from "next/image";
 import github from "/public/github.svg";
 import { useCallback, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { useScrollSmooth } from "@/utils/useScrollSmooth";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "../languageSwitcher/languageSwitcher";
 
 export default function Header() {
   const t = useTranslations("Header");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollSmooth = useScrollSmooth();
+
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -22,10 +28,14 @@ export default function Header() {
 
   const handleOnClick = useCallback(
     (href: string) => {
-      scrollSmooth(href);
+      if (isHome) {
+        scrollSmooth(href);
+      } else {
+        router.push(`/${locale}${href}`);
+      }
       setMenuOpen(false);
     },
-    [scrollSmooth]
+    [isHome, locale, router, scrollSmooth]
   );
 
   return (

@@ -4,6 +4,7 @@ import * as styles from "./button.css";
 import tick from "/public/tick.svg";
 import clipboard from "/public/clipboard.svg";
 import Image from "next/image";
+import NextLink from "next/link";
 import { useScrollSmooth } from "@/utils/useScrollSmooth";
 
 type ButtonProps = {
@@ -62,6 +63,20 @@ export default function Button({
   );
 
   if (href && link) {
+    const isInternal = href.startsWith("/") && target !== "_blank";
+
+    if (isInternal) {
+      return (
+        <NextLink
+          id={id}
+          className={clsx(styles.button, mainStyles, className)}
+          href={href}
+        >
+          {children}
+        </NextLink>
+      );
+    }
+
     return (
       <a
         id={id}

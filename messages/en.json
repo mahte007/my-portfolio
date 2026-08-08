@@ -210,19 +210,98 @@
     "projects": {
       "meetingRoomManager": {
         "title": "Meeting Room Reservation",
-        "description": "Full-stack PWA for managing meeting rooms and reservations with authentication, role-based workflows and offline support."
+        "description": "Full-stack PWA for managing meeting rooms and reservations with authentication, role-based workflows and offline support.",
+        "tagline": "A full-stack progressive web app that lets teams book and manage meeting rooms — with authentication, role-based permissions and offline support.",
+        "role": "Solo full-stack developer",
+        "overview": [
+          "Meeting Room Reservation is a personal full-stack project built to explore how a small internal tool — booking a meeting room — can be turned into a polished, production-style product. The frontend is a Next.js and TypeScript PWA, backed by a Java Spring Boot API and a PostgreSQL database.",
+          "The goal was to cover the full stack end-to-end: authentication and authorization, relational data modelling, a REST API, and a responsive, installable frontend that keeps working when the network doesn't."
+        ],
+        "highlights": [
+          "Authentication and role-based access, so admins and regular users see different capabilities",
+          "Installable PWA with offline support, so bookings can still be viewed without a connection",
+          "A Spring Boot REST API backed by PostgreSQL for persistent, relational data",
+          "Responsive booking UI built with Next.js, TypeScript and React"
+        ],
+        "challenges": [
+          {
+            "title": "Keeping the UI usable offline",
+            "description": "Since the app is a PWA, I had to think carefully about what should be cached, how to communicate stale data to the user, and how to handle actions made while offline."
+          },
+          {
+            "title": "Modelling roles and permissions",
+            "description": "Reservations, rooms and users needed clear ownership rules, so I designed the PostgreSQL schema and Spring Boot authorization layer so role checks stay consistent across every endpoint."
+          }
+        ]
       },
       "architectPortfolio": {
         "title": "Architech Portfolio",
         "description": "Portfolio website for architects and designers — clean layout, image gallery, and easy customization.",
-        "buttonText": "View Project"
+        "buttonText": "View Project",
+        "tagline": "A reusable portfolio template for architects and designers, built around a clean layout and an image-first gallery.",
+        "role": "Personal project",
+        "overview": [
+          "Architect Portfolio is a template-style personal project: a portfolio website aimed at architects and designers who need a clean way to showcase their work. It's built with React and Next.js, styled with plain CSS to keep the codebase lightweight and easy to customize.",
+          "The focus was on making the gallery the centerpiece of the experience, while keeping the rest of the site simple enough to reasonably fork and re-theme for a different portfolio."
+        ],
+        "highlights": [
+          "Image-first gallery layout designed to showcase project work",
+          "Hand-written CSS instead of a framework, for full control and a smaller footprint",
+          "LocalStorage used for lightweight, backend-free customization and persistence",
+          "Structured to be easy to fork and re-theme for a different designer's portfolio"
+        ],
+        "challenges": [
+          {
+            "title": "Styling without a CSS framework",
+            "description": "Writing the styling in vanilla CSS instead of Tailwind meant building a small design system by hand: spacing, typography and responsive breakpoints all had to be defined and kept consistent manually."
+          },
+          {
+            "title": "Making a gallery-heavy site fast",
+            "description": "With images as the main content, I focused on responsive image sizing and layout choices that keep the gallery smooth without needing a backend or CMS."
+          }
+        ]
       },
       "bodaPortfolioSite": {
         "title": "Boda Viktor Website",
         "description": "Production website built with Next.js and TypeScript with a focus on responsive design, performance and a polished user experience.",
-        "buttonText": "Contact Me"
+        "buttonText": "Contact Me",
+        "tagline": "A production marketing website for financial advisor Boda Viktor, built for speed, clarity and a professional first impression.",
+        "role": "Freelance frontend developer",
+        "overview": [
+          "This is a client website I built for Boda Viktor, a financial advisor, using Next.js, TypeScript and Tailwind CSS. The brief was straightforward: a fast, professional, easy-to-navigate site that builds trust and makes it simple for visitors to get in touch.",
+          "I owned the project from implementation through deployment, translating the design into a responsive, accessible layout and paying close attention to load performance and polish across devices."
+        ],
+        "highlights": [
+          "Fully responsive layout, tuned for mobile, tablet and desktop",
+          "Performance-focused build using Next.js for fast page loads",
+          "Clean, componentized Tailwind CSS styling for easy long-term maintenance",
+          "Clear contact and call-to-action flow aimed at converting visitors into leads"
+        ],
+        "challenges": [
+          {
+            "title": "Balancing polish with delivery speed",
+            "description": "As a solo freelance build, I had to prioritize the details that mattered most for a client-facing site — visual polish, responsiveness and performance — without over-engineering the underlying architecture."
+          },
+          {
+            "title": "Performance on a content-heavy layout",
+            "description": "I optimized images, fonts and component structure with Next.js to keep the site fast without sacrificing the visual design."
+          }
+        ]
       }
     }
+  },
+  "CaseStudy": {
+    "eyebrow": "Case Study",
+    "backToProjects": "Back to projects",
+    "role": "Role",
+    "liveDemo": "Live Demo",
+    "viewOnGithub": "View on GitHub",
+    "overview": "Overview",
+    "keyHighlights": "Key Highlights",
+    "challenges": "Challenges & Approach",
+    "techStack": "Tech Stack",
+    "previousProject": "Previous Project",
+    "nextProject": "Next Project"
   },
   "ExperienceSection": {
     "title": "Where I've Worked",

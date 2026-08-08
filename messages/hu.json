@@ -259,19 +259,98 @@
     "projects": {
       "meetingRoomManager": {
         "title": "Meeting Room Reservation",
-        "description": "Full-stack PWA tárgyaló foglalások kezelésére, hitelesítéssel, szerepkör-alapú munkafolyamatokkal és offline támogatással."
+        "description": "Full-stack PWA tárgyaló foglalások kezelésére, hitelesítéssel, szerepkör-alapú munkafolyamatokkal és offline támogatással.",
+        "tagline": "Egy full-stack progresszív webalkalmazás (PWA), amellyel csapatok foglalhatnak és kezelhetnek tárgyalókat — hitelesítéssel, szerepkör-alapú jogosultságokkal és offline támogatással.",
+        "role": "Önálló full-stack fejlesztő",
+        "overview": [
+          "A Meeting Room Reservation egy saját full-stack projekt, amelyben azt jártam körül, hogyan lehet egy egyszerű belső eszközből — tárgyaló foglalásból — igényes, éles termékre hasonlító alkalmazást építeni. A frontend egy Next.js és TypeScript alapú PWA, mögötte egy Java Spring Boot API és PostgreSQL adatbázis áll.",
+          "A cél az volt, hogy a teljes stacket lefedjem: hitelesítés és jogosultságkezelés, relációs adatmodellezés, REST API, valamint egy reszponzív, telepíthető frontend, amely akkor is működik, ha épp nincs internetkapcsolat."
+        ],
+        "highlights": [
+          "Hitelesítés és szerepkör-alapú hozzáférés, így az adminok és a sima felhasználók más-más funkciókat látnak",
+          "Telepíthető PWA offline támogatással, így a foglalások kapcsolat nélkül is megtekinthetők",
+          "Spring Boot REST API PostgreSQL adatbázissal a tartós, relációs adatokhoz",
+          "Reszponzív foglalási felület Next.js, TypeScript és React segítségével"
+        ],
+        "challenges": [
+          {
+            "title": "A felület használhatóvá tétele offline módban",
+            "description": "Mivel az alkalmazás egy PWA, alaposan végig kellett gondolnom, mit érdemes gyorsítótárazni, hogyan jelezzem a felhasználónak az elavult adatokat, és hogyan kezeljem az offline állapotban végzett műveleteket."
+          },
+          {
+            "title": "Szerepkörök és jogosultságok modellezése",
+            "description": "A foglalásoknak, termeknek és felhasználóknak egyértelmű tulajdonlási szabályokra volt szükségük, ezért úgy alakítottam ki a PostgreSQL sémát és a Spring Boot jogosultsági réteget, hogy a szerepkör-ellenőrzés minden végponton konzisztens maradjon."
+          }
+        ]
       },
       "architectPortfolio": {
         "title": "Építész Portfólió Sablon",
         "description": "Egy sablon weboldal építészek és dizájnerek számára, letisztult felépítéssel, képgalériával és egyszerűen testreszabható funkciókkal.",
-        "buttonText": "Nézd meg"
+        "buttonText": "Nézd meg",
+        "tagline": "Egy újrafelhasználható portfólió sablon építészek és dizájnerek számára, letisztult elrendezéssel és kép-központú galériával.",
+        "role": "Saját projekt",
+        "overview": [
+          "Az Architect Portfolio egy sablon jellegű saját projekt: egy portfólió weboldal olyan építészeknek és dizájnereknek, akiknek letisztult módra van szükségük a munkáik bemutatásához. React-tel és Next.js-szel épült, a stílusokat pedig sima CSS-sel írtam, hogy a kódbázis könnyű és egyszerűen testreszabható maradjon.",
+          "A fókusz azon volt, hogy a galéria legyen az élmény középpontja, miközben az oldal többi része elég egyszerű maradjon ahhoz, hogy más is nyugodtan lefork-olja és átstílusozza a saját portfóliójához."
+        ],
+        "highlights": [
+          "Kép-központú galéria elrendezés a projektmunkák bemutatásához",
+          "Kézzel írt CSS keretrendszer helyett, a teljes kontroll és a kisebb méret érdekében",
+          "LocalStorage a könnyű, backend nélküli testreszabáshoz és perzisztenciához",
+          "Úgy felépítve, hogy könnyen lefork-olható és átstílusozható legyen más dizájner portfóliójához"
+        ],
+        "challenges": [
+          {
+            "title": "Stílusozás CSS keretrendszer nélkül",
+            "description": "A Tailwind helyett sima CSS-ben megírt stílusozás azt jelentette, hogy egy kis dizájnrendszert kézzel kellett felépítenem: a térközöket, a tipográfiát és a reszponzív töréspontokat manuálisan kellett meghatároznom és konzisztensen tartanom."
+          },
+          {
+            "title": "Egy galéria-központú oldal gyorssá tétele",
+            "description": "Mivel a képek a fő tartalom, a reszponzív képméretezésre és olyan elrendezési döntésekre fókuszáltam, amelyek backend vagy CMS nélkül is gördülékennyé teszik a galériát."
+          }
+        ]
       },
       "bodaPortfolioSite": {
         "title": "Boda Viktor weboldal",
         "description": "Éles weboldal Next.js és TypeScript segítségével, a reszponzív dizájnra, teljesítményre és letisztult felhasználói élményre fókuszálva.",
-        "buttonText": "Írj nekem"
+        "buttonText": "Írj nekem",
+        "tagline": "Éles bemutatkozó weboldal Boda Viktor pénzügyi tanácsadó számára, a gyorsaságra, érthetőségre és profi első benyomásra fókuszálva.",
+        "role": "Szabadúszó frontend fejlesztő",
+        "overview": [
+          "Ez egy ügyfélprojekt, amelyet Boda Viktor pénzügyi tanácsadó számára építettem Next.js, TypeScript és Tailwind CSS segítségével. A cél egyértelmű volt: egy gyors, professzionális, könnyen navigálható oldal, amely bizalmat épít, és megkönnyíti a látogatók számára a kapcsolatfelvételt.",
+          "A projektet a megvalósítástól a kiszállításig én vittem végig: a dizájnt reszponzív, akadálymentes felületté alakítottam, kiemelt figyelmet fordítva a betöltési teljesítményre és a részletek csiszolására minden eszközön."
+        ],
+        "highlights": [
+          "Teljesen reszponzív elrendezés, mobilra, tabletre és asztali gépre optimalizálva",
+          "Teljesítmény-fókuszú Next.js build a gyors betöltésért",
+          "Letisztult, komponens-alapú Tailwind CSS stílusozás a könnyű karbantarthatóságért",
+          "Egyértelmű kapcsolatfelvételi és call-to-action folyamat a látogatók konvertálásához"
+        ],
+        "challenges": [
+          {
+            "title": "Csiszoltság és gyors kiszállítás egyensúlya",
+            "description": "Önálló szabadúszó munkaként azokra a részletekre kellett fókuszálnom, amelyek egy ügyfélnek szánt oldalnál a legtöbbet számítanak — vizuális csiszoltság, reszponzivitás és teljesítmény —, anélkül hogy túlbonyolítottam volna az alapul szolgáló architektúrát."
+            },
+          {
+            "title": "Teljesítmény egy tartalmas oldalon",
+            "description": "A képeket, betűtípusokat és a komponensstruktúrát Next.js segítségével optimalizáltam, hogy az oldal gyors maradjon a vizuális megjelenés feláldozása nélkül."
+          }
+        ]
       }
     }
+  },
+  "CaseStudy": {
+    "eyebrow": "Esettanulmány",
+    "backToProjects": "Vissza a projektekhez",
+    "role": "Szerep",
+    "liveDemo": "Élő Verzió",
+    "viewOnGithub": "Megtekintés GitHubon",
+    "overview": "Áttekintés",
+    "keyHighlights": "Legfontosabb Funkciók",
+    "challenges": "Kihívások és Megoldások",
+    "techStack": "Technológiák",
+    "previousProject": "Előző Projekt",
+    "nextProject": "Következő Projekt"
   },
   "ExperienceSection": {
     "title": "Hol dolgoztam eddig",
