@@ -5,6 +5,8 @@ const baseHeading = style({
     lineHeight: 1.2,
     color: "white",
     margin: 0,
+    maxWidth: "100%",
+    overflowWrap: "break-word",
 });
 
 export const titleContainer = style({

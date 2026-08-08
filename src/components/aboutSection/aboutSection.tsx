@@ -22,7 +22,7 @@ export default function AboutSection() {
         <div className={styles.imageWrapper}>
           <Image
             alt="Máté Horváth"
-            src="/ProfilePic.png"
+            src="/Profile.png"
             fill
             sizes="220px"
             className={styles.image}

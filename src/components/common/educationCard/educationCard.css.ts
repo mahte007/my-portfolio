@@ -3,7 +3,7 @@ import { style } from "@vanilla-extract/css";
 export const card = style({
   display: "flex",
   flexDirection: "column",
-  width: "80%",
+  width: "100%",
   height: "fit-content",
   borderRadius: "16px",
   padding: "24px 48px 24px 48px",
@@ -11,6 +11,12 @@ export const card = style({
   backgroundColor: "rgba(15, 26, 41, 0.6)",
   border: "1px solid rgba(255, 255, 255, 0.08)",
   boxShadow: "0 0 15px rgba(59, 130, 246, 0.1)",
+  "@media": {
+    "screen and (max-width: 675px)": {
+      padding: "24px",
+      gap: "48px",
+    },
+  },
 });
 
 export const header = style({

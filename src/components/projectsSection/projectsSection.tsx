@@ -19,7 +19,7 @@ export default function ProjectsSection() {
         {t("title")}
       </CustomTitle>
       <div className="flex justify-center w-full mt-16">
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-32 lg:gap-16">
         {projects.map((p, i) => (
         <ShowcaseBlock key={p.id} index={i + 1} title={t(`projects.${p.id}.${p.titleKey}`)} image={p.imageLink} githubHref={p.githubHref} caseStudyHref={p.caseStudyHref} tags={p.tags} reversed={p.reversed}>
           {t(`projects.${p.id}.${p.descKey}`)}

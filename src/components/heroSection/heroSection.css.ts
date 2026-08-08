@@ -32,15 +32,21 @@ export const textContainer = style({
 export const titleContainer = style({
     fontWeight: "800",
     fontSize: "60px",
+    maxWidth: "100%",
+    overflowWrap: "break-word",
     '@media': {
         '(max-width: 768px)': {
             fontSize: "36px",
-        }
+        },
+        '(max-width: 400px)': {
+            fontSize: "30px",
+        },
     }
 })
 
 export const mainContainer = style({
     width: "60%",
+    minWidth: 0,
     '@media': {
         '(max-width: 768px)': {
             width: "100%",

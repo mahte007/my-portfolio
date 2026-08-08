@@ -24,6 +24,11 @@ export const imageWrapper = style({
   backgroundColor: "#0f1a25",
   border: "1px solid rgba(255, 255, 255, 0.08)",
   boxShadow: "0 20px 60px -20px rgba(0, 108, 238, 0.25)",
+  "@media": {
+    "screen and (max-width: 1024px)": {
+      order: 1,
+    },
+  },
 });
 
 export const imageWrapperReversed = style({
@@ -40,7 +45,12 @@ export const content = style({
   order: 1,
   justifyContent: "space-between",
   height: "100%",
-  padding: "10px 0 50px 0"
+  padding: "10px 0 50px 0",
+  "@media": {
+    "screen and (max-width: 1024px)": {
+      order: 0
+    },
+  },
 });
 
 export const contentReversed = style({

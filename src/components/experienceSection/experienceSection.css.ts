@@ -1,5 +1,4 @@
 import { style } from "@vanilla-extract/css";
-import { colors } from "@/theme/colors";
 
 export const experienceSectionContainer = style({
   display: "flex",
@@ -9,7 +8,6 @@ export const experienceSectionContainer = style({
   "@media": {
     "screen and (max-width: 675px)": {
       justifyContent: "center",
-      alignItems: "center",
       marginBottom: "128px"
     },
   },
@@ -19,7 +17,14 @@ export const mainContainer = style({
   display: "flex",
   flexDirection: "row",
   gap: "128px",
-  marginTop: "64px"
+  marginTop: "64px",
+  "@media": {
+    "screen and (max-width: 1024px)": {
+      flexDirection: "column",
+      gap: "48px",
+      marginTop: 0
+    },
+  },
 });
 
 

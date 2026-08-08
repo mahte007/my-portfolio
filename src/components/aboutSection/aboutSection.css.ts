@@ -7,7 +7,6 @@ export const aboutSectionContainer = style({
   marginBottom: "64px",
   "@media": {
     "screen and (max-width: 675px)": {
-      alignItems: "center",
       marginBottom: "128px",
     },
   },
@@ -21,8 +20,10 @@ export const mainContainer = style({
   "@media": {
     "screen and (max-width: 675px)": {
       flexDirection: "column",
+      alignItems: "center",
       textAlign: "center",
       gap: "24px",
+      marginTop: 0
     },
   },
 });
@@ -47,6 +48,8 @@ export const textContainer = style({
   flexDirection: "column",
   gap: "16px",
   maxWidth: "640px",
+  width: "100%",
+  minWidth: 0,
 });
 
 export const paragraph = style({

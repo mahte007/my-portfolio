@@ -7,7 +7,6 @@ export const skillsSectionContainer = style({
   marginBottom: "64px",
   "@media": {
     "screen and (max-width: 675px)": {
-      alignItems: "center",
       marginBottom: "128px",
     },
   },
@@ -17,13 +16,13 @@ export const mainContainer = style({
   display: "grid",
   gridTemplateColumns: "1fr",
   gap: "24px",
-  marginTop: "64px",
   marginBottom: "64px",
   alignItems: "stretch",
   "@media": {
     "screen and (min-width: 676px)": {
       gridTemplateColumns: "1fr 2fr",
       gap: "32px",
+      marginTop: "64px",
     },
   },
 });
@@ -184,20 +183,50 @@ export const techDetailMetaItem = style({
 
 export const activeSkillContainer = style({
   display: "flex",
-  gap: "64px"
+  gap: "64px",
+  "@media": {
+    "screen and (max-width: 767px)": {
+      flexDirection: "column",
+      gap: "24px",
+    },
+  },
 });
 
 export const techDetailContainer = style({
-  width: "50%"
+  width: "50%",
+  minWidth: 0,
+  "@media": {
+    "screen and (max-width: 767px)": {
+      width: "100%",
+    },
+  },
 });
 
 export const usedInContainer = style({
   paddingLeft: "48px",
   borderLeft: "1px solid rgba(255, 255, 255, 0.08)",
+  minWidth: 0,
+  "@media": {
+    "screen and (max-width: 675px)": {
+      display: "flex",
+      textAlign: "center",
+      paddingLeft: 0,
+      paddingTop: "24px",
+      borderLeft: "none",
+      borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+      justifyContent: "center"
+    },
+  },
 });
 
 export const projectListItem = style({
   listStyleType: "disc",
   color:"green",
-  marginBottom: "8px"
+  marginBottom: "8px",
+  "@media": {
+    "screen and (max-width: 675px)": {
+      listStyleType: "none",
+      marginBottom: "24px"
+    },
+  },
 })
