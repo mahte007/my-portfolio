@@ -49,6 +49,7 @@ export default function ShowcaseBlock({
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
           className={styles.image}
+          fetchPriority="high"
         />
       </div>
 

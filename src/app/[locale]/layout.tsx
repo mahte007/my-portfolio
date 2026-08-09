@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -15,72 +15,118 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://horvathmate.dev";
+
 export const metadata: Metadata = {
-  title: "Máté Horváth | Front-End Developer",
-  description:
-    "Front-end developer based in Pécs, Hungary. I build fast, accessible, and visually appealing websites using React, Next.js, and TypeScript for businesses and agencies.",
-  keywords: [
-    "Front-end developer",
-    "React developer",
-    "Next.js developer",
-    "Freelance web developer",
-    "Pécs web design",
-    "TypeScript developer",
-    "Web developer Hungary",
-  ],
-  authors: [{ name: "Máté Horváth", url: "https://horvathmate.dev/" }],
-  metadataBase: new URL("https://horvathmate.dev/"),
-  alternates: {
-    canonical: "https://horvathmate.dev/",
+  metadataBase: new URL(siteUrl),
+
+  title: {
+    default: "Máté Horváth | Front-End Engineer",
+    template: "%s | Máté Horváth",
   },
+
+  description:
+    "Front-end Engineer based in Pécs, Hungary, building fast, accessible, and visually polished web applications with React, Next.js, and TypeScript.",
+
+  keywords: [
+    "Front-end Engineer",
+    "Frontend Engineer",
+    "Front-end Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript Developer",
+    "Web Developer Hungary",
+    "Frontend Developer Hungary",
+    "React Developer Hungary",
+    "Web Developer Pécs",
+  ],
+
+  authors: [
+    {
+      name: "Máté Horváth",
+      url: siteUrl,
+    },
+  ],
+
+  creator: "Máté Horváth",
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
-    title: "Máté Horváth | Front-End Developer",
-    description:
-      "Modern, accessible websites built with React, Next.js, and TypeScript. Available for freelance and contract work.",
-    url: "https://horvathmate.dev/",
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
     siteName: "Máté Horváth Portfolio",
+    title: "Máté Horváth | Front-End Engineer",
+    description:
+      "Front-end Engineer building fast, accessible, and visually polished web applications with React, Next.js, and TypeScript.",
     images: [
       {
         url: "/preview.webp",
         width: 1200,
         height: 630,
-        alt: "Preview of Máté Horváth’s Front-End Developer portfolio website",
+        alt: "Máté Horváth Front-End Engineer portfolio",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Máté Horváth | Front-End Developer",
+    title: "Máté Horváth | Front-End Engineer",
     description:
-      "Building fast, accessible websites using React, Next.js, and TypeScript.",
+      "Front-end Engineer building fast, accessible web applications with React, Next.js, and TypeScript.",
     images: ["/preview.webp"],
   },
-  themeColor: "#040a11",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#040a11",
+  width: "device-width",
+  initialScale: 1,
 };
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{locale: string}>
-}
+  params: Promise<{ locale: string }>;
+};
 
-export default async function RootLayout({children, params}: Props) {
-  const {locale} = await params;
+export default async function RootLayout({
+  children,
+  params,
+}: Props) {
+  const { locale } = await params;
+
   if (!hasLocale(routing.locales, locale)) {
-    notFound()
+    notFound();
   }
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          {children}
+
+        {children}
         </NextIntlClientProvider>
       </body>
     </html>
