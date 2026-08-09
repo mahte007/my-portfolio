@@ -17,6 +17,7 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "Next.js", "Spring Boot", "PostgreSQL"],
     imageLink: "/PWA_Dashboard.webp",
     githubHref: "https://github.com/mahte007/meeting-room-pwa",
+    liveHref: "",
     reversed: false,
   },
   {
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
     imageLink: "/bodaPortfolio.webp",
     githubHref: "https://github.com/mahte007/boda_portfolio",
+    liveHref: "https://www.bvpenzugyek.hu/",
     reversed: true,
   },
   {
@@ -35,6 +37,7 @@ export const projects: Project[] = [
     tags: ["React", "Vanilla CSS", "Next.js", "LocalStorage"],
     imageLink: "/architectGalery.webp",
     githubHref: "https://github.com/mahte007/architect-portfolio",
+    liveHref: "https://architect-portfolio.netlify.app/",
     reversed: false,
   },
 ];

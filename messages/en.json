@@ -288,6 +288,11 @@
           }
         ]
       }
+    },
+    "showcaseBlock": {
+      "caseStudy": "View case study",
+      "github": "GitHub",
+      "live": "View it Live"
     }
   },
   "CaseStudy": {

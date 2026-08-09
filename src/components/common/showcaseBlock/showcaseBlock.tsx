@@ -4,6 +4,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Button from "../button/button";
+import { useTranslations } from "next-intl";
 
 type ShowcaseBlockProps = {
   index?: string | number;
@@ -14,6 +15,7 @@ type ShowcaseBlockProps = {
   tags?: string[];
   caseStudyHref?: string;
   githubHref?: string;
+  liveHref?: string;
   reversed?: boolean;
   className?: string;
 };
@@ -27,9 +29,12 @@ export default function ShowcaseBlock({
   tags,
   caseStudyHref,
   githubHref,
+  liveHref,
   reversed = false,
   className,
 }: ShowcaseBlockProps) {
+  const t = useTranslations("ProjectsSection");
+
   return (
     <div className={clsx(styles.container, className)}>
       <div
@@ -68,7 +73,7 @@ export default function ShowcaseBlock({
           </div>
         )}
 
-        {(caseStudyHref || githubHref) && (
+        {(caseStudyHref || githubHref || liveHref) && (
           <div className={styles.links}>
             {caseStudyHref && (
               <Button
@@ -77,7 +82,7 @@ export default function ShowcaseBlock({
                 href={caseStudyHref}
                 className={styles.link}
               >
-                View case study <ArrowRight size={16} />
+                {t("showcaseBlock.caseStudy")} <ArrowRight size={16} />
               </Button>
             )}
             {githubHref && (
@@ -88,7 +93,18 @@ export default function ShowcaseBlock({
                 target="_blank"
                 className={styles.link}
               >
-                GitHub <ArrowUpRight size={16} />
+                {t("showcaseBlock.github")} <ArrowUpRight size={16} />
+              </Button>
+            )}
+            {liveHref && (
+              <Button
+                variant="link"
+                link
+                href={liveHref}
+                target="_blank"
+                className={styles.link}
+              >
+                {t("showcaseBlock.live")} <ArrowUpRight size={16} />
               </Button>
             )}
           </div>

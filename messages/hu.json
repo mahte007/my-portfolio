@@ -337,6 +337,11 @@
           }
         ]
       }
+    },
+    "showcaseBlock": {
+      "caseStudy": "Esettanulmány",
+      "github": "GitHub",
+      "live": "Nézd meg élesben"
     }
   },
   "CaseStudy": {
