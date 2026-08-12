@@ -15,11 +15,6 @@ export const heroSectionContainer = style({
     justifyContent: "space-between",
     marginBottom: "48px",
     flexDirection: "column",
-    '@media': {
-        '(max-width: 675px)': {
-            justifyContent: "center"
-        }
-        }
 })
 
 export const buttonContainer = style({
@@ -101,7 +96,7 @@ export const aboutMainContainer = style({
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            textAlign: "justify",
+            textAlign: "center",
             gap: "16px",
         },
     },
